@@ -1,6 +1,7 @@
 THEME = faithful
 MINIFY = min
 BOOTSTRAP = bootstrap
+BOOTSTRAP_VER = 2.3.2
 SRC_LESS_DIR = ./less/
 SRC_IMG_DIR = ./img/
 SRC_JS_DIR =  ./js/
@@ -15,7 +16,7 @@ DOCS_DIR = ./docs/assets/
 DOCS_CSS_DIR = ${DOCS_DIR}css/
 DOCS_IMG_DIR = ${DOCS_DIR}img/
 DOCS_JS_DIR =  ${DOCS_DIR}js/
-DOCS_FONT_DIR = ${DOCS_DIR}font/
+DOCS_FONT_DIR = ${DOCS_CSS_DIR}font/
 BOOTSTRAP_CSS = ${BOOTSTRAP}.css
 BOOTSTRAP_MIN = ${BOOTSTRAP}.${MINIFY}
 BOOTSTRAP_MIN_CSS = ${BOOTSTRAP_MIN}.css
@@ -37,6 +38,7 @@ SOURCE_FONT_DIR = Source
 SOURCE_FONT_LESS = ${SOURCE_FONT}.less
 SOURCE_FONT_CSS = ${SOURCE_FONT}.css
 SOURCE_FONT_MIN_CSS = ${SOURCE_FONT}.${MINIFY}.css
+FONTAWESOME_VER = 3.2.1
 FONTAWESOME_FONT = font-awesome
 FONTAWESOME_FONT_IE7 = ${FONTAWESOME_FONT}-ie7
 FONTAWESOME_FONT_DIR = FontAwesome
@@ -103,12 +105,15 @@ CSS3_MEDIAQUERIES_MIN_JS = ${CSS3_MEDIAQUERIES}.${MINIFY}.js
 
 JSHINT = ./node_modules/.bin/jshint.cmd
 UGLIFYJS = ./node_modules/.bin/uglifyjs.cmd
+UGLIFYJS_PARAMS = --verbose --support-ie8 --beautify --comments all
+UGLIFYJS_MINIFY_PARAMS = --support-ie8 --compress unused=false,side_effects=false,keep_fnames=true --mangle keep_fnames=true
 RECESS = ./node_modules/.bin/recess.cmd
 LESSC = ./node_modules/.bin/lessc.cmd
+LESS_COMPILER = ${LESSC}
 
 DATE=$(shell date +%I:%M%p)
 CHECK=√
-HR=\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
+HR=\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
 
 #
@@ -117,71 +122,71 @@ HR=\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\
 
 build:
 	@echo "${HR}"
-	@echo "   Building Bootstrap..."
+	@echo "   Building Bootstrap v${BOOTSTRAP_VER} with Font-Awesome v${FONTAWESOME_VER}..."
 	@echo "${HR}"
 	@${JSHINT} ${SRC_JS_DIR}*.js --config ${SRC_JS_DIR}.jshintrc
 	@${JSHINT} ${SRC_JS_DIR}tests/unit/*.js --config ${SRC_JS_DIR}.jshintrc
 	@echo "Running JSHint on javascript...             ${CHECK} Done"
 	@mkdir -p ${DIST_CSS_DIR}
 	@echo "Compiling ${BOOTSTRAP_LESS}...               "
-	@${RECESS} --compile ${SRC_LESS_DIR}${BOOTSTRAP_LESS} > ${DIST_CSS_DIR}${BOOTSTRAP_CSS}
-	@${RECESS} --compress ${SRC_LESS_DIR}${BOOTSTRAP_LESS} > ${DIST_CSS_DIR}${BOOTSTRAP_MIN_CSS}	
+	@${LESS_COMPILER} --compile ${SRC_LESS_DIR}${BOOTSTRAP_LESS} > ${DIST_CSS_DIR}${BOOTSTRAP_CSS}
+	@${LESS_COMPILER} --compress ${SRC_LESS_DIR}${BOOTSTRAP_LESS} > ${DIST_CSS_DIR}${BOOTSTRAP_MIN_CSS}	
 	@echo "Compiling ${BOOTSTRAP_RESPONSIVE_LESS}...               "
-	@${RECESS} --compile ${SRC_LESS_DIR}${BOOTSTRAP_RESPONSIVE_LESS} > ${DIST_CSS_DIR}${BOOTSTRAP_RESPONSIVE_CSS}
-	@${RECESS} --compress ${SRC_LESS_DIR}${BOOTSTRAP_RESPONSIVE_LESS} > ${DIST_CSS_DIR}${BOOTSTRAP_RESPONSIVE_MIN_CSS}
+	@${LESS_COMPILER} --compile ${SRC_LESS_DIR}${BOOTSTRAP_RESPONSIVE_LESS} > ${DIST_CSS_DIR}${BOOTSTRAP_RESPONSIVE_CSS}
+	@${LESS_COMPILER} --compress ${SRC_LESS_DIR}${BOOTSTRAP_RESPONSIVE_LESS} > ${DIST_CSS_DIR}${BOOTSTRAP_RESPONSIVE_MIN_CSS}
 	@echo "Compiling LESS with Recess...               ${CHECK} Done"	
 	@echo "Compiling and minifying ${BOOTSTRAP_JS}...       "
 	@mkdir -p ${DIST_JS_DIR}	
 	@echo "/*!\n* Bootstrap.js v2.3.2 by @fat & @mdo\n* Copyright 2013 Twitter, Inc.\n* http://www.apache.org/licenses/LICENSE-2.0.txt\n*/" > ${DIST_JS_DIR}copyright.js	
 	@cat ${SRC_JS_DIR}bootstrap-transition.js ${SRC_JS_DIR}bootstrap-alert.js ${SRC_JS_DIR}bootstrap-button.js ${SRC_JS_DIR}bootstrap-carousel.js ${SRC_JS_DIR}bootstrap-collapse.js ${SRC_JS_DIR}bootstrap-dropdown.js ${SRC_JS_DIR}bootstrap-modal.js ${SRC_JS_DIR}bootstrap-tooltip.js ${SRC_JS_DIR}bootstrap-popover.js ${SRC_JS_DIR}bootstrap-scrollspy.js ${SRC_JS_DIR}bootstrap-tab.js ${SRC_JS_DIR}bootstrap-typeahead.js ${SRC_JS_DIR}bootstrap-affix.js > ${DIST_JS_DIR}${BOOTSTRAP_JS}
-	@${UGLIFYJS} -nc ${DIST_JS_DIR}${BOOTSTRAP_JS} > ${DIST_JS_DIR}${BOOTSTRAP_MIN_JS}.tmp
+	@${UGLIFYJS} ${DIST_JS_DIR}${BOOTSTRAP_JS} ${UGLIFYJS_MINIFY_PARAMS} -o ${DIST_JS_DIR}${BOOTSTRAP_MIN_JS}.tmp
 	@cat ${DIST_JS_DIR}copyright.js ${DIST_JS_DIR}${BOOTSTRAP_MIN_JS}.tmp > ${DIST_JS_DIR}${BOOTSTRAP_MIN_JS}
 	@rm ${DIST_JS_DIR}copyright.js ${DIST_JS_DIR}${BOOTSTRAP_MIN_JS}.tmp
 	@echo "Compiling and minifying ${BOOTSWATCH_VER_JS}...       "
 	@cp ${SRC_JS_EXT_DIR}${BOOTSWATCH_VER_JS} ${DIST_JS_DIR}${BOOTSWATCH_JS}
-	@${UGLIFYJS} -nc ${DIST_JS_DIR}${BOOTSWATCH_JS} > ${DIST_JS_DIR}${BOOTSWATCH_MIN_JS}
+	@${UGLIFYJS} ${DIST_JS_DIR}${BOOTSWATCH_JS} ${UGLIFYJS_MINIFY_PARAMS} -o ${DIST_JS_DIR}${BOOTSWATCH_MIN_JS}
 	@echo "Compiling and minifying ${JQUERY_VER_JS}...       "
 	@cp ${SRC_JS_EXT_DIR}${JQUERY_VER_JS} ${DIST_JS_DIR}${JQUERY_JS}	
-	@${UGLIFYJS} -nc ${DIST_JS_DIR}${JQUERY_JS} > ${DIST_JS_DIR}${JQUERY_MIN_JS}
+	@${UGLIFYJS} ${DIST_JS_DIR}${JQUERY_JS} ${UGLIFYJS_MINIFY_PARAMS} -o ${DIST_JS_DIR}${JQUERY_MIN_JS}
 	@echo "Compiling and minifying ${SMOOTH_SCROLL_VER_JS}...       "
 	@cp ${SRC_JS_EXT_DIR}${SMOOTH_SCROLL_VER_JS} ${DIST_JS_DIR}${SMOOTH_SCROLL_JS}
-	@${UGLIFYJS} -nc ${DIST_JS_DIR}${SMOOTH_SCROLL_JS} > ${DIST_JS_DIR}${SMOOTH_SCROLL_MIN_JS}
-	@echo "Compiling and minifying ${CSS3_MEDIAQUERIES_JS}...       "
-	@cp ${SRC_JS_EXT_DIR}${CSS3_MEDIAQUERIES_JS} ${DIST_JS_DIR}${CSS3_MEDIAQUERIES_JS}
-	@${UGLIFYJS} -nc ${DIST_JS_DIR}${CSS3_MEDIAQUERIES_JS} > ${DIST_JS_DIR}${CSS3_MEDIAQUERIES_MIN_JS}	
+	@${UGLIFYJS} ${DIST_JS_DIR}${SMOOTH_SCROLL_JS} ${UGLIFYJS_MINIFY_PARAMS} -o ${DIST_JS_DIR}${SMOOTH_SCROLL_MIN_JS}
+#	@echo "Compiling and minifying ${CSS3_MEDIAQUERIES_JS}...       "
+#	@cp ${SRC_JS_EXT_DIR}${CSS3_MEDIAQUERIES_JS} ${DIST_JS_DIR}${CSS3_MEDIAQUERIES_JS}
+#	@${UGLIFYJS} ${DIST_JS_DIR}${CSS3_MEDIAQUERIES_JS} ${UGLIFYJS_MINIFY_PARAMS} -o ${DIST_JS_DIR}${CSS3_MEDIAQUERIES_MIN_JS}	
 	@echo "Compiling and minifying ${HTML5SHIV_VER_JS}...       "
 	@cp ${SRC_JS_EXT_DIR}${HTML5SHIV_VER_JS} ${DIST_JS_DIR}${HTML5SHIV_JS}
-	@${UGLIFYJS} -nc ${DIST_JS_DIR}${HTML5SHIV_JS} > ${DIST_JS_DIR}${HTML5SHIV_MIN_JS}
+	@${UGLIFYJS} ${DIST_JS_DIR}${HTML5SHIV_JS} ${UGLIFYJS_MINIFY_PARAMS} -o ${DIST_JS_DIR}${HTML5SHIV_MIN_JS}
 	@cp ${SRC_JS_EXT_DIR}${HTML5SHIV_PRINTSHIV_VER_JS} ${DIST_JS_DIR}${HTML5SHIV_PRINTSHIV_JS}
-	@${UGLIFYJS} -nc ${DIST_JS_DIR}${HTML5SHIV_PRINTSHIV_JS} > ${DIST_JS_DIR}${HTML5SHIV_PRINTSHIV_MIN_JS}			
+	@${UGLIFYJS} ${DIST_JS_DIR}${HTML5SHIV_PRINTSHIV_JS} ${UGLIFYJS_MINIFY_PARAMS} -o ${DIST_JS_DIR}${HTML5SHIV_PRINTSHIV_MIN_JS}			
 	@echo "Compiling and minifying ${MODERNIZR_VER_JS}...       "
 	@cp ${SRC_JS_EXT_DIR}${MODERNIZR_VER_JS} ${DIST_JS_DIR}${MODERNIZR_JS}
-	@${UGLIFYJS} -nc ${DIST_JS_DIR}${MODERNIZR_JS} > ${DIST_JS_DIR}${MODERNIZR_MIN_JS}	
+	@${UGLIFYJS} ${DIST_JS_DIR}${MODERNIZR_JS} ${UGLIFYJS_MINIFY_PARAMS} -o ${DIST_JS_DIR}${MODERNIZR_MIN_JS}	
 	@echo "Compiling and minifying ${RESPOND_VER_JS}...       "
 	@cp ${SRC_JS_EXT_DIR}${RESPOND_VER_JS} ${DIST_JS_DIR}${RESPOND_JS}
-	@${UGLIFYJS} -nc ${DIST_JS_DIR}${RESPOND_JS} > ${DIST_JS_DIR}${RESPOND_MIN_JS}
+	@${UGLIFYJS} ${DIST_JS_DIR}${RESPOND_JS} ${UGLIFYJS_MINIFY_PARAMS} -o ${DIST_JS_DIR}${RESPOND_MIN_JS}
 	@cp ${SRC_JS_EXT_DIR}${RESPOND_MATCHMEDIA_VER_JS} ${DIST_JS_DIR}${RESPOND_MATCHMEDIA_JS}
-	@${UGLIFYJS} -nc ${DIST_JS_DIR}${RESPOND_MATCHMEDIA_JS} > ${DIST_JS_DIR}${RESPOND_MATCHMEDIA_MIN_JS}	
+	@${UGLIFYJS} ${DIST_JS_DIR}${RESPOND_MATCHMEDIA_JS} ${UGLIFYJS_MINIFY_PARAMS} -o ${DIST_JS_DIR}${RESPOND_MATCHMEDIA_MIN_JS}	
 	@echo "Compiling and minifying javascript...       ${CHECK} Done"
 	@mkdir -p ${DIST_IMG_DIR}
 	@cp ${SRC_IMG_DIR}* ${DIST_IMG_DIR}
 	@echo "Copying glyphicons and images...       	    ${CHECK} Done"
 	@mkdir -p ${DIST_FONT_DIR}
-	@echo "Copying Font-Awesome font...  "	
-	@${LESSC} --compile ${SRC_LESS_DIR}${FONTAWESOME_FONT_LESS} > ${DIST_CSS_DIR}${FONTAWESOME_FONT_CSS}
-	@${LESSC} --compress ${SRC_LESS_DIR}${FONTAWESOME_FONT_LESS} > ${DIST_CSS_DIR}${FONTAWESOME_FONT_MIN_CSS}
-	@${LESSC} --compile ${SRC_LESS_DIR}${FONTAWESOME_FONT_IE7_LESS} > ${DIST_CSS_DIR}${FONTAWESOME_FONT_IE7_CSS}
-	@${LESSC} --compress ${SRC_LESS_DIR}${FONTAWESOME_FONT_IE7_LESS} > ${DIST_CSS_DIR}${FONTAWESOME_FONT_IE7_MIN_CSS}
+	@echo "Preparing Font-Awesome font...  "	
+	@${LESS_COMPILER} --compile ${SRC_LESS_DIR}${FONTAWESOME_FONT_LESS} > ${DIST_CSS_DIR}${FONTAWESOME_FONT_CSS}
+	@${LESS_COMPILER} --compress ${SRC_LESS_DIR}${FONTAWESOME_FONT_LESS} > ${DIST_CSS_DIR}${FONTAWESOME_FONT_MIN_CSS}
+	@${LESS_COMPILER} --compile ${SRC_LESS_DIR}${FONTAWESOME_FONT_IE7_LESS} > ${DIST_CSS_DIR}${FONTAWESOME_FONT_IE7_CSS}
+	@${LESS_COMPILER} --compress ${SRC_LESS_DIR}${FONTAWESOME_FONT_IE7_LESS} > ${DIST_CSS_DIR}${FONTAWESOME_FONT_IE7_MIN_CSS}
 	@cp -R ${SRC_FONT_DIR}${FONTAWESOME_FONT_DIR} ${DIST_FONT_DIR}${FONTAWESOME_FONT_DIR}
-	@echo "Copying Liberation font...  "
-	@${LESSC} --compile ${SRC_LESS_DIR}${LIBERATION_FONT_LESS} > ${DIST_CSS_DIR}${LIBERATION_FONT_CSS}
-	@${LESSC} --compress ${SRC_LESS_DIR}${LIBERATION_FONT_LESS} > ${DIST_CSS_DIR}${LIBERATION_FONT_MIN_CSS}	
+	@echo "Preparing Liberation font...  "
+	@${LESS_COMPILER} --compile ${SRC_LESS_DIR}${LIBERATION_FONT_LESS} > ${DIST_CSS_DIR}${LIBERATION_FONT_CSS}
+	@${LESS_COMPILER} --compress ${SRC_LESS_DIR}${LIBERATION_FONT_LESS} > ${DIST_CSS_DIR}${LIBERATION_FONT_MIN_CSS}	
 	@cp -R ${SRC_FONT_DIR}${LIBERATION_FONT_DIR} ${DIST_FONT_DIR}${LIBERATION_FONT_DIR}
-	@echo "Copying Source font...  "
-	@${LESSC} --compile ${SRC_LESS_DIR}${SOURCE_FONT_LESS} > ${DIST_CSS_DIR}${SOURCE_FONT_CSS}
-	@${LESSC} --compress ${SRC_LESS_DIR}${SOURCE_FONT_LESS} > ${DIST_CSS_DIR}${SOURCE_FONT_MIN_CSS}	
+	@echo "Preparing Source font...  "
+	@${LESS_COMPILER} --compile ${SRC_LESS_DIR}${SOURCE_FONT_LESS} > ${DIST_CSS_DIR}${SOURCE_FONT_CSS}
+	@${LESS_COMPILER} --compress ${SRC_LESS_DIR}${SOURCE_FONT_LESS} > ${DIST_CSS_DIR}${SOURCE_FONT_MIN_CSS}	
 	@cp -R ${SRC_FONT_DIR}${SOURCE_FONT_DIR} ${DIST_FONT_DIR}${SOURCE_FONT_DIR}
-	@echo "Copying 3rdparty font...  ${CHECK} Done"
+	@echo "Building 3rdparty fonts...                  ${CHECK} Done"
 	@node docs/build
 	@mkdir -p ${DOCS_CSS_DIR}
 	@cp ${DIST_CSS_DIR}*.css ${DOCS_CSS_DIR}
@@ -190,7 +195,7 @@ build:
 	@mkdir -p ${DOCS_IMG_DIR}
 	@cp ${DIST_IMG_DIR}* ${DOCS_IMG_DIR}
 	@mkdir -p ${DOCS_FONT_DIR}
-	@cp -R ${DIST_FONT_DIR} ${DOCS_FONT_DIR}
+	@cp -R ${DIST_FONT_DIR}${FONTAWESOME_FONT_DIR} ${DOCS_FONT_DIR}
 	@echo "Compiling documentation...                  ${CHECK} Done"
 	@echo "${HR}"
 	@echo "   Bootstrap successfully built at ${DATE}."

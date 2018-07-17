@@ -1,12 +1,12 @@
 # Numerous always-ignore extensions
 *.diff
 *.err
-*.orig
+#*.orig
 *.log
 *.rej
 *.swo
 *.swp
-*.zip
+#*.zip
 *.vi
 *~
 *.sass-cache
@@ -33,5 +33,5 @@ nbproject
 .svn
 .CVS
 .idea
-node_modules
+#node_modules
 dist
