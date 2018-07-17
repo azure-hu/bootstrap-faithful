@@ -187,16 +187,16 @@ build:
 	@${LESS_COMPILER} --compress ${SRC_LESS_DIR}${SOURCE_FONT_LESS} > ${DIST_CSS_DIR}${SOURCE_FONT_MIN_CSS}	
 	@cp -R ${SRC_FONT_DIR}${SOURCE_FONT_DIR} ${DIST_FONT_DIR}${SOURCE_FONT_DIR}
 	@echo "Building 3rdparty fonts...                  ${CHECK} Done"
-	@node docs/build
-	@mkdir -p ${DOCS_CSS_DIR}
-	@cp ${DIST_CSS_DIR}*.css ${DOCS_CSS_DIR}
-	@mkdir -p ${DOCS_JS_DIR}
-	@cp ${DIST_JS_DIR}*.js ${DOCS_JS_DIR}
-	@mkdir -p ${DOCS_IMG_DIR}
-	@cp ${DIST_IMG_DIR}* ${DOCS_IMG_DIR}
-	@mkdir -p ${DOCS_FONT_DIR}
-	@cp -R ${DIST_FONT_DIR}${FONTAWESOME_FONT_DIR} ${DOCS_FONT_DIR}
-	@echo "Compiling documentation...                  ${CHECK} Done"
+#	@node docs/build
+#	@mkdir -p ${DOCS_CSS_DIR}
+#	@cp ${DIST_CSS_DIR}*.css ${DOCS_CSS_DIR}
+#	@mkdir -p ${DOCS_JS_DIR}
+#	@cp ${DIST_JS_DIR}*.js ${DOCS_JS_DIR}
+#	@mkdir -p ${DOCS_IMG_DIR}
+#	@cp ${DIST_IMG_DIR}* ${DOCS_IMG_DIR}
+#	@mkdir -p ${DOCS_FONT_DIR}
+#	@cp -R ${DIST_FONT_DIR}${FONTAWESOME_FONT_DIR} ${DOCS_FONT_DIR}
+#	@echo "Compiling documentation...                  ${CHECK} Done"
 	@echo "${HR}"
 	@echo "   Bootstrap successfully built at ${DATE}."
 	@echo "   Thanks for using Bootstrap, <3 @mdo and @fat"
