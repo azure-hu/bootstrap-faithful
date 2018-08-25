@@ -132,6 +132,7 @@ input[type="button"] {
 
 // Provide *some* extra contrast for those who can get it
 .btn-primary.active,
+.btn-secondary.active,
 .btn-warning.active,
 .btn-danger.active,
 .btn-success.active,
@@ -144,6 +145,10 @@ input[type="button"] {
 // -------------------------
 .btn-primary {
   .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
+}
+// Secondary appears are purple
+.btn-secondary {
+  .buttonBackground(@btnSecondaryBackground, @btnSecondaryBackgroundHighlight);
 }
 // Warning appears are orange
 .btn-warning {

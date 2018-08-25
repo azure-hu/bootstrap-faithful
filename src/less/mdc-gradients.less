@@ -1,0 +1,2168 @@
+/*!
+ * Material Design for Bootstrap 4
+ * Version: MDB Free 4.5.8
+ *
+ *
+ * Copyright: Material Design for Bootstrap
+ * https://mdbootstrap.com/
+ *
+ * Read the license: https://mdbootstrap.com/license/
+ */
+ 
+/*!
+ * Colors from MDBoostrap4 cloned to use with Bootstrap 2.3.2
+ * customized Boostwatch 2.3.2 theme, named "Faithful"
+ * Made for use colored elements and texts by @Azure_hu (github.com/zoi)
+ */
+
+@import "variables.less";
+@import "mixins.less";
+@import "mdc-variables.less";
+
+/* material base */
+.md-color.md-gradient.mdb-color-lighten-5, .md-gradient.mdb-color-lighten-5 {
+	#gradient.vertical(lighten(@mdbColorLighten5, 10%), @mdbColorLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@mdbColorLighten5, 10%),3%), darken(@mdbColorLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.mdb-color-lighten-4, .md-gradient.mdb-color-lighten-4 {
+	#gradient.vertical(lighten(@mdbColorLighten4, 10%), @mdbColorLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@mdbColorLighten4, 10%),3%), darken(@mdbColorLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.mdb-color-lighten-3, .md-gradient.mdb-color-lighten-3 {
+	#gradient.vertical(lighten(@mdbColorLighten3, 10%), @mdbColorLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@mdbColorLighten3, 10%),3%), darken(@mdbColorLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.mdb-color-lighten-2, .md-gradient.mdb-color-lighten-2 {
+	#gradient.vertical(lighten(@mdbColorLighten2, 10%), @mdbColorLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@mdbColorLighten2, 10%),3%), darken(@mdbColorLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.mdb-color-lighten-1, .md-gradient.mdb-color-lighten-1 {
+	#gradient.vertical(lighten(@mdbColorLighten1, 10%), @mdbColorLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@mdbColorLighten1, 10%),3%), darken(@mdbColorLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.mdb-color, .md-gradient.mdb-color {
+	#gradient.vertical(lighten(@mdbColorBase, 10%), @mdbColorBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@mdbColorBase, 10%),3%), darken(@mdbColorBase,3%));
+	}
+}
+
+.md-color.md-gradient.mdb-color-darken-1, .md-gradient.mdb-color-darken-1 {
+	#gradient.vertical(lighten(@mdbColorDarken1, 10%), @mdbColorDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@mdbColorDarken1, 10%),3%), darken(@mdbColorDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.mdb-color-darken-2, .md-gradient.mdb-color-darken-2 {
+	#gradient.vertical(lighten(@mdbColorDarken2, 10%), @mdbColorDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@mdbColorDarken2, 10%),3%), darken(@mdbColorDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.mdb-color-darken-3, .md-gradient.mdb-color-darken-3 {
+	#gradient.vertical(lighten(@mdbColorDarken3, 10%), @mdbColorDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@mdbColorDarken3, 10%),3%), darken(@mdbColorDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.mdb-color-darken-4, .md-gradient.mdb-color-darken-4 {
+	#gradient.vertical(lighten(@mdbColorDarken4, 10%), @mdbColorDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@mdbColorDarken4, 10%),3%), darken(@mdbColorDarken4,3%));
+	}
+}
+
+/* red */
+.md-color.md-gradient.red-lighten-5, .md-gradient.red-lighten-5 {
+	#gradient.vertical(lighten(@redLighten5, 10%), @redLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@redLighten5, 10%),3%), darken(@redLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.red-lighten-4, .md-gradient.red-lighten-4 {
+	#gradient.vertical(lighten(@redLighten4, 10%), @redLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@redLighten4, 10%),3%), darken(@redLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.red-lighten-3, .md-gradient.red-lighten-3 {
+	#gradient.vertical(lighten(@redLighten3, 10%), @redLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@redLighten3, 10%),3%), darken(@redLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.red-lighten-2, .md-gradient.red-lighten-2 {
+	#gradient.vertical(lighten(@redLighten2, 10%), @redLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@redLighten2, 10%),3%), darken(@redLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.red-lighten-1, .md-gradient.red-lighten-1 {
+	#gradient.vertical(lighten(@redLighten1, 10%), @redLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@redLighten1, 10%),3%), darken(@redLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.red, .md-gradient.red {
+	#gradient.vertical(lighten(@redBase, 10%), @redBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@redBase, 10%),3%), darken(@redBase,3%));
+	}
+}
+
+.md-color.md-gradient.red-darken-1, .md-gradient.red-darken-1 {
+	#gradient.vertical(lighten(@redDarken1, 10%), @redDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@redDarken1, 10%),3%), darken(@redDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.red-darken-2, .md-gradient.red-darken-2 {
+	#gradient.vertical(lighten(@redDarken2, 10%), @redDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@redDarken2, 10%),3%), darken(@redDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.red-darken-3, .md-gradient.red-darken-3 {
+	#gradient.vertical(lighten(@redDarken3, 10%), @redDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@redDarken3, 10%),3%), darken(@redDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.red-darken-4, .md-gradient.red-darken-4 {
+	#gradient.vertical(lighten(@redDarken4, 10%), @redDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@redDarken4, 10%),3%), darken(@redDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.red-accent-1, .md-gradient.red-accent-1 {
+	#gradient.vertical(lighten(@redAccent1, 10%), @redAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@redAccent1, 10%),3%), darken(@redAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.red-accent-2, .md-gradient.red-accent-2 {
+	#gradient.vertical(lighten(@redAccent2, 10%), @redAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@redAccent2, 10%),3%), darken(@redAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.red-accent-3, .md-gradient.red-accent-3 {
+	#gradient.vertical(lighten(@redAccent3, 10%), @redAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@redAccent3, 10%),3%), darken(@redAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.red-accent-4, .md-gradient.red-accent-4 {
+	#gradient.vertical(lighten(@redAccent4, 10%), @redAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@redAccent4, 10%),3%), darken(@redAccent4,3%));
+	}
+}
+
+/* pink */
+.md-color.md-gradient.pink-lighten-5, .md-gradient.pink-lighten-5 {
+	#gradient.vertical(lighten(@pinkLighten5, 10%), @pinkLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@pinkLighten5, 10%),3%), darken(@pinkLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.pink-lighten-4, .md-gradient.pink-lighten-4 {
+	#gradient.vertical(lighten(@pinkLighten4, 10%), @pinkLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@pinkLighten4, 10%),3%), darken(@pinkLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.pink-lighten-3, .md-gradient.pink-lighten-3 {
+	#gradient.vertical(lighten(@pinkLighten3, 10%), @pinkLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@pinkLighten3, 10%),3%), darken(@pinkLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.pink-lighten-2, .md-gradient.pink-lighten-2 {
+	#gradient.vertical(lighten(@pinkLighten2, 10%), @pinkLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@pinkLighten2, 10%),3%), darken(@pinkLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.pink-lighten-1, .md-gradient.pink-lighten-1 {
+	#gradient.vertical(lighten(@pinkLighten1, 10%), @pinkLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@pinkLighten1, 10%),3%), darken(@pinkLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.pink, .md-gradient.pink {
+	#gradient.vertical(lighten(@pinkBase, 10%), @pinkBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@pinkBase, 10%),3%), darken(@pinkBase,3%));
+	}
+}
+
+.md-color.md-gradient.pink-darken-1, .md-gradient.pink-darken-1 {
+	#gradient.vertical(lighten(@pinkDarken1, 10%), @pinkDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@pinkDarken1, 10%),3%), darken(@pinkDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.pink-darken-2, .md-gradient.pink-darken-2 {
+	#gradient.vertical(lighten(@pinkDarken2, 10%), @pinkDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@pinkDarken2, 10%),3%), darken(@pinkDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.pink-darken-3, .md-gradient.pink-darken-3 {
+	#gradient.vertical(lighten(@pinkDarken3, 10%), @pinkDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@pinkDarken3, 10%),3%), darken(@pinkDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.pink-darken-4, .md-gradient.pink-darken-4 {
+	#gradient.vertical(lighten(@pinkDarken4, 10%), @pinkDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@pinkDarken4, 10%),3%), darken(@pinkDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.pink-accent-1, .md-gradient.pink-accent-1 {
+	#gradient.vertical(lighten(@pinkAccent1, 10%), @pinkAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@pinkAccent1, 10%),3%), darken(@pinkAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.pink-accent-2, .md-gradient.pink-accent-2 {
+	#gradient.vertical(lighten(@pinkAccent2, 10%), @pinkAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@pinkAccent2, 10%),3%), darken(@pinkAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.pink-accent-3, .md-gradient.pink-accent-3 {
+	#gradient.vertical(lighten(@pinkAccent3, 10%), @pinkAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@pinkAccent3, 10%),3%), darken(@pinkAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.pink-accent-4, .md-gradient.pink-accent-4 {
+	#gradient.vertical(lighten(@pinkAccent4, 10%), @pinkAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@pinkAccent4, 10%),3%), darken(@pinkAccent4,3%));
+	}
+}
+
+/* purple */
+.md-color.md-gradient.purple-lighten-5, .md-gradient.purple-lighten-5 {
+	#gradient.vertical(lighten(@purpleLighten5, 10%), @purpleLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@purpleLighten5, 10%),3%), darken(@purpleLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.purple-lighten-4, .md-gradient.purple-lighten-4 {
+	#gradient.vertical(lighten(@purpleLighten4, 10%), @purpleLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@purpleLighten4, 10%),3%), darken(@purpleLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.purple-lighten-3, .md-gradient.purple-lighten-3 {
+	#gradient.vertical(lighten(@purpleLighten3, 10%), @purpleLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@purpleLighten3, 10%),3%), darken(@purpleLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.purple-lighten-2, .md-gradient.purple-lighten-2 {
+	#gradient.vertical(lighten(@purpleLighten2, 10%), @purpleLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@purpleLighten2, 10%),3%), darken(@purpleLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.purple-lighten-1, .md-gradient.purple-lighten-1 {
+	#gradient.vertical(lighten(@purpleLighten1, 10%), @purpleLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@purpleLighten1, 10%),3%), darken(@purpleLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.purple, .md-gradient.purple {
+	#gradient.vertical(lighten(@purpleBase, 10%), @purpleBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@purpleBase, 10%),3%), darken(@purpleBase,3%));
+	}
+}
+
+.md-color.md-gradient.purple-darken-1, .md-gradient.purple-darken-1 {
+	#gradient.vertical(lighten(@purpleDarken1, 10%), @purpleDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@purpleDarken1, 10%),3%), darken(@purpleDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.purple-darken-2, .md-gradient.purple-darken-2 {
+	#gradient.vertical(lighten(@purpleDarken2, 10%), @purpleDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@purpleDarken2, 10%),3%), darken(@purpleDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.purple-darken-3, .md-gradient.purple-darken-3 {
+	#gradient.vertical(lighten(@purpleDarken3, 10%), @purpleDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@purpleDarken3, 10%),3%), darken(@purpleDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.purple-darken-4, .md-gradient.purple-darken-4 {
+	#gradient.vertical(lighten(@purpleDarken4, 10%), @purpleDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@purpleDarken4, 10%),3%), darken(@purpleDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.purple-accent-1, .md-gradient.purple-accent-1 {
+	#gradient.vertical(lighten(@purpleAccent1, 10%), @purpleAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@purpleAccent1, 10%),3%), darken(@purpleAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.purple-accent-2, .md-gradient.purple-accent-2 {
+	#gradient.vertical(lighten(@purpleAccent2, 10%), @purpleAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@purpleAccent2, 10%),3%), darken(@purpleAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.purple-accent-3, .md-gradient.purple-accent-3 {
+	#gradient.vertical(lighten(@purpleAccent3, 10%), @purpleAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@purpleAccent3, 10%),3%), darken(@purpleAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.purple-accent-4, .md-gradient.purple-accent-4 {
+	#gradient.vertical(lighten(@purpleAccent4, 10%), @purpleAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@purpleAccent4, 10%),3%), darken(@purpleAccent4,3%));
+	}
+}
+
+/* deep-purple */
+.md-color.md-gradient.deep-purple-lighten-5, .md-gradient.deep-purple-lighten-5 {
+	#gradient.vertical(lighten(@deepPurpleLighten5, 10%), @deepPurpleLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepPurpleLighten5, 10%),3%), darken(@deepPurpleLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.deep-purple-lighten-4, .md-gradient.deep-purple-lighten-4 {
+	#gradient.vertical(lighten(@deepPurpleLighten4, 10%), @deepPurpleLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepPurpleLighten4, 10%),3%), darken(@deepPurpleLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.deep-purple-lighten-3, .md-gradient.deep-purple-lighten-3 {
+	#gradient.vertical(lighten(@deepPurpleLighten3, 10%), @deepPurpleLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepPurpleLighten3, 10%),3%), darken(@deepPurpleLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.deep-purple-lighten-2, .md-gradient.deep-purple-lighten-2 {
+	#gradient.vertical(lighten(@deepPurpleLighten2, 10%), @deepPurpleLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepPurpleLighten2, 10%),3%), darken(@deepPurpleLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.deep-purple-lighten-1, .md-gradient.deep-purple-lighten-1 {
+	#gradient.vertical(lighten(@deepPurpleLighten1, 10%), @deepPurpleLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepPurpleLighten1, 10%),3%), darken(@deepPurpleLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.deep-purple, .md-gradient.deep-purple {
+	#gradient.vertical(lighten(@deepPurpleBase, 10%), @deepPurpleBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepPurpleBase, 10%),3%), darken(@deepPurpleBase,3%));
+	}
+}
+
+.md-color.md-gradient.deep-purple-darken-1, .md-gradient.deep-purple-darken-1 {
+	#gradient.vertical(lighten(@deepPurpleDarken1, 10%), @deepPurpleDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepPurpleDarken1, 10%),3%), darken(@deepPurpleDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.deep-purple-darken-2, .md-gradient.deep-purple-darken-2 {
+	#gradient.vertical(lighten(@deepPurpleDarken2, 10%), @deepPurpleDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepPurpleDarken2, 10%),3%), darken(@deepPurpleDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.deep-purple-darken-3, .md-gradient.deep-purple-darken-3 {
+	#gradient.vertical(lighten(@deepPurpleDarken3, 10%), @deepPurpleDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepPurpleDarken3, 10%),3%), darken(@deepPurpleDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.deep-purple-darken-4, .md-gradient.deep-purple-darken-4 {
+	#gradient.vertical(lighten(@deepPurpleDarken4, 10%), @deepPurpleDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepPurpleDarken4, 10%),3%), darken(@deepPurpleDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.deep-purple-accent-1, .md-gradient.deep-purple-accent-1 {
+	#gradient.vertical(lighten(@deepPurpleAccent1, 10%), @deepPurpleAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepPurpleAccent1, 10%),3%), darken(@deepPurpleAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.deep-purple-accent-2, .md-gradient.deep-purple-accent-2 {
+	#gradient.vertical(lighten(@deepPurpleAccent2, 10%), @deepPurpleAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepPurpleAccent2, 10%),3%), darken(@deepPurpleAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.deep-purple-accent-3, .md-gradient.deep-purple-accent-3 {
+	#gradient.vertical(lighten(@deepPurpleAccent3, 10%), @deepPurpleAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepPurpleAccent3, 10%),3%), darken(@deepPurpleAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.deep-purple-accent-4, .md-gradient.deep-purple-accent-4 {
+	#gradient.vertical(lighten(@deepPurpleAccent4, 10%), @deepPurpleAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepPurpleAccent4, 10%),3%), darken(@deepPurpleAccent4,3%));
+	}
+}
+
+/* indigo */
+.md-color.md-gradient.indigo-lighten-5, .md-gradient.indigo-lighten-5 {
+	#gradient.vertical(lighten(@indigoLighten5, 10%), @indigoLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@indigoLighten5, 10%),3%), darken(@indigoLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.indigo-lighten-4, .md-gradient.indigo-lighten-4 {
+	#gradient.vertical(lighten(@indigoLighten4, 10%), @indigoLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@indigoLighten4, 10%),3%), darken(@indigoLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.indigo-lighten-3, .md-gradient.indigo-lighten-3 {
+	#gradient.vertical(lighten(@indigoLighten3, 10%), @indigoLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@indigoLighten3, 10%),3%), darken(@indigoLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.indigo-lighten-2, .md-gradient.indigo-lighten-2 {
+	#gradient.vertical(lighten(@indigoLighten2, 10%), @indigoLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@indigoLighten2, 10%),3%), darken(@indigoLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.indigo-lighten-1, .md-gradient.indigo-lighten-1 {
+	#gradient.vertical(lighten(@indigoLighten1, 10%), @indigoLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@indigoLighten1, 10%),3%), darken(@indigoLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.indigo, .md-gradient.indigo {
+	#gradient.vertical(lighten(@indigoBase, 10%), @indigoBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@indigoBase, 10%),3%), darken(@indigoBase,3%));
+	}
+}
+
+.md-color.md-gradient.indigo-darken-1, .md-gradient.indigo-darken-1 {
+	#gradient.vertical(lighten(@indigoDarken1, 10%), @indigoDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@indigoDarken1, 10%),3%), darken(@indigoDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.indigo-darken-2, .md-gradient.indigo-darken-2 {
+	#gradient.vertical(lighten(@indigoDarken2, 10%), @indigoDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@indigoDarken2, 10%),3%), darken(@indigoDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.indigo-darken-3, .md-gradient.indigo-darken-3 {
+	#gradient.vertical(lighten(@indigoDarken3, 10%), @indigoDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@indigoDarken3, 10%),3%), darken(@indigoDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.indigo-darken-4, .md-gradient.indigo-darken-4 {
+	#gradient.vertical(lighten(@indigoDarken4, 10%), @indigoDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@indigoDarken4, 10%),3%), darken(@indigoDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.indigo-accent-1, .md-gradient.indigo-accent-1 {
+	#gradient.vertical(lighten(@indigoAccent1, 10%), @indigoAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@indigoAccent1, 10%),3%), darken(@indigoAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.indigo-accent-2, .md-gradient.indigo-accent-2 {
+	#gradient.vertical(lighten(@indigoAccent2, 10%), @indigoAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@indigoAccent2, 10%),3%), darken(@indigoAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.indigo-accent-3, .md-gradient.indigo-accent-3 {
+	#gradient.vertical(lighten(@indigoAccent3, 10%), @indigoAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@indigoAccent3, 10%),3%), darken(@indigoAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.indigo-accent-4, .md-gradient.indigo-accent-4 {
+	#gradient.vertical(lighten(@indigoAccent4, 10%), @indigoAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@indigoAccent4, 10%),3%), darken(@indigoAccent4,3%));
+	}
+}
+
+/* blue */
+.md-color.md-gradient.blue-lighten-5, .md-gradient.blue-lighten-5 {
+	#gradient.vertical(lighten(@blueLighten5, 10%), @blueLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueLighten5, 10%),3%), darken(@blueLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.blue-lighten-4, .md-gradient.blue-lighten-4 {
+	#gradient.vertical(lighten(@blueLighten4, 10%), @blueLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueLighten4, 10%),3%), darken(@blueLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.blue-lighten-3, .md-gradient.blue-lighten-3 {
+	#gradient.vertical(lighten(@blueLighten3, 10%), @blueLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueLighten3, 10%),3%), darken(@blueLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.blue-lighten-2, .md-gradient.blue-lighten-2 {
+	#gradient.vertical(lighten(@blueLighten2, 10%), @blueLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueLighten2, 10%),3%), darken(@blueLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.blue-lighten-1, .md-gradient.blue-lighten-1 {
+	#gradient.vertical(lighten(@blueLighten1, 10%), @blueLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueLighten1, 10%),3%), darken(@blueLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.blue, .md-gradient.blue {
+	#gradient.vertical(lighten(@blueBase, 10%), @blueBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueBase, 10%),3%), darken(@blueBase,3%));
+	}
+}
+
+.md-color.md-gradient.blue-darken-1, .md-gradient.blue-darken-1 {
+	#gradient.vertical(lighten(@blueDarken1, 10%), @blueDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueDarken1, 10%),3%), darken(@blueDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.blue-darken-2, .md-gradient.blue-darken-2 {
+	#gradient.vertical(lighten(@blueDarken2, 10%), @blueDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueDarken2, 10%),3%), darken(@blueDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.blue-darken-3, .md-gradient.blue-darken-3 {
+	#gradient.vertical(lighten(@blueDarken3, 10%), @blueDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueDarken3, 10%),3%), darken(@blueDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.blue-darken-4, .md-gradient.blue-darken-4 {
+	#gradient.vertical(lighten(@blueDarken4, 10%), @blueDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueDarken4, 10%),3%), darken(@blueDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.blue-accent-1, .md-gradient.blue-accent-1 {
+	#gradient.vertical(lighten(@blueAccent1, 10%), @blueAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueAccent1, 10%),3%), darken(@blueAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.blue-accent-2, .md-gradient.blue-accent-2 {
+	#gradient.vertical(lighten(@blueAccent2, 10%), @blueAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueAccent2, 10%),3%), darken(@blueAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.blue-accent-3, .md-gradient.blue-accent-3 {
+	#gradient.vertical(lighten(@blueAccent3, 10%), @blueAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueAccent3, 10%),3%), darken(@blueAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.blue-accent-4, .md-gradient.blue-accent-4 {
+	#gradient.vertical(lighten(@blueAccent4, 10%), @blueAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueAccent4, 10%),3%), darken(@blueAccent4,3%));
+	}
+}
+
+/* light-blue */
+.md-color.md-gradient.light-blue-lighten-5, .md-gradient.light-blue-lighten-5 {
+	#gradient.vertical(lighten(@lightBlueLighten5, 10%), @lightBlueLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightBlueLighten5, 10%),3%), darken(@lightBlueLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.light-blue-lighten-4, .md-gradient.light-blue-lighten-4 {
+	#gradient.vertical(lighten(@lightBlueLighten4, 10%), @lightBlueLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightBlueLighten4, 10%),3%), darken(@lightBlueLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.light-blue-lighten-3, .md-gradient.light-blue-lighten-3 {
+	#gradient.vertical(lighten(@lightBlueLighten3, 10%), @lightBlueLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightBlueLighten3, 10%),3%), darken(@lightBlueLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.light-blue-lighten-2, .md-gradient.light-blue-lighten-2 {
+	#gradient.vertical(lighten(@lightBlueLighten2, 10%), @lightBlueLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightBlueLighten2, 10%),3%), darken(@lightBlueLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.light-blue-lighten-1, .md-gradient.light-blue-lighten-1 {
+	#gradient.vertical(lighten(@lightBlueLighten1, 10%), @lightBlueLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightBlueLighten1, 10%),3%), darken(@lightBlueLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.light-blue, .md-gradient.light-blue {
+	#gradient.vertical(lighten(@lightBlueBase, 10%), @lightBlueBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightBlueBase, 10%),3%), darken(@lightBlueBase,3%));
+	}
+}
+
+.md-color.md-gradient.light-blue-darken-1, .md-gradient.light-blue-darken-1 {
+	#gradient.vertical(lighten(@lightBlueDarken1, 10%), @lightBlueDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightBlueDarken1, 10%),3%), darken(@lightBlueDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.light-blue-darken-2, .md-gradient.light-blue-darken-2 {
+	#gradient.vertical(lighten(@lightBlueDarken2, 10%), @lightBlueDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightBlueDarken2, 10%),3%), darken(@lightBlueDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.light-blue-darken-3, .md-gradient.light-blue-darken-3 {
+	#gradient.vertical(lighten(@lightBlueDarken3, 10%), @lightBlueDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightBlueDarken3, 10%),3%), darken(@lightBlueDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.light-blue-darken-4, .md-gradient.light-blue-darken-4 {
+	#gradient.vertical(lighten(@lightBlueDarken4, 10%), @lightBlueDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightBlueDarken4, 10%),3%), darken(@lightBlueDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.light-blue-accent-1, .md-gradient.light-blue-accent-1 {
+	#gradient.vertical(lighten(@lightBlueAccent1, 10%), @lightBlueAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightBlueAccent1, 10%),3%), darken(@lightBlueAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.light-blue-accent-2, .md-gradient.light-blue-accent-2 {
+	#gradient.vertical(lighten(@lightBlueAccent2, 10%), @lightBlueAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightBlueAccent2, 10%),3%), darken(@lightBlueAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.light-blue-accent-3, .md-gradient.light-blue-accent-3 {
+	#gradient.vertical(lighten(@lightBlueAccent3, 10%), @lightBlueAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightBlueAccent3, 10%),3%), darken(@lightBlueAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.light-blue-accent-4, .md-gradient.light-blue-accent-4 {
+	#gradient.vertical(lighten(@lightBlueAccent4, 10%), @lightBlueAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightBlueAccent4, 10%),3%), darken(@lightBlueAccent4,3%));
+	}
+}
+
+/* cyan */
+.md-color.md-gradient.cyan-lighten-5, .md-gradient.cyan-lighten-5 {
+	#gradient.vertical(lighten(@cyanLighten5, 10%), @cyanLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@cyanLighten5, 10%),3%), darken(@cyanLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.cyan-lighten-4, .md-gradient.cyan-lighten-4 {
+	#gradient.vertical(lighten(@cyanLighten4, 10%), @cyanLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@cyanLighten4, 10%),3%), darken(@cyanLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.cyan-lighten-3, .md-gradient.cyan-lighten-3 {
+	#gradient.vertical(lighten(@cyanLighten3, 10%), @cyanLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@cyanLighten3, 10%),3%), darken(@cyanLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.cyan-lighten-2, .md-gradient.cyan-lighten-2 {
+	#gradient.vertical(lighten(@cyanLighten2, 10%), @cyanLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@cyanLighten2, 10%),3%), darken(@cyanLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.cyan-lighten-1, .md-gradient.cyan-lighten-1 {
+	#gradient.vertical(lighten(@cyanLighten1, 10%), @cyanLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@cyanLighten1, 10%),3%), darken(@cyanLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.cyan, .md-gradient.cyan {
+	#gradient.vertical(lighten(@cyanBase, 10%), @cyanBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@cyanBase, 10%),3%), darken(@cyanBase,3%));
+	}
+}
+
+.md-color.md-gradient.cyan-darken-1, .md-gradient.cyan-darken-1 {
+	#gradient.vertical(lighten(@cyanDarken1, 10%), @cyanDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@cyanDarken1, 10%),3%), darken(@cyanDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.cyan-darken-2, .md-gradient.cyan-darken-2 {
+	#gradient.vertical(lighten(@cyanDarken2, 10%), @cyanDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@cyanDarken2, 10%),3%), darken(@cyanDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.cyan-darken-3, .md-gradient.cyan-darken-3 {
+	#gradient.vertical(lighten(@cyanDarken3, 10%), @cyanDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@cyanDarken3, 10%),3%), darken(@cyanDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.cyan-darken-4, .md-gradient.cyan-darken-4 {
+	#gradient.vertical(lighten(@cyanDarken4, 10%), @cyanDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@cyanDarken4, 10%),3%), darken(@cyanDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.cyan-accent-1, .md-gradient.cyan-accent-1 {
+	#gradient.vertical(lighten(@cyanAccent1, 10%), @cyanAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@cyanAccent1, 10%),3%), darken(@cyanAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.cyan-accent-2, .md-gradient.cyan-accent-2 {
+	#gradient.vertical(lighten(@cyanAccent2, 10%), @cyanAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@cyanAccent2, 10%),3%), darken(@cyanAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.cyan-accent-3, .md-gradient.cyan-accent-3 {
+	#gradient.vertical(lighten(@cyanAccent3, 10%), @cyanAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@cyanAccent3, 10%),3%), darken(@cyanAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.cyan-accent-4, .md-gradient.cyan-accent-4 {
+	#gradient.vertical(lighten(@cyanAccent4, 10%), @cyanAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@cyanAccent4, 10%),3%), darken(@cyanAccent4,3%));
+	}
+}
+
+/* teal */
+.md-color.md-gradient.teal-lighten-5, .md-gradient.teal-lighten-5 {
+	#gradient.vertical(lighten(@tealLighten5, 10%), @tealLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@tealLighten5, 10%),3%), darken(@tealLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.teal-lighten-4, .md-gradient.teal-lighten-4 {
+	#gradient.vertical(lighten(@tealLighten4, 10%), @tealLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@tealLighten4, 10%),3%), darken(@tealLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.teal-lighten-3, .md-gradient.teal-lighten-3 {
+	#gradient.vertical(lighten(@tealLighten3, 10%), @tealLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@tealLighten3, 10%),3%), darken(@tealLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.teal-lighten-2, .md-gradient.teal-lighten-2 {
+	#gradient.vertical(lighten(@tealLighten2, 10%), @tealLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@tealLighten2, 10%),3%), darken(@tealLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.teal-lighten-1, .md-gradient.teal-lighten-1 {
+	#gradient.vertical(lighten(@tealLighten1, 10%), @tealLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@tealLighten1, 10%),3%), darken(@tealLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.teal, .md-gradient.teal {
+	#gradient.vertical(lighten(@tealBase, 10%), @tealBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@tealBase, 10%),3%), darken(@tealBase,3%));
+	}
+}
+
+.md-color.md-gradient.teal-darken-1, .md-gradient.teal-darken-1 {
+	#gradient.vertical(lighten(@tealDarken1, 10%), @tealDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@tealDarken1, 10%),3%), darken(@tealDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.teal-darken-2, .md-gradient.teal-darken-2 {
+	#gradient.vertical(lighten(@tealDarken2, 10%), @tealDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@tealDarken2, 10%),3%), darken(@tealDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.teal-darken-3, .md-gradient.teal-darken-3 {
+	#gradient.vertical(lighten(@tealDarken3, 10%), @tealDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@tealDarken3, 10%),3%), darken(@tealDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.teal-darken-4, .md-gradient.teal-darken-4 {
+	#gradient.vertical(lighten(@tealDarken4, 10%), @tealDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@tealDarken4, 10%),3%), darken(@tealDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.teal-accent-1, .md-gradient.teal-accent-1 {
+	#gradient.vertical(lighten(@tealAccent1, 10%), @tealAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@tealAccent1, 10%),3%), darken(@tealAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.teal-accent-2, .md-gradient.teal-accent-2 {
+	#gradient.vertical(lighten(@tealAccent2, 10%), @tealAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@tealAccent2, 10%),3%), darken(@tealAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.teal-accent-3, .md-gradient.teal-accent-3 {
+	#gradient.vertical(lighten(@tealAccent3, 10%), @tealAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@tealAccent3, 10%),3%), darken(@tealAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.teal-accent-4, .md-gradient.teal-accent-4 {
+	#gradient.vertical(lighten(@tealAccent4, 10%), @tealAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@tealAccent4, 10%),3%), darken(@tealAccent4,3%));
+	}
+}
+
+/* green */
+.md-color.md-gradient.green-lighten-5, .md-gradient.green-lighten-5 {
+	#gradient.vertical(lighten(@greenLighten5, 10%), @greenLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greenLighten5, 10%),3%), darken(@greenLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.green-lighten-4, .md-gradient.green-lighten-4 {
+	#gradient.vertical(lighten(@greenLighten4, 10%), @greenLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greenLighten4, 10%),3%), darken(@greenLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.green-lighten-3, .md-gradient.green-lighten-3 {
+	#gradient.vertical(lighten(@greenLighten3, 10%), @greenLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greenLighten3, 10%),3%), darken(@greenLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.green-lighten-2, .md-gradient.green-lighten-2 {
+	#gradient.vertical(lighten(@greenLighten2, 10%), @greenLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greenLighten2, 10%),3%), darken(@greenLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.green-lighten-1, .md-gradient.green-lighten-1 {
+	#gradient.vertical(lighten(@greenLighten1, 10%), @greenLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greenLighten1, 10%),3%), darken(@greenLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.green, .md-gradient.green {
+	#gradient.vertical(lighten(@greenBase, 10%), @greenBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greenBase, 10%),3%), darken(@greenBase,3%));
+	}
+}
+
+.md-color.md-gradient.green-darken-1, .md-gradient.green-darken-1 {
+	#gradient.vertical(lighten(@greenDarken1, 10%), @greenDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greenDarken1, 10%),3%), darken(@greenDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.green-darken-2, .md-gradient.green-darken-2 {
+	#gradient.vertical(lighten(@greenDarken2, 10%), @greenDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greenDarken2, 10%),3%), darken(@greenDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.green-darken-3, .md-gradient.green-darken-3 {
+	#gradient.vertical(lighten(@greenDarken3, 10%), @greenDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greenDarken3, 10%),3%), darken(@greenDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.green-darken-4, .md-gradient.green-darken-4 {
+	#gradient.vertical(lighten(@greenDarken4, 10%), @greenDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greenDarken4, 10%),3%), darken(@greenDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.green-accent-1, .md-gradient.green-accent-1 {
+	#gradient.vertical(lighten(@greenAccent1, 10%), @greenAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greenAccent1, 10%),3%), darken(@greenAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.green-accent-2, .md-gradient.green-accent-2 {
+	#gradient.vertical(lighten(@greenAccent2, 10%), @greenAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greenAccent2, 10%),3%), darken(@greenAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.green-accent-3, .md-gradient.green-accent-3 {
+	#gradient.vertical(lighten(@greenAccent3, 10%), @greenAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greenAccent3, 10%),3%), darken(@greenAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.green-accent-4, .md-gradient.green-accent-4 {
+	#gradient.vertical(lighten(@greenAccent4, 10%), @greenAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greenAccent4, 10%),3%), darken(@greenAccent4,3%));
+	}
+}
+
+/* light-green */
+.md-color.md-gradient.light-green-lighten-5, .md-gradient.light-green-lighten-5 {
+	#gradient.vertical(lighten(@lightGreenLighten5, 10%), @lightGreenLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightGreenLighten5, 10%),3%), darken(@lightGreenLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.light-green-lighten-4, .md-gradient.light-green-lighten-4 {
+	#gradient.vertical(lighten(@lightGreenLighten4, 10%), @lightGreenLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightGreenLighten4, 10%),3%), darken(@lightGreenLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.light-green-lighten-3, .md-gradient.light-green-lighten-3 {
+	#gradient.vertical(lighten(@lightGreenLighten3, 10%), @lightGreenLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightGreenLighten3, 10%),3%), darken(@lightGreenLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.light-green-lighten-2, .md-gradient.light-green-lighten-2 {
+	#gradient.vertical(lighten(@lightGreenLighten2, 10%), @lightGreenLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightGreenLighten2, 10%),3%), darken(@lightGreenLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.light-green-lighten-1, .md-gradient.light-green-lighten-1 {
+	#gradient.vertical(lighten(@lightGreenLighten1, 10%), @lightGreenLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightGreenLighten1, 10%),3%), darken(@lightGreenLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.light-green, .md-gradient.light-green {
+	#gradient.vertical(lighten(@lightGreenBase, 10%), @lightGreenBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightGreenBase, 10%),3%), darken(@lightGreenBase,3%));
+	}
+}
+
+.md-color.md-gradient.light-green-darken-1, .md-gradient.light-green-darken-1 {
+	#gradient.vertical(lighten(@lightGreenDarken1, 10%), @lightGreenDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightGreenDarken1, 10%),3%), darken(@lightGreenDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.light-green-darken-2, .md-gradient.light-green-darken-2 {
+	#gradient.vertical(lighten(@lightGreenDarken2, 10%), @lightGreenDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightGreenDarken2, 10%),3%), darken(@lightGreenDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.light-green-darken-3, .md-gradient.light-green-darken-3 {
+	#gradient.vertical(lighten(@lightGreenDarken3, 10%), @lightGreenDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightGreenDarken3, 10%),3%), darken(@lightGreenDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.light-green-darken-4, .md-gradient.light-green-darken-4 {
+	#gradient.vertical(lighten(@lightGreenDarken4, 10%), @lightGreenDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightGreenDarken4, 10%),3%), darken(@lightGreenDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.light-green-accent-1, .md-gradient.light-green-accent-1 {
+	#gradient.vertical(lighten(@lightGreenAccent1, 10%), @lightGreenAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightGreenAccent1, 10%),3%), darken(@lightGreenAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.light-green-accent-2, .md-gradient.light-green-accent-2 {
+	#gradient.vertical(lighten(@lightGreenAccent2, 10%), @lightGreenAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightGreenAccent2, 10%),3%), darken(@lightGreenAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.light-green-accent-3, .md-gradient.light-green-accent-3 {
+	#gradient.vertical(lighten(@lightGreenAccent3, 10%), @lightGreenAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightGreenAccent3, 10%),3%), darken(@lightGreenAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.light-green-accent-4, .md-gradient.light-green-accent-4 {
+	#gradient.vertical(lighten(@lightGreenAccent4, 10%), @lightGreenAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@lightGreenAccent4, 10%),3%), darken(@lightGreenAccent4,3%));
+	}
+}
+
+/* lime */
+.md-color.md-gradient.lime-lighten-5, .md-gradient.lime-lighten-5 {
+	#gradient.vertical(lighten(@limeLighten5, 10%), @limeLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@limeLighten5, 10%),3%), darken(@limeLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.lime-lighten-4, .md-gradient.lime-lighten-4 {
+	#gradient.vertical(lighten(@limeLighten4, 10%), @limeLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@limeLighten4, 10%),3%), darken(@limeLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.lime-lighten-3, .md-gradient.lime-lighten-3 {
+	#gradient.vertical(lighten(@limeLighten3, 10%), @limeLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@limeLighten3, 10%),3%), darken(@limeLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.lime-lighten-2, .md-gradient.lime-lighten-2 {
+	#gradient.vertical(lighten(@limeLighten2, 10%), @limeLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@limeLighten2, 10%),3%), darken(@limeLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.lime-lighten-1, .md-gradient.lime-lighten-1 {
+	#gradient.vertical(lighten(@limeLighten1, 10%), @limeLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@limeLighten1, 10%),3%), darken(@limeLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.lime, .md-gradient.lime {
+	#gradient.vertical(lighten(@limeBase, 10%), @limeBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@limeBase, 10%),3%), darken(@limeBase,3%));
+	}
+}
+
+.md-color.md-gradient.lime-darken-1, .md-gradient.lime-darken-1 {
+	#gradient.vertical(lighten(@limeDarken1, 10%), @limeDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@limeDarken1, 10%),3%), darken(@limeDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.lime-darken-2, .md-gradient.lime-darken-2 {
+	#gradient.vertical(lighten(@limeDarken2, 10%), @limeDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@limeDarken2, 10%),3%), darken(@limeDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.lime-darken-3, .md-gradient.lime-darken-3 {
+	#gradient.vertical(lighten(@limeDarken3, 10%), @limeDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@limeDarken3, 10%),3%), darken(@limeDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.lime-darken-4, .md-gradient.lime-darken-4 {
+	#gradient.vertical(lighten(@limeDarken4, 10%), @limeDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@limeDarken4, 10%),3%), darken(@limeDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.lime-accent-1, .md-gradient.lime-accent-1 {
+	#gradient.vertical(lighten(@limeAccent1, 10%), @limeAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@limeAccent1, 10%),3%), darken(@limeAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.lime-accent-2, .md-gradient.lime-accent-2 {
+	#gradient.vertical(lighten(@limeAccent2, 10%), @limeAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@limeAccent2, 10%),3%), darken(@limeAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.lime-accent-3, .md-gradient.lime-accent-3 {
+	#gradient.vertical(lighten(@limeAccent3, 10%), @limeAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@limeAccent3, 10%),3%), darken(@limeAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.lime-accent-4, .md-gradient.lime-accent-4 {
+	#gradient.vertical(lighten(@limeAccent4, 10%), @limeAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@limeAccent4, 10%),3%), darken(@limeAccent4,3%));
+	}
+}
+
+/* yellow */
+.md-color.md-gradient.yellow-lighten-5, .md-gradient.yellow-lighten-5 {
+	#gradient.vertical(lighten(@yellowLighten5, 10%), @yellowLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@yellowLighten5, 10%),3%), darken(@yellowLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.yellow-lighten-4, .md-gradient.yellow-lighten-4 {
+	#gradient.vertical(lighten(@yellowLighten4, 10%), @yellowLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@yellowLighten4, 10%),3%), darken(@yellowLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.yellow-lighten-3, .md-gradient.yellow-lighten-3 {
+	#gradient.vertical(lighten(@yellowLighten3, 10%), @yellowLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@yellowLighten3, 10%),3%), darken(@yellowLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.yellow-lighten-2, .md-gradient.yellow-lighten-2 {
+	#gradient.vertical(lighten(@yellowLighten2, 10%), @yellowLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@yellowLighten2, 10%),3%), darken(@yellowLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.yellow-lighten-1, .md-gradient.yellow-lighten-1 {
+	#gradient.vertical(lighten(@yellowLighten1, 10%), @yellowLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@yellowLighten1, 10%),3%), darken(@yellowLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.yellow, .md-gradient.yellow {
+	#gradient.vertical(lighten(@yellowBase, 10%), @yellowBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@yellowBase, 10%),3%), darken(@yellowBase,3%));
+	}
+}
+
+.md-color.md-gradient.yellow-darken-1, .md-gradient.yellow-darken-1 {
+	#gradient.vertical(lighten(@yellowDarken1, 10%), @yellowDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@yellowDarken1, 10%),3%), darken(@yellowDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.yellow-darken-2, .md-gradient.yellow-darken-2 {
+	#gradient.vertical(lighten(@yellowDarken2, 10%), @yellowDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@yellowDarken2, 10%),3%), darken(@yellowDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.yellow-darken-3, .md-gradient.yellow-darken-3 {
+	#gradient.vertical(lighten(@yellowDarken3, 10%), @yellowDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@yellowDarken3, 10%),3%), darken(@yellowDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.yellow-darken-4, .md-gradient.yellow-darken-4 {
+	#gradient.vertical(lighten(@yellowDarken4, 10%), @yellowDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@yellowDarken4, 10%),3%), darken(@yellowDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.yellow-accent-1, .md-gradient.yellow-accent-1 {
+	#gradient.vertical(lighten(@yellowAccent1, 10%), @yellowAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@yellowAccent1, 10%),3%), darken(@yellowAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.yellow-accent-2, .md-gradient.yellow-accent-2 {
+	#gradient.vertical(lighten(@yellowAccent2, 10%), @yellowAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@yellowAccent2, 10%),3%), darken(@yellowAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.yellow-accent-3, .md-gradient.yellow-accent-3 {
+	#gradient.vertical(lighten(@yellowAccent3, 10%), @yellowAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@yellowAccent3, 10%),3%), darken(@yellowAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.yellow-accent-4, .md-gradient.yellow-accent-4 {
+	#gradient.vertical(lighten(@yellowAccent4, 10%), @yellowAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@yellowAccent4, 10%),3%), darken(@yellowAccent4,3%));
+	}
+}
+
+/* amber */
+.md-color.md-gradient.amber-lighten-5, .md-gradient.amber-lighten-5 {
+	#gradient.vertical(lighten(@amberLighten5, 10%), @amberLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@amberLighten5, 10%),3%), darken(@amberLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.amber-lighten-4, .md-gradient.amber-lighten-4 {
+	#gradient.vertical(lighten(@amberLighten4, 10%), @amberLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@amberLighten4, 10%),3%), darken(@amberLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.amber-lighten-3, .md-gradient.amber-lighten-3 {
+	#gradient.vertical(lighten(@amberLighten3, 10%), @amberLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@amberLighten3, 10%),3%), darken(@amberLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.amber-lighten-2, .md-gradient.amber-lighten-2 {
+	#gradient.vertical(lighten(@amberLighten2, 10%), @amberLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@amberLighten2, 10%),3%), darken(@amberLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.amber-lighten-1, .md-gradient.amber-lighten-1 {
+	#gradient.vertical(lighten(@amberLighten1, 10%), @amberLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@amberLighten1, 10%),3%), darken(@amberLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.amber, .md-gradient.amber {
+	#gradient.vertical(lighten(@amberBase, 10%), @amberBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@amberBase, 10%),3%), darken(@amberBase,3%));
+	}
+}
+
+.md-color.md-gradient.amber-darken-1, .md-gradient.amber-darken-1 {
+	#gradient.vertical(lighten(@amberDarken1, 10%), @amberDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@amberDarken1, 10%),3%), darken(@amberDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.amber-darken-2, .md-gradient.amber-darken-2 {
+	#gradient.vertical(lighten(@amberDarken2, 10%), @amberDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@amberDarken2, 10%),3%), darken(@amberDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.amber-darken-3, .md-gradient.amber-darken-3 {
+	#gradient.vertical(lighten(@amberDarken3, 10%), @amberDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@amberDarken3, 10%),3%), darken(@amberDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.amber-darken-4, .md-gradient.amber-darken-4 {
+	#gradient.vertical(lighten(@amberDarken4, 10%), @amberDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@amberDarken4, 10%),3%), darken(@amberDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.amber-accent-1, .md-gradient.amber-accent-1 {
+	#gradient.vertical(lighten(@amberAccent1, 10%), @amberAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@amberAccent1, 10%),3%), darken(@amberAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.amber-accent-2, .md-gradient.amber-accent-2 {
+	#gradient.vertical(lighten(@amberAccent2, 10%), @amberAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@amberAccent2, 10%),3%), darken(@amberAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.amber-accent-3, .md-gradient.amber-accent-3 {
+	#gradient.vertical(lighten(@amberAccent3, 10%), @amberAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@amberAccent3, 10%),3%), darken(@amberAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.amber-accent-4, .md-gradient.amber-accent-4 {
+	#gradient.vertical(lighten(@amberAccent4, 10%), @amberAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@amberAccent4, 10%),3%), darken(@amberAccent4,3%));
+	}
+}
+
+/* orange */
+.md-color.md-gradient.orange-lighten-5, .md-gradient.orange-lighten-5 {
+	#gradient.vertical(lighten(@orangeLighten5, 10%), @orangeLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@orangeLighten5, 10%),3%), darken(@orangeLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.orange-lighten-4, .md-gradient.orange-lighten-4 {
+	#gradient.vertical(lighten(@orangeLighten4, 10%), @orangeLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@orangeLighten4, 10%),3%), darken(@orangeLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.orange-lighten-3, .md-gradient.orange-lighten-3 {
+	#gradient.vertical(lighten(@orangeLighten3, 10%), @orangeLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@orangeLighten3, 10%),3%), darken(@orangeLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.orange-lighten-2, .md-gradient.orange-lighten-2 {
+	#gradient.vertical(lighten(@orangeLighten2, 10%), @orangeLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@orangeLighten2, 10%),3%), darken(@orangeLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.orange-lighten-1, .md-gradient.orange-lighten-1 {
+	#gradient.vertical(lighten(@orangeLighten1, 10%), @orangeLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@orangeLighten1, 10%),3%), darken(@orangeLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.orange, .md-gradient.orange {
+	#gradient.vertical(lighten(@orangeBase, 10%), @orangeBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@orangeBase, 10%),3%), darken(@orangeBase,3%));
+	}
+}
+
+.md-color.md-gradient.orange-darken-1, .md-gradient.orange-darken-1 {
+	#gradient.vertical(lighten(@orangeDarken1, 10%), @orangeDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@orangeDarken1, 10%),3%), darken(@orangeDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.orange-darken-2, .md-gradient.orange-darken-2 {
+	#gradient.vertical(lighten(@orangeDarken2, 10%), @orangeDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@orangeDarken2, 10%),3%), darken(@orangeDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.orange-darken-3, .md-gradient.orange-darken-3 {
+	#gradient.vertical(lighten(@orangeDarken3, 10%), @orangeDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@orangeDarken3, 10%),3%), darken(@orangeDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.orange-darken-4, .md-gradient.orange-darken-4 {
+	#gradient.vertical(lighten(@orangeDarken4, 10%), @orangeDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@orangeDarken4, 10%),3%), darken(@orangeDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.orange-accent-1, .md-gradient.orange-accent-1 {
+	#gradient.vertical(lighten(@orangeAccent1, 10%), @orangeAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@orangeAccent1, 10%),3%), darken(@orangeAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.orange-accent-2, .md-gradient.orange-accent-2 {
+	#gradient.vertical(lighten(@orangeAccent2, 10%), @orangeAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@orangeAccent2, 10%),3%), darken(@orangeAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.orange-accent-3, .md-gradient.orange-accent-3 {
+	#gradient.vertical(lighten(@orangeAccent3, 10%), @orangeAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@orangeAccent3, 10%),3%), darken(@orangeAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.orange-accent-4, .md-gradient.orange-accent-4 {
+	#gradient.vertical(lighten(@orangeAccent4, 10%), @orangeAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@orangeAccent4, 10%),3%), darken(@orangeAccent4,3%));
+	}
+}
+
+/* deep-orange */
+.md-color.md-gradient.deep-orange-lighten-5, .md-gradient.deep-orange-lighten-5 {
+	#gradient.vertical(lighten(@deepOrangeLighten5, 10%), @deepOrangeLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepOrangeLighten5, 10%),3%), darken(@deepOrangeLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.deep-orange-lighten-4, .md-gradient.deep-orange-lighten-4 {
+	#gradient.vertical(lighten(@deepOrangeLighten4, 10%), @deepOrangeLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepOrangeLighten4, 10%),3%), darken(@deepOrangeLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.deep-orange-lighten-3, .md-gradient.deep-orange-lighten-3 {
+	#gradient.vertical(lighten(@deepOrangeLighten3, 10%), @deepOrangeLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepOrangeLighten3, 10%),3%), darken(@deepOrangeLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.deep-orange-lighten-2, .md-gradient.deep-orange-lighten-2 {
+	#gradient.vertical(lighten(@deepOrangeLighten2, 10%), @deepOrangeLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepOrangeLighten2, 10%),3%), darken(@deepOrangeLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.deep-orange-lighten-1, .md-gradient.deep-orange-lighten-1 {
+	#gradient.vertical(lighten(@deepOrangeLighten1, 10%), @deepOrangeLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepOrangeLighten1, 10%),3%), darken(@deepOrangeLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.deep-orange, .md-gradient.deep-orange {
+	#gradient.vertical(lighten(@deepOrangeBase, 10%), @deepOrangeBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepOrangeBase, 10%),3%), darken(@deepOrangeBase,3%));
+	}
+}
+
+.md-color.md-gradient.deep-orange-darken-1, .md-gradient.deep-orange-darken-1 {
+	#gradient.vertical(lighten(@deepOrangeDarken1, 10%), @deepOrangeDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepOrangeDarken1, 10%),3%), darken(@deepOrangeDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.deep-orange-darken-2, .md-gradient.deep-orange-darken-2 {
+	#gradient.vertical(lighten(@deepOrangeDarken2, 10%), @deepOrangeDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepOrangeDarken2, 10%),3%), darken(@deepOrangeDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.deep-orange-darken-3, .md-gradient.deep-orange-darken-3 {
+	#gradient.vertical(lighten(@deepOrangeDarken3, 10%), @deepOrangeDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepOrangeDarken3, 10%),3%), darken(@deepOrangeDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.deep-orange-darken-4, .md-gradient.deep-orange-darken-4 {
+	#gradient.vertical(lighten(@deepOrangeDarken4, 10%), @deepOrangeDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepOrangeDarken4, 10%),3%), darken(@deepOrangeDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.deep-orange-accent-1, .md-gradient.deep-orange-accent-1 {
+	#gradient.vertical(lighten(@deepOrangeAccent1, 10%), @deepOrangeAccent1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepOrangeAccent1, 10%),3%), darken(@deepOrangeAccent1,3%));
+	}
+}
+
+.md-color.md-gradient.deep-orange-accent-2, .md-gradient.deep-orange-accent-2 {
+	#gradient.vertical(lighten(@deepOrangeAccent2, 10%), @deepOrangeAccent2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepOrangeAccent2, 10%),3%), darken(@deepOrangeAccent2,3%));
+	}
+}
+
+.md-color.md-gradient.deep-orange-accent-3, .md-gradient.deep-orange-accent-3 {
+	#gradient.vertical(lighten(@deepOrangeAccent3, 10%), @deepOrangeAccent3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepOrangeAccent3, 10%),3%), darken(@deepOrangeAccent3,3%));
+	}
+}
+
+.md-color.md-gradient.deep-orange-accent-4, .md-gradient.deep-orange-accent-4 {
+	#gradient.vertical(lighten(@deepOrangeAccent4, 10%), @deepOrangeAccent4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@deepOrangeAccent4, 10%),3%), darken(@deepOrangeAccent4,3%));
+	}
+}
+
+/* brown */
+.md-color.md-gradient.brown-lighten-5, .md-gradient.brown-lighten-5 {
+	#gradient.vertical(lighten(@brownLighten5, 10%), @brownLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@brownLighten5, 10%),3%), darken(@brownLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.brown-lighten-4, .md-gradient.brown-lighten-4 {
+	#gradient.vertical(lighten(@brownLighten4, 10%), @brownLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@brownLighten4, 10%),3%), darken(@brownLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.brown-lighten-3, .md-gradient.brown-lighten-3 {
+	#gradient.vertical(lighten(@brownLighten3, 10%), @brownLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@brownLighten3, 10%),3%), darken(@brownLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.brown-lighten-2, .md-gradient.brown-lighten-2 {
+	#gradient.vertical(lighten(@brownLighten2, 10%), @brownLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@brownLighten2, 10%),3%), darken(@brownLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.brown-lighten-1, .md-gradient.brown-lighten-1 {
+	#gradient.vertical(lighten(@brownLighten1, 10%), @brownLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@brownLighten1, 10%),3%), darken(@brownLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.brown, .md-gradient.brown {
+	#gradient.vertical(lighten(@brownBase, 10%), @brownBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@brownBase, 10%),3%), darken(@brownBase,3%));
+	}
+}
+
+.md-color.md-gradient.brown-darken-1, .md-gradient.brown-darken-1 {
+	#gradient.vertical(lighten(@brownDarken1, 10%), @brownDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@brownDarken1, 10%),3%), darken(@brownDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.brown-darken-2, .md-gradient.brown-darken-2 {
+	#gradient.vertical(lighten(@brownDarken2, 10%), @brownDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@brownDarken2, 10%),3%), darken(@brownDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.brown-darken-3, .md-gradient.brown-darken-3 {
+	#gradient.vertical(lighten(@brownDarken3, 10%), @brownDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@brownDarken3, 10%),3%), darken(@brownDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.brown-darken-4, .md-gradient.brown-darken-4 {
+	#gradient.vertical(lighten(@brownDarken4, 10%), @brownDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@brownDarken4, 10%),3%), darken(@brownDarken4,3%));
+	}
+}
+
+/* blue-grey */
+.md-color.md-gradient.blue-grey-lighten-5, .md-gradient.blue-grey-lighten-5 {
+	#gradient.vertical(lighten(@blueGreyLighten5, 10%), @blueGreyLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueGreyLighten5, 10%),3%), darken(@blueGreyLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.blue-grey-lighten-4, .md-gradient.blue-grey-lighten-4 {
+	#gradient.vertical(lighten(@blueGreyLighten4, 10%), @blueGreyLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueGreyLighten4, 10%),3%), darken(@blueGreyLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.blue-grey-lighten-3, .md-gradient.blue-grey-lighten-3 {
+	#gradient.vertical(lighten(@blueGreyLighten3, 10%), @blueGreyLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueGreyLighten3, 10%),3%), darken(@blueGreyLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.blue-grey-lighten-2, .md-gradient.blue-grey-lighten-2 {
+	#gradient.vertical(lighten(@blueGreyLighten2, 10%), @blueGreyLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueGreyLighten2, 10%),3%), darken(@blueGreyLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.blue-grey-lighten-1, .md-gradient.blue-grey-lighten-1 {
+	#gradient.vertical(lighten(@blueGreyLighten1, 10%), @blueGreyLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueGreyLighten1, 10%),3%), darken(@blueGreyLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.blue-grey, .md-gradient.blue-grey {
+	#gradient.vertical(lighten(@blueGreyBase, 10%), @blueGreyBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueGreyBase, 10%),3%), darken(@blueGreyBase,3%));
+	}
+}
+
+.md-color.md-gradient.blue-grey-darken-1, .md-gradient.blue-grey-darken-1 {
+	#gradient.vertical(lighten(@blueGreyDarken1, 10%), @blueGreyDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueGreyDarken1, 10%),3%), darken(@blueGreyDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.blue-grey-darken-2, .md-gradient.blue-grey-darken-2 {
+	#gradient.vertical(lighten(@blueGreyDarken2, 10%), @blueGreyDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueGreyDarken2, 10%),3%), darken(@blueGreyDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.blue-grey-darken-3, .md-gradient.blue-grey-darken-3 {
+	#gradient.vertical(lighten(@blueGreyDarken3, 10%), @blueGreyDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueGreyDarken3, 10%),3%), darken(@blueGreyDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.blue-grey-darken-4, .md-gradient.blue-grey-darken-4 {
+	#gradient.vertical(lighten(@blueGreyDarken4, 10%), @blueGreyDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blueGreyDarken4, 10%),3%), darken(@blueGreyDarken4,3%));
+	}
+}
+
+/* grey */
+.md-color.md-gradient.grey-lighten-5, .md-gradient.grey-lighten-5 {
+	#gradient.vertical(lighten(@greyLighten5, 10%), @greyLighten5);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greyLighten5, 10%),3%), darken(@greyLighten5,3%));
+	}
+}
+
+.md-color.md-gradient.grey-lighten-4, .md-gradient.grey-lighten-4 {
+	#gradient.vertical(lighten(@greyLighten4, 10%), @greyLighten4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greyLighten4, 10%),3%), darken(@greyLighten4,3%));
+	}
+}
+
+.md-color.md-gradient.grey-lighten-3, .md-gradient.grey-lighten-3 {
+	#gradient.vertical(lighten(@greyLighten3, 10%), @greyLighten3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greyLighten3, 10%),3%), darken(@greyLighten3,3%));
+	}
+}
+
+.md-color.md-gradient.grey-lighten-2, .md-gradient.grey-lighten-2 {
+	#gradient.vertical(lighten(@greyLighten2, 10%), @greyLighten2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greyLighten2, 10%),3%), darken(@greyLighten2,3%));
+	}
+}
+
+.md-color.md-gradient.grey-lighten-1, .md-gradient.grey-lighten-1 {
+	#gradient.vertical(lighten(@greyLighten1, 10%), @greyLighten1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greyLighten1, 10%),3%), darken(@greyLighten1,3%));
+	}
+}
+
+.md-color.md-gradient.grey, .md-gradient.grey {
+	#gradient.vertical(lighten(@greyBase, 10%), @greyBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greyBase, 10%),3%), darken(@greyBase,3%));
+	}
+}
+
+.md-color.md-gradient.grey-darken-1, .md-gradient.grey-darken-1 {
+	#gradient.vertical(lighten(@greyDarken1, 10%), @greyDarken1);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greyDarken1, 10%),3%), darken(@greyDarken1,3%));
+	}
+}
+
+.md-color.md-gradient.grey-darken-2, .md-gradient.grey-darken-2 {
+	#gradient.vertical(lighten(@greyDarken2, 10%), @greyDarken2);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greyDarken2, 10%),3%), darken(@greyDarken2,3%));
+	}
+}
+
+.md-color.md-gradient.grey-darken-3, .md-gradient.grey-darken-3 {
+	#gradient.vertical(lighten(@greyDarken3, 10%), @greyDarken3);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greyDarken3, 10%),3%), darken(@greyDarken3,3%));
+	}
+}
+
+.md-color.md-gradient.grey-darken-4, .md-gradient.grey-darken-4 {
+	#gradient.vertical(lighten(@greyDarken4, 10%), @greyDarken4);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@greyDarken4, 10%),3%), darken(@greyDarken4,3%));
+	}
+}
+
+.md-color.md-gradient.black, .md-gradient.black {    
+	#gradient.vertical(lighten(@blackBase, 10%), @blackBase);
+
+	&:active {
+		#gradient.vertical(darken(lighten(@blackBase, 10%),3%), darken(@blackBase,3%));
+	}
+}
+
+.md-color.md-gradient.white, .md-gradient.white {
+	#gradient.vertical(darken(@whiteBase, 10%), @whiteBase);
+
+	&:active {
+		#gradient.vertical(darken(darken(@whiteBase, 10%),3%), darken(@whiteBase,3%));
+	}
+}

@@ -1,0 +1,2167 @@
+/*!
+ * Material Design for Bootstrap 4
+ * Version: MDB Free 4.5.8
+ *
+ *
+ * Copyright: Material Design for Bootstrap
+ * https://mdbootstrap.com/
+ *
+ * Read the license: https://mdbootstrap.com/license/
+ */
+ 
+/*!
+ * Colors from MDBoostrap4 cloned to use with Bootstrap 2.3.2
+ * customized Boostwatch 2.3.2 theme, named "Faithful"
+ * Made for use colored elements and texts by @Azure_hu (github.com/zoi)
+ */
+
+@import "variables.less";
+@import "mixins.less";
+@import "mdc-variables.less";
+
+/* material base */
+.md-color.mdb-color-lighten-5-text, .mdb-color-lighten-5-text {
+	color: 	@mdbColorLighten5 !important;
+
+	&:active {
+		color: 	 darken(@mdbColorLighten5,3%) !important;
+	}
+}
+
+.md-color.mdb-color-lighten-4-text, .mdb-color-lighten-4-text {
+	color: 	@mdbColorLighten4 !important;
+	&:active {
+		color: 	 darken(@mdbColorLighten4,3%) !important;
+	}
+}
+
+.md-color.mdb-color-lighten-3-text, .mdb-color-lighten-3-text {
+	color: 	@mdbColorLighten3 !important;
+
+	&:active {
+		color: 	 darken(@mdbColorLighten3,3%) !important;
+	}
+}
+
+.md-color.mdb-color-lighten-2-text, .mdb-color-lighten-2-text {
+	color: 	@mdbColorLighten2 !important;
+
+	&:active {
+		color: 	 darken(@mdbColorLighten2,3%) !important;
+	}
+}
+
+.md-color.mdb-color-lighten-1-text, .mdb-color-lighten-1-text {
+	color: 	@mdbColorLighten1 !important;
+
+	&:active {
+		color: 	 darken(@mdbColorLighten1,3%) !important;
+	}
+}
+
+.md-color.mdb-color-text, .mdb-color-text {
+	color: 	@mdbColorBase !important;
+
+	&:active {
+		color: 	 darken(@mdbColorBase,3%) !important;
+	}
+}
+
+.md-color.mdb-color-darken-1-text, .mdb-color-darken-1-text {
+	color: 	@mdbColorDarken1 !important;
+
+	&:active {
+		color: 	 darken(@mdbColorDarken1,3%) !important;
+	}
+}
+
+.md-color.mdb-color-darken-2-text, .mdb-color-darken-2-text {
+	color: 	@mdbColorDarken2 !important;
+
+	&:active {
+		color: 	 darken(@mdbColorDarken2,3%) !important;
+	}
+}
+
+.md-color.mdb-color-darken-3-text, .mdb-color-darken-3-text {
+	color: 	@mdbColorDarken3 !important;
+
+	&:active {
+		color: 	 darken(@mdbColorDarken3,3%) !important;
+	}
+}
+
+.md-color.mdb-color-darken-4-text, .mdb-color-darken-4-text {
+	color: 	@mdbColorDarken4 !important;
+
+	&:active {
+		color: 	 darken(@mdbColorDarken4,3%) !important;
+	}
+}
+
+/* red */
+.md-color.red-lighten-5-text, .red-lighten-5-text {
+	color: 	@redLighten5 !important;
+
+	&:active {
+		color: 	 darken(@redLighten5,3%) !important;
+	}
+}
+
+.md-color.red-lighten-4-text, .red-lighten-4-text {
+	color: 	@redLighten4 !important;
+
+	&:active {
+		color: 	 darken(@redLighten4,3%) !important;
+	}
+}
+
+.md-color.red-lighten-3-text, .red-lighten-3-text {
+	color: 	@redLighten3 !important;
+
+	&:active {
+		color: 	 darken(@redLighten3,3%) !important;
+	}
+}
+
+.md-color.red-lighten-2-text, .red-lighten-2-text {
+	color: 	@redLighten2 !important;
+
+	&:active {
+		color: 	 darken(@redLighten2,3%) !important;
+	}
+}
+
+.md-color.red-lighten-1-text, .red-lighten-1-text {
+	color: 	@redLighten1 !important;
+
+	&:active {
+		color: 	 darken(@redLighten1,3%) !important;
+	}
+}
+
+.md-color.red-text, .red-text {
+	color: 	@redBase !important;
+
+	&:active {
+		color: 	 darken(@redBase,3%) !important;
+	}
+}
+
+.md-color.red-darken-1-text, .red-darken-1-text {
+	color: 	@redDarken1 !important;
+
+	&:active {
+		color: 	 darken(@redDarken1,3%) !important;
+	}
+}
+
+.md-color.red-darken-2-text, .red-darken-2-text {
+	color: 	@redDarken2 !important;
+
+	&:active {
+		color: 	 darken(@redDarken2,3%) !important;
+	}
+}
+
+.md-color.red-darken-3-text, .red-darken-3-text {
+	color: 	@redDarken3 !important;
+
+	&:active {
+		color: 	 darken(@redDarken3,3%) !important;
+	}
+}
+
+.md-color.red-darken-4-text, .red-darken-4-text {
+	color: 	@redDarken4 !important;
+
+	&:active {
+		color: 	 darken(@redDarken4,3%) !important;
+	}
+}
+
+.md-color.red-accent-1-text, .red-accent-1-text {
+	color: 	@redAccent1 !important;
+
+	&:active {
+		color: 	 darken(@redAccent1,3%) !important;
+	}
+}
+
+.md-color.red-accent-2-text, .red-accent-2-text {
+	color: 	@redAccent2 !important;
+
+	&:active {
+		color: 	 darken(@redAccent2,3%) !important;
+	}
+}
+
+.md-color.red-accent-3-text, .red-accent-3-text {
+	color: 	@redAccent3 !important;
+
+	&:active {
+		color: 	 darken(@redAccent3,3%) !important;
+	}
+}
+
+.md-color.red-accent-4-text, .red-accent-4-text {
+	color: 	@redAccent4 !important;
+
+	&:active {
+		color: 	 darken(@redAccent4,3%) !important;
+	}
+}
+
+/* pink */
+.md-color.pink-lighten-5-text, .pink-lighten-5-text {
+	color: 	@pinkLighten5 !important;
+
+	&:active {
+		color: 	 darken(@pinkLighten5,3%) !important;
+	}
+}
+
+.md-color.pink-lighten-4-text, .pink-lighten-4-text {
+	color: 	@pinkLighten4 !important;
+
+	&:active {
+		color: 	 darken(@pinkLighten4,3%) !important;
+	}
+}
+
+.md-color.pink-lighten-3-text, .pink-lighten-3-text {
+	color: 	@pinkLighten3 !important;
+
+	&:active {
+		color: 	 darken(@pinkLighten3,3%) !important;
+	}
+}
+
+.md-color.pink-lighten-2-text, .pink-lighten-2-text {
+	color: 	@pinkLighten2 !important;
+
+	&:active {
+		color: 	 darken(@pinkLighten2,3%) !important;
+	}
+}
+
+.md-color.pink-lighten-1-text, .pink-lighten-1-text {
+	color: 	@pinkLighten1 !important;
+
+	&:active {
+		color: 	 darken(@pinkLighten1,3%) !important;
+	}
+}
+
+.md-color.pink-text, .pink-text {
+	color: 	@pinkBase !important;
+
+	&:active {
+		color: 	 darken(@pinkBase,3%) !important;
+	}
+}
+
+.md-color.pink-darken-1-text, .pink-darken-1-text {
+	color: 	@pinkDarken1 !important;
+
+	&:active {
+		color: 	 darken(@pinkDarken1,3%) !important;
+	}
+}
+
+.md-color.pink-darken-2-text, .pink-darken-2-text {
+	color: 	@pinkDarken2 !important;
+
+	&:active {
+		color: 	 darken(@pinkDarken2,3%) !important;
+	}
+}
+
+.md-color.pink-darken-3-text, .pink-darken-3-text {
+	color: 	@pinkDarken3 !important;
+
+	&:active {
+		color: 	 darken(@pinkDarken3,3%) !important;
+	}
+}
+
+.md-color.pink-darken-4-text, .pink-darken-4-text {
+	color: 	@pinkDarken4 !important;
+
+	&:active {
+		color: 	 darken(@pinkDarken4,3%) !important;
+	}
+}
+
+.md-color.pink-accent-1-text, .pink-accent-1-text {
+	color: 	@pinkAccent1 !important;
+
+	&:active {
+		color: 	 darken(@pinkAccent1,3%) !important;
+	}
+}
+
+.md-color.pink-accent-2-text, .pink-accent-2-text {
+	color: 	@pinkAccent2 !important;
+
+	&:active {
+		color: 	 darken(@pinkAccent2,3%) !important;
+	}
+}
+
+.md-color.pink-accent-3-text, .pink-accent-3-text {
+	color: 	@pinkAccent3 !important;
+
+	&:active {
+		color: 	 darken(@pinkAccent3,3%) !important;
+	}
+}
+
+.md-color.pink-accent-4-text, .pink-accent-4-text {
+	color: 	@pinkAccent4 !important;
+
+	&:active {
+		color: 	 darken(@pinkAccent4,3%) !important;
+	}
+}
+
+/* purple */
+.md-color.purple-lighten-5-text, .purple-lighten-5-text {
+	color: 	@purpleLighten5 !important;
+
+	&:active {
+		color: 	 darken(@purpleLighten5,3%) !important;
+	}
+}
+
+.md-color.purple-lighten-4-text, .purple-lighten-4-text {
+	color: 	@purpleLighten4 !important;
+
+	&:active {
+		color: 	 darken(@purpleLighten4,3%) !important;
+	}
+}
+
+.md-color.purple-lighten-3-text, .purple-lighten-3-text {
+	color: 	@purpleLighten3 !important;
+
+	&:active {
+		color: 	 darken(@purpleLighten3,3%) !important;
+	}
+}
+
+.md-color.purple-lighten-2-text, .purple-lighten-2-text {
+	color: 	@purpleLighten2 !important;
+
+	&:active {
+		color: 	 darken(@purpleLighten2,3%) !important;
+	}
+}
+
+.md-color.purple-lighten-1-text, .purple-lighten-1-text {
+	color: 	@purpleLighten1 !important;
+
+	&:active {
+		color: 	 darken(@purpleLighten1,3%) !important;
+	}
+}
+
+.md-color.purple-text, .purple-text {
+	color: 	@purpleBase !important;
+
+	&:active {
+		color: 	 darken(@purpleBase,3%) !important;
+	}
+}
+
+.md-color.purple-darken-1-text, .purple-darken-1-text {
+	color: 	@purpleDarken1 !important;
+
+	&:active {
+		color: 	 darken(@purpleDarken1,3%) !important;
+	}
+}
+
+.md-color.purple-darken-2-text, .purple-darken-2-text {
+	color: 	@purpleDarken2 !important;
+
+	&:active {
+		color: 	 darken(@purpleDarken2,3%) !important;
+	}
+}
+
+.md-color.purple-darken-3-text, .purple-darken-3-text {
+	color: 	@purpleDarken3 !important;
+
+	&:active {
+		color: 	 darken(@purpleDarken3,3%) !important;
+	}
+}
+
+.md-color.purple-darken-4-text, .purple-darken-4-text {
+	color: 	@purpleDarken4 !important;
+
+	&:active {
+		color: 	 darken(@purpleDarken4,3%) !important;
+	}
+}
+
+.md-color.purple-accent-1-text, .purple-accent-1-text {
+	color: 	@purpleAccent1 !important;
+
+	&:active {
+		color: 	 darken(@purpleAccent1,3%) !important;
+	}
+}
+
+.md-color.purple-accent-2-text, .purple-accent-2-text {
+	color: 	@purpleAccent2 !important;
+
+	&:active {
+		color: 	 darken(@purpleAccent2,3%) !important;
+	}
+}
+
+.md-color.purple-accent-3-text, .purple-accent-3-text {
+	color: 	@purpleAccent3 !important;
+
+	&:active {
+		color: 	 darken(@purpleAccent3,3%) !important;
+	}
+}
+
+.md-color.purple-accent-4-text, .purple-accent-4-text {
+	color: 	@purpleAccent4 !important;
+
+	&:active {
+		color: 	 darken(@purpleAccent4,3%) !important;
+	}
+}
+
+/* deep-purple */
+.md-color.deep-purple-lighten-5-text, .deep-purple-lighten-5-text {
+	color: 	@deepPurpleLighten5 !important;
+
+	&:active {
+		color: 	 darken(@deepPurpleLighten5,3%) !important;
+	}
+}
+
+.md-color.deep-purple-lighten-4-text, .deep-purple-lighten-4-text {
+	color: 	@deepPurpleLighten4 !important;
+
+	&:active {
+		color: 	 darken(@deepPurpleLighten4,3%) !important;
+	}
+}
+
+.md-color.deep-purple-lighten-3-text, .deep-purple-lighten-3-text {
+	color: 	@deepPurpleLighten3 !important;
+
+	&:active {
+		color: 	 darken(@deepPurpleLighten3,3%) !important;
+	}
+}
+
+.md-color.deep-purple-lighten-2-text, .deep-purple-lighten-2-text {
+	color: 	@deepPurpleLighten2 !important;
+
+	&:active {
+		color: 	 darken(@deepPurpleLighten2,3%) !important;
+	}
+}
+
+.md-color.deep-purple-lighten-1-text, .deep-purple-lighten-1-text {
+	color: 	@deepPurpleLighten1 !important;
+
+	&:active {
+		color: 	 darken(@deepPurpleLighten1,3%) !important;
+	}
+}
+
+.md-color.deep-purple-text, .deep-purple-text {
+	color: 	@deepPurpleBase !important;
+
+	&:active {
+		color: 	 darken(@deepPurpleBase,3%) !important;
+	}
+}
+
+.md-color.deep-purple-darken-1-text, .deep-purple-darken-1-text {
+	color: 	@deepPurpleDarken1 !important;
+
+	&:active {
+		color: 	 darken(@deepPurpleDarken1,3%) !important;
+	}
+}
+
+.md-color.deep-purple-darken-2-text, .deep-purple-darken-2-text {
+	color: 	@deepPurpleDarken2 !important;
+
+	&:active {
+		color: 	 darken(@deepPurpleDarken2,3%) !important;
+	}
+}
+
+.md-color.deep-purple-darken-3-text, .deep-purple-darken-3-text {
+	color: 	@deepPurpleDarken3 !important;
+
+	&:active {
+		color: 	 darken(@deepPurpleDarken3,3%) !important;
+	}
+}
+
+.md-color.deep-purple-darken-4-text, .deep-purple-darken-4-text {
+	color: 	@deepPurpleDarken4 !important;
+
+	&:active {
+		color: 	 darken(@deepPurpleDarken4,3%) !important;
+	}
+}
+
+.md-color.deep-purple-accent-1-text, .deep-purple-accent-1-text {
+	color: 	@deepPurpleAccent1 !important;
+
+	&:active {
+		color: 	 darken(@deepPurpleAccent1,3%) !important;
+	}
+}
+
+.md-color.deep-purple-accent-2-text, .deep-purple-accent-2-text {
+	color: 	@deepPurpleAccent2 !important;
+
+	&:active {
+		color: 	 darken(@deepPurpleAccent2,3%) !important;
+	}
+}
+
+.md-color.deep-purple-accent-3-text, .deep-purple-accent-3-text {
+	color: 	@deepPurpleAccent3 !important;
+
+	&:active {
+		color: 	 darken(@deepPurpleAccent3,3%) !important;
+	}
+}
+
+.md-color.deep-purple-accent-4-text, .deep-purple-accent-4-text {
+	color: 	@deepPurpleAccent4 !important;
+
+	&:active {
+		color: 	 darken(@deepPurpleAccent4,3%) !important;
+	}
+}
+
+/* indigo */
+.md-color.indigo-lighten-5-text, .indigo-lighten-5-text {
+	color: 	@indigoLighten5 !important;
+
+	&:active {
+		color: 	 darken(@indigoLighten5,3%) !important;
+	}
+}
+
+.md-color.indigo-lighten-4-text, .indigo-lighten-4-text {
+	color: 	@indigoLighten4 !important;
+
+	&:active {
+		color: 	 darken(@indigoLighten4,3%) !important;
+	}
+}
+
+.md-color.indigo-lighten-3-text, .indigo-lighten-3-text {
+	color: 	@indigoLighten3 !important;
+
+	&:active {
+		color: 	 darken(@indigoLighten3,3%) !important;
+	}
+}
+
+.md-color.indigo-lighten-2-text, .indigo-lighten-2-text {
+	color: 	@indigoLighten2 !important;
+
+	&:active {
+		color: 	 darken(@indigoLighten2,3%) !important;
+	}
+}
+
+.md-color.indigo-lighten-1-text, .indigo-lighten-1-text {
+	color: 	@indigoLighten1 !important;
+
+	&:active {
+		color: 	 darken(@indigoLighten1,3%) !important;
+	}
+}
+
+.md-color.indigo-text, .indigo-text {
+	color: 	@indigoBase !important;
+
+	&:active {
+		color: 	 darken(@indigoBase,3%) !important;
+	}
+}
+
+.md-color.indigo-darken-1-text, .indigo-darken-1-text {
+	color: 	@indigoDarken1 !important;
+
+	&:active {
+		color: 	 darken(@indigoDarken1,3%) !important;
+	}
+}
+
+.md-color.indigo-darken-2-text, .indigo-darken-2-text {
+	color: 	@indigoDarken2 !important;
+
+	&:active {
+		color: 	 darken(@indigoDarken2,3%) !important;
+	}
+}
+
+.md-color.indigo-darken-3-text, .indigo-darken-3-text {
+	color: 	@indigoDarken3 !important;
+
+	&:active {
+		color: 	 darken(@indigoDarken3,3%) !important;
+	}
+}
+
+.md-color.indigo-darken-4-text, .indigo-darken-4-text {
+	color: 	@indigoDarken4 !important;
+
+	&:active {
+		color: 	 darken(@indigoDarken4,3%) !important;
+	}
+}
+
+.md-color.indigo-accent-1-text, .indigo-accent-1-text {
+	color: 	@indigoAccent1 !important;
+
+	&:active {
+		color: 	 darken(@indigoAccent1,3%) !important;
+	}
+}
+
+.md-color.indigo-accent-2-text, .indigo-accent-2-text {
+	color: 	@indigoAccent2 !important;
+
+	&:active {
+		color: 	 darken(@indigoAccent2,3%) !important;
+	}
+}
+
+.md-color.indigo-accent-3-text, .indigo-accent-3-text {
+	color: 	@indigoAccent3 !important;
+
+	&:active {
+		color: 	 darken(@indigoAccent3,3%) !important;
+	}
+}
+
+.md-color.indigo-accent-4-text, .indigo-accent-4-text {
+	color: 	@indigoAccent4 !important;
+
+	&:active {
+		color: 	 darken(@indigoAccent4,3%) !important;
+	}
+}
+
+/* blue */
+.md-color.blue-lighten-5-text, .blue-lighten-5-text {
+	color: 	@blueLighten5 !important;
+
+	&:active {
+		color: 	 darken(@blueLighten5,3%) !important;
+	}
+}
+
+.md-color.blue-lighten-4-text, .blue-lighten-4-text {
+	color: 	@blueLighten4 !important;
+
+	&:active {
+		color: 	 darken(@blueLighten4,3%) !important;
+	}
+}
+
+.md-color.blue-lighten-3-text, .blue-lighten-3-text {
+	color: 	@blueLighten3 !important;
+
+	&:active {
+		color: 	 darken(@blueLighten3,3%) !important;
+	}
+}
+
+.md-color.blue-lighten-2-text, .blue-lighten-2-text {
+	color: 	@blueLighten2 !important;
+
+	&:active {
+		color: 	 darken(@blueLighten2,3%) !important;
+	}
+}
+
+.md-color.blue-lighten-1-text, .blue-lighten-1-text {
+	color: 	@blueLighten1 !important;
+
+	&:active {
+		color: 	 darken(@blueLighten1,3%) !important;
+	}
+}
+
+.md-color.blue-text, .blue-text {
+	color: 	@blueBase !important;
+
+	&:active {
+		color: 	 darken(@blueBase,3%) !important;
+	}
+}
+
+.md-color.blue-darken-1-text, .blue-darken-1-text {
+	color: 	@blueDarken1 !important;
+
+	&:active {
+		color: 	 darken(@blueDarken1,3%) !important;
+	}
+}
+
+.md-color.blue-darken-2-text, .blue-darken-2-text {
+	color: 	@blueDarken2 !important;
+
+	&:active {
+		color: 	 darken(@blueDarken2,3%) !important;
+	}
+}
+
+.md-color.blue-darken-3-text, .blue-darken-3-text {
+	color: 	@blueDarken3 !important;
+
+	&:active {
+		color: 	 darken(@blueDarken3,3%) !important;
+	}
+}
+
+.md-color.blue-darken-4-text, .blue-darken-4-text {
+	color: 	@blueDarken4 !important;
+
+	&:active {
+		color: 	 darken(@blueDarken4,3%) !important;
+	}
+}
+
+.md-color.blue-accent-1-text, .blue-accent-1-text {
+	color: 	@blueAccent1 !important;
+
+	&:active {
+		color: 	 darken(@blueAccent1,3%) !important;
+	}
+}
+
+.md-color.blue-accent-2-text, .blue-accent-2-text {
+	color: 	@blueAccent2 !important;
+
+	&:active {
+		color: 	 darken(@blueAccent2,3%) !important;
+	}
+}
+
+.md-color.blue-accent-3-text, .blue-accent-3-text {
+	color: 	@blueAccent3 !important;
+
+	&:active {
+		color: 	 darken(@blueAccent3,3%) !important;
+	}
+}
+
+.md-color.blue-accent-4-text, .blue-accent-4-text {
+	color: 	@blueAccent4 !important;
+
+	&:active {
+		color: 	 darken(@blueAccent4,3%) !important;
+	}
+}
+
+/* light-blue */
+.md-color.light-blue-lighten-5-text, .light-blue-lighten-5-text {
+	color: 	@lightBlueLighten5 !important;
+
+	&:active {
+		color: 	 darken(@lightBlueLighten5,3%) !important;
+	}
+}
+
+.md-color.light-blue-lighten-4-text, .light-blue-lighten-4-text {
+	color: 	@lightBlueLighten4 !important;
+
+	&:active {
+		color: 	 darken(@lightBlueLighten4,3%) !important;
+	}
+}
+
+.md-color.light-blue-lighten-3-text, .light-blue-lighten-3-text {
+	color: 	@lightBlueLighten3 !important;
+
+	&:active {
+		color: 	 darken(@lightBlueLighten3,3%) !important;
+	}
+}
+
+.md-color.light-blue-lighten-2-text, .light-blue-lighten-2-text {
+	color: 	@lightBlueLighten2 !important;
+
+	&:active {
+		color: 	 darken(@lightBlueLighten2,3%) !important;
+	}
+}
+
+.md-color.light-blue-lighten-1-text, .light-blue-lighten-1-text {
+	color: 	@lightBlueLighten1 !important;
+
+	&:active {
+		color: 	 darken(@lightBlueLighten1,3%) !important;
+	}
+}
+
+.md-color.light-blue-text, .light-blue-text {
+	color: 	@lightBlueBase !important;
+
+	&:active {
+		color: 	 darken(@lightBlueBase,3%) !important;
+	}
+}
+
+.md-color.light-blue-darken-1-text, .light-blue-darken-1-text {
+	color: 	@lightBlueDarken1 !important;
+
+	&:active {
+		color: 	 darken(@lightBlueDarken1,3%) !important;
+	}
+}
+
+.md-color.light-blue-darken-2-text, .light-blue-darken-2-text {
+	color: 	@lightBlueDarken2 !important;
+
+	&:active {
+		color: 	 darken(@lightBlueDarken2,3%) !important;
+	}
+}
+
+.md-color.light-blue-darken-3-text, .light-blue-darken-3-text {
+	color: 	@lightBlueDarken3 !important;
+
+	&:active {
+		color: 	 darken(@lightBlueDarken3,3%) !important;
+	}
+}
+
+.md-color.light-blue-darken-4-text, .light-blue-darken-4-text {
+	color: 	@lightBlueDarken4 !important;
+
+	&:active {
+		color: 	 darken(@lightBlueDarken4,3%) !important;
+	}
+}
+
+.md-color.light-blue-accent-1-text, .light-blue-accent-1-text {
+	color: 	@lightBlueAccent1 !important;
+
+	&:active {
+		color: 	 darken(@lightBlueAccent1,3%) !important;
+	}
+}
+
+.md-color.light-blue-accent-2-text, .light-blue-accent-2-text {
+	color: 	@lightBlueAccent2 !important;
+
+	&:active {
+		color: 	 darken(@lightBlueAccent2,3%) !important;
+	}
+}
+
+.md-color.light-blue-accent-3-text, .light-blue-accent-3-text {
+	color: 	@lightBlueAccent3 !important;
+
+	&:active {
+		color: 	 darken(@lightBlueAccent3,3%) !important;
+	}
+}
+
+.md-color.light-blue-accent-4-text, .light-blue-accent-4-text {
+	color: 	@lightBlueAccent4 !important;
+
+	&:active {
+		color: 	 darken(@lightBlueAccent4,3%) !important;
+	}
+}
+
+/* cyan */
+.md-color.cyan-lighten-5-text, .cyan-lighten-5-text {
+	color: 	@cyanLighten5 !important;
+
+	&:active {
+		color: 	 darken(@cyanLighten5,3%) !important;
+	}
+}
+
+.md-color.cyan-lighten-4-text, .cyan-lighten-4-text {
+	color: 	@cyanLighten4 !important;
+
+	&:active {
+		color: 	 darken(@cyanLighten4,3%) !important;
+	}
+}
+
+.md-color.cyan-lighten-3-text, .cyan-lighten-3-text {
+	color: 	@cyanLighten3 !important;
+
+	&:active {
+		color: 	 darken(@cyanLighten3,3%) !important;
+	}
+}
+
+.md-color.cyan-lighten-2-text, .cyan-lighten-2-text {
+	color: 	@cyanLighten2 !important;
+
+	&:active {
+		color: 	 darken(@cyanLighten2,3%) !important;
+	}
+}
+
+.md-color.cyan-lighten-1-text, .cyan-lighten-1-text {
+	color: 	@cyanLighten1 !important;
+
+	&:active {
+		color: 	 darken(@cyanLighten1,3%) !important;
+	}
+}
+
+.md-color.cyan-text, .cyan-text {
+	color: 	@cyanBase !important;
+
+	&:active {
+		color: 	 darken(@cyanBase,3%) !important;
+	}
+}
+
+.md-color.cyan-darken-1-text, .cyan-darken-1-text {
+	color: 	@cyanDarken1 !important;
+
+	&:active {
+		color: 	 darken(@cyanDarken1,3%) !important;
+	}
+}
+
+.md-color.cyan-darken-2-text, .cyan-darken-2-text {
+	color: 	@cyanDarken2 !important;
+
+	&:active {
+		color: 	 darken(@cyanDarken2,3%) !important;
+	}
+}
+
+.md-color.cyan-darken-3-text, .cyan-darken-3-text {
+	color: 	@cyanDarken3 !important;
+
+	&:active {
+		color: 	 darken(@cyanDarken3,3%) !important;
+	}
+}
+
+.md-color.cyan-darken-4-text, .cyan-darken-4-text {
+	color: 	@cyanDarken4 !important;
+
+	&:active {
+		color: 	 darken(@cyanDarken4,3%) !important;
+	}
+}
+
+.md-color.cyan-accent-1-text, .cyan-accent-1-text {
+	color: 	@cyanAccent1 !important;
+
+	&:active {
+		color: 	 darken(@cyanAccent1,3%) !important;
+	}
+}
+
+.md-color.cyan-accent-2-text, .cyan-accent-2-text {
+	color: 	@cyanAccent2 !important;
+
+	&:active {
+		color: 	 darken(@cyanAccent2,3%) !important;
+	}
+}
+
+.md-color.cyan-accent-3-text, .cyan-accent-3-text {
+	color: 	@cyanAccent3 !important;
+
+	&:active {
+		color: 	 darken(@cyanAccent3,3%) !important;
+	}
+}
+
+.md-color.cyan-accent-4-text, .cyan-accent-4-text {
+	color: 	@cyanAccent4 !important;
+
+	&:active {
+		color: 	 darken(@cyanAccent4,3%) !important;
+	}
+}
+
+/* teal */
+.md-color.teal-lighten-5-text, .teal-lighten-5-text {
+	color: 	@tealLighten5 !important;
+
+	&:active {
+		color: 	 darken(@tealLighten5,3%) !important;
+	}
+}
+
+.md-color.teal-lighten-4-text, .teal-lighten-4-text {
+	color: 	@tealLighten4 !important;
+
+	&:active {
+		color: 	 darken(@tealLighten4,3%) !important;
+	}
+}
+
+.md-color.teal-lighten-3-text, .teal-lighten-3-text {
+	color: 	@tealLighten3 !important;
+
+	&:active {
+		color: 	 darken(@tealLighten3,3%) !important;
+	}
+}
+
+.md-color.teal-lighten-2-text, .teal-lighten-2-text {
+	color: 	@tealLighten2 !important;
+
+	&:active {
+		color: 	 darken(@tealLighten2,3%) !important;
+	}
+}
+
+.md-color.teal-lighten-1-text, .teal-lighten-1-text {
+	color: 	@tealLighten1 !important;
+
+	&:active {
+		color: 	 darken(@tealLighten1,3%) !important;
+	}
+}
+
+.md-color.teal-text, .teal-text {
+	color: 	@tealBase !important;
+
+	&:active {
+		color: 	 darken(@tealBase,3%) !important;
+	}
+}
+
+.md-color.teal-darken-1-text, .teal-darken-1-text {
+	color: 	@tealDarken1 !important;
+
+	&:active {
+		color: 	 darken(@tealDarken1,3%) !important;
+	}
+}
+
+.md-color.teal-darken-2-text, .teal-darken-2-text {
+	color: 	@tealDarken2 !important;
+
+	&:active {
+		color: 	 darken(@tealDarken2,3%) !important;
+	}
+}
+
+.md-color.teal-darken-3-text, .teal-darken-3-text {
+	color: 	@tealDarken3 !important;
+
+	&:active {
+		color: 	 darken(@tealDarken3,3%) !important;
+	}
+}
+
+.md-color.teal-darken-4-text, .teal-darken-4-text {
+	color: 	@tealDarken4 !important;
+
+	&:active {
+		color: 	 darken(@tealDarken4,3%) !important;
+	}
+}
+
+.md-color.teal-accent-1-text, .teal-accent-1-text {
+	color: 	@tealAccent1 !important;
+
+	&:active {
+		color: 	 darken(@tealAccent1,3%) !important;
+	}
+}
+
+.md-color.teal-accent-2-text, .teal-accent-2-text {
+	color: 	@tealAccent2 !important;
+
+	&:active {
+		color: 	 darken(@tealAccent2,3%) !important;
+	}
+}
+
+.md-color.teal-accent-3-text, .teal-accent-3-text {
+	color: 	@tealAccent3 !important;
+
+	&:active {
+		color: 	 darken(@tealAccent3,3%) !important;
+	}
+}
+
+.md-color.teal-accent-4-text, .teal-accent-4-text {
+	color: 	@tealAccent4 !important;
+
+	&:active {
+		color: 	 darken(@tealAccent4,3%) !important;
+	}
+}
+
+/* green */
+.md-color.green-lighten-5-text, .green-lighten-5-text {
+	color: 	@greenLighten5 !important;
+
+	&:active {
+		color: 	 darken(@greenLighten5,3%) !important;
+	}
+}
+
+.md-color.green-lighten-4-text, .green-lighten-4-text {
+	color: 	@greenLighten4 !important;
+
+	&:active {
+		color: 	 darken(@greenLighten4,3%) !important;
+	}
+}
+
+.md-color.green-lighten-3-text, .green-lighten-3-text {
+	color: 	@greenLighten3 !important;
+
+	&:active {
+		color: 	 darken(@greenLighten3,3%) !important;
+	}
+}
+
+.md-color.green-lighten-2-text, .green-lighten-2-text {
+	color: 	@greenLighten2 !important;
+
+	&:active {
+		color: 	 darken(@greenLighten2,3%) !important;
+	}
+}
+
+.md-color.green-lighten-1-text, .green-lighten-1-text {
+	color: 	@greenLighten1 !important;
+
+	&:active {
+		color: 	 darken(@greenLighten1,3%) !important;
+	}
+}
+
+.md-color.green-text, .green-text {
+	color: 	@greenBase !important;
+
+	&:active {
+		color: 	 darken(@greenBase,3%) !important;
+	}
+}
+
+.md-color.green-darken-1-text, .green-darken-1-text {
+	color: 	@greenDarken1 !important;
+
+	&:active {
+		color: 	 darken(@greenDarken1,3%) !important;
+	}
+}
+
+.md-color.green-darken-2-text, .green-darken-2-text {
+	color: 	@greenDarken2 !important;
+
+	&:active {
+		color: 	 darken(@greenDarken2,3%) !important;
+	}
+}
+
+.md-color.green-darken-3-text, .green-darken-3-text {
+	color: 	@greenDarken3 !important;
+
+	&:active {
+		color: 	 darken(@greenDarken3,3%) !important;
+	}
+}
+
+.md-color.green-darken-4-text, .green-darken-4-text {
+	color: 	@greenDarken4 !important;
+
+	&:active {
+		color: 	 darken(@greenDarken4,3%) !important;
+	}
+}
+
+.md-color.green-accent-1-text, .green-accent-1-text {
+	color: 	@greenAccent1 !important;
+
+	&:active {
+		color: 	 darken(@greenAccent1,3%) !important;
+	}
+}
+
+.md-color.green-accent-2-text, .green-accent-2-text {
+	color: 	@greenAccent2 !important;
+
+	&:active {
+		color: 	 darken(@greenAccent2,3%) !important;
+	}
+}
+
+.md-color.green-accent-3-text, .green-accent-3-text {
+	color: 	@greenAccent3 !important;
+
+	&:active {
+		color: 	 darken(@greenAccent3,3%) !important;
+	}
+}
+
+.md-color.green-accent-4-text, .green-accent-4-text {
+	color: 	@greenAccent4 !important;
+
+	&:active {
+		color: 	 darken(@greenAccent4,3%) !important;
+	}
+}
+
+/* light-green */
+.md-color.light-green-lighten-5-text, .light-green-lighten-5-text {
+	color: 	@lightGreenLighten5 !important;
+
+	&:active {
+		color: 	 darken(@lightGreenLighten5,3%) !important;
+	}
+}
+
+.md-color.light-green-lighten-4-text, .light-green-lighten-4-text {
+	color: 	@lightGreenLighten4 !important;
+
+	&:active {
+		color: 	 darken(@lightGreenLighten4,3%) !important;
+	}
+}
+
+.md-color.light-green-lighten-3-text, .light-green-lighten-3-text {
+	color: 	@lightGreenLighten3 !important;
+
+	&:active {
+		color: 	 darken(@lightGreenLighten3,3%) !important;
+	}
+}
+
+.md-color.light-green-lighten-2-text, .light-green-lighten-2-text {
+	color: 	@lightGreenLighten2 !important;
+
+	&:active {
+		color: 	 darken(@lightGreenLighten2,3%) !important;
+	}
+}
+
+.md-color.light-green-lighten-1-text, .light-green-lighten-1-text {
+	color: 	@lightGreenLighten1 !important;
+
+	&:active {
+		color: 	 darken(@lightGreenLighten1,3%) !important;
+	}
+}
+
+.md-color.light-green-text, .light-green-text {
+	color: 	@lightGreenBase !important;
+
+	&:active {
+		color: 	 darken(@lightGreenBase,3%) !important;
+	}
+}
+
+.md-color.light-green-darken-1-text, .light-green-darken-1-text {
+	color: 	@lightGreenDarken1 !important;
+
+	&:active {
+		color: 	 darken(@lightGreenDarken1,3%) !important;
+	}
+}
+
+.md-color.light-green-darken-2-text, .light-green-darken-2-text {
+	color: 	@lightGreenDarken2 !important;
+
+	&:active {
+		color: 	 darken(@lightGreenDarken2,3%) !important;
+	}
+}
+
+.md-color.light-green-darken-3-text, .light-green-darken-3-text {
+	color: 	@lightGreenDarken3 !important;
+
+	&:active {
+		color: 	 darken(@lightGreenDarken3,3%) !important;
+	}
+}
+
+.md-color.light-green-darken-4-text, .light-green-darken-4-text {
+	color: 	@lightGreenDarken4 !important;
+
+	&:active {
+		color: 	 darken(@lightGreenDarken4,3%) !important;
+	}
+}
+
+.md-color.light-green-accent-1-text, .light-green-accent-1-text {
+	color: 	@lightGreenAccent1 !important;
+
+	&:active {
+		color: 	 darken(@lightGreenAccent1,3%) !important;
+	}
+}
+
+.md-color.light-green-accent-2-text, .light-green-accent-2-text {
+	color: 	@lightGreenAccent2 !important;
+
+	&:active {
+		color: 	 darken(@lightGreenAccent2,3%) !important;
+	}
+}
+
+.md-color.light-green-accent-3-text, .light-green-accent-3-text {
+	color: 	@lightGreenAccent3 !important;
+
+	&:active {
+		color: 	 darken(@lightGreenAccent3,3%) !important;
+	}
+}
+
+.md-color.light-green-accent-4-text, .light-green-accent-4-text {
+	color: 	@lightGreenAccent4 !important;
+
+	&:active {
+		color: 	 darken(@lightGreenAccent4,3%) !important;
+	}
+}
+
+/* lime */
+.md-color.lime-lighten-5-text, .lime-lighten-5-text {
+	color: 	@limeLighten5 !important;
+
+	&:active {
+		color: 	 darken(@limeLighten5,3%) !important;
+	}
+}
+
+.md-color.lime-lighten-4-text, .lime-lighten-4-text {
+	color: 	@limeLighten4 !important;
+
+	&:active {
+		color: 	 darken(@limeLighten4,3%) !important;
+	}
+}
+
+.md-color.lime-lighten-3-text, .lime-lighten-3-text {
+	color: 	@limeLighten3 !important;
+
+	&:active {
+		color: 	 darken(@limeLighten3,3%) !important;
+	}
+}
+
+.md-color.lime-lighten-2-text, .lime-lighten-2-text {
+	color: 	@limeLighten2 !important;
+
+	&:active {
+		color: 	 darken(@limeLighten2,3%) !important;
+	}
+}
+
+.md-color.lime-lighten-1-text, .lime-lighten-1-text {
+	color: 	@limeLighten1 !important;
+
+	&:active {
+		color: 	 darken(@limeLighten1,3%) !important;
+	}
+}
+
+.md-color.lime-text, .lime-text {
+	color: 	@limeBase !important;
+
+	&:active {
+		color: 	 darken(@limeBase,3%) !important;
+	}
+}
+
+.md-color.lime-darken-1-text, .lime-darken-1-text {
+	color: 	@limeDarken1 !important;
+
+	&:active {
+		color: 	 darken(@limeDarken1,3%) !important;
+	}
+}
+
+.md-color.lime-darken-2-text, .lime-darken-2-text {
+	color: 	@limeDarken2 !important;
+
+	&:active {
+		color: 	 darken(@limeDarken2,3%) !important;
+	}
+}
+
+.md-color.lime-darken-3-text, .lime-darken-3-text {
+	color: 	@limeDarken3 !important;
+
+	&:active {
+		color: 	 darken(@limeDarken3,3%) !important;
+	}
+}
+
+.md-color.lime-darken-4-text, .lime-darken-4-text {
+	color: 	@limeDarken4 !important;
+
+	&:active {
+		color: 	 darken(@limeDarken4,3%) !important;
+	}
+}
+
+.md-color.lime-accent-1-text, .lime-accent-1-text {
+	color: 	@limeAccent1 !important;
+
+	&:active {
+		color: 	 darken(@limeAccent1,3%) !important;
+	}
+}
+
+.md-color.lime-accent-2-text, .lime-accent-2-text {
+	color: 	@limeAccent2 !important;
+
+	&:active {
+		color: 	 darken(@limeAccent2,3%) !important;
+	}
+}
+
+.md-color.lime-accent-3-text, .lime-accent-3-text {
+	color: 	@limeAccent3 !important;
+
+	&:active {
+		color: 	 darken(@limeAccent3,3%) !important;
+	}
+}
+
+.md-color.lime-accent-4-text, .lime-accent-4-text {
+	color: 	@limeAccent4 !important;
+
+	&:active {
+		color: 	 darken(@limeAccent4,3%) !important;
+	}
+}
+
+/* yellow */
+.md-color.yellow-lighten-5-text, .yellow-lighten-5-text {
+	color: 	@yellowLighten5 !important;
+
+	&:active {
+		color: 	 darken(@yellowLighten5,3%) !important;
+	}
+}
+
+.md-color.yellow-lighten-4-text, .yellow-lighten-4-text {
+	color: 	@yellowLighten4 !important;
+
+	&:active {
+		color: 	 darken(@yellowLighten4,3%) !important;
+	}
+}
+
+.md-color.yellow-lighten-3-text, .yellow-lighten-3-text {
+	color: 	@yellowLighten3 !important;
+
+	&:active {
+		color: 	 darken(@yellowLighten3,3%) !important;
+	}
+}
+
+.md-color.yellow-lighten-2-text, .yellow-lighten-2-text {
+	color: 	@yellowLighten2 !important;
+
+	&:active {
+		color: 	 darken(@yellowLighten2,3%) !important;
+	}
+}
+
+.md-color.yellow-lighten-1-text, .yellow-lighten-1-text {
+	color: 	@yellowLighten1 !important;
+
+	&:active {
+		color: 	 darken(@yellowLighten1,3%) !important;
+	}
+}
+
+.md-color.yellow-text, .yellow-text {
+	color: 	@yellowBase !important;
+
+	&:active {
+		color: 	 darken(@yellowBase,3%) !important;
+	}
+}
+
+.md-color.yellow-darken-1-text, .yellow-darken-1-text {
+	color: 	@yellowDarken1 !important;
+
+	&:active {
+		color: 	 darken(@yellowDarken1,3%) !important;
+	}
+}
+
+.md-color.yellow-darken-2-text, .yellow-darken-2-text {
+	color: 	@yellowDarken2 !important;
+
+	&:active {
+		color: 	 darken(@yellowDarken2,3%) !important;
+	}
+}
+
+.md-color.yellow-darken-3-text, .yellow-darken-3-text {
+	color: 	@yellowDarken3 !important;
+
+	&:active {
+		color: 	 darken(@yellowDarken3,3%) !important;
+	}
+}
+
+.md-color.yellow-darken-4-text, .yellow-darken-4-text {
+	color: 	@yellowDarken4 !important;
+
+	&:active {
+		color: 	 darken(@yellowDarken4,3%) !important;
+	}
+}
+
+.md-color.yellow-accent-1-text, .yellow-accent-1-text {
+	color: 	@yellowAccent1 !important;
+
+	&:active {
+		color: 	 darken(@yellowAccent1,3%) !important;
+	}
+}
+
+.md-color.yellow-accent-2-text, .yellow-accent-2-text {
+	color: 	@yellowAccent2 !important;
+
+	&:active {
+		color: 	 darken(@yellowAccent2,3%) !important;
+	}
+}
+
+.md-color.yellow-accent-3-text, .yellow-accent-3-text {
+	color: 	@yellowAccent3 !important;
+
+	&:active {
+		color: 	 darken(@yellowAccent3,3%) !important;
+	}
+}
+
+.md-color.yellow-accent-4-text, .yellow-accent-4-text {
+	color: 	@yellowAccent4 !important;
+
+	&:active {
+		color: 	 darken(@yellowAccent4,3%) !important;
+	}
+}
+
+/* amber */
+.md-color.amber-lighten-5-text, .amber-lighten-5-text {
+	color: 	@amberLighten5 !important;
+
+	&:active {
+		color: 	 darken(@amberLighten5,3%) !important;
+	}
+}
+
+.md-color.amber-lighten-4-text, .amber-lighten-4-text {
+	color: 	@amberLighten4 !important;
+
+	&:active {
+		color: 	 darken(@amberLighten4,3%) !important;
+	}
+}
+
+.md-color.amber-lighten-3-text, .amber-lighten-3-text {
+	color: 	@amberLighten3 !important;
+
+	&:active {
+		color: 	 darken(@amberLighten3,3%) !important;
+	}
+}
+
+.md-color.amber-lighten-2-text, .amber-lighten-2-text {
+	color: 	@amberLighten2 !important;
+
+	&:active {
+		color: 	 darken(@amberLighten2,3%) !important;
+	}
+}
+
+.md-color.amber-lighten-1-text, .amber-lighten-1-text {
+	color: 	@amberLighten1 !important;
+
+	&:active {
+		color: 	 darken(@amberLighten1,3%) !important;
+	}
+}
+
+.md-color.amber-text, .amber-text {
+	color: 	@amberBase !important;
+
+	&:active {
+		color: 	 darken(@amberBase,3%) !important;
+	}
+}
+
+.md-color.amber-darken-1-text, .amber-darken-1-text {
+	color: 	@amberDarken1 !important;
+
+	&:active {
+		color: 	 darken(@amberDarken1,3%) !important;
+	}
+}
+
+.md-color.amber-darken-2-text, .amber-darken-2-text {
+	color: 	@amberDarken2 !important;
+
+	&:active {
+		color: 	 darken(@amberDarken2,3%) !important;
+	}
+}
+
+.md-color.amber-darken-3-text, .amber-darken-3-text {
+	color: 	@amberDarken3 !important;
+
+	&:active {
+		color: 	 darken(@amberDarken3,3%) !important;
+	}
+}
+
+.md-color.amber-darken-4-text, .amber-darken-4-text {
+	color: 	@amberDarken4 !important;
+
+	&:active {
+		color: 	 darken(@amberDarken4,3%) !important;
+	}
+}
+
+.md-color.amber-accent-1-text, .amber-accent-1-text {
+	color: 	@amberAccent1 !important;
+
+	&:active {
+		color: 	 darken(@amberAccent1,3%) !important;
+	}
+}
+
+.md-color.amber-accent-2-text, .amber-accent-2-text {
+	color: 	@amberAccent2 !important;
+
+	&:active {
+		color: 	 darken(@amberAccent2,3%) !important;
+	}
+}
+
+.md-color.amber-accent-3-text, .amber-accent-3-text {
+	color: 	@amberAccent3 !important;
+
+	&:active {
+		color: 	 darken(@amberAccent3,3%) !important;
+	}
+}
+
+.md-color.amber-accent-4-text, .amber-accent-4-text {
+	color: 	@amberAccent4 !important;
+
+	&:active {
+		color: 	 darken(@amberAccent4,3%) !important;
+	}
+}
+
+/* orange */
+.md-color.orange-lighten-5-text, .orange-lighten-5-text {
+	color: 	@orangeLighten5 !important;
+
+	&:active {
+		color: 	 darken(@orangeLighten5,3%) !important;
+	}
+}
+
+.md-color.orange-lighten-4-text, .orange-lighten-4-text {
+	color: 	@orangeLighten4 !important;
+
+	&:active {
+		color: 	 darken(@orangeLighten4,3%) !important;
+	}
+}
+
+.md-color.orange-lighten-3-text, .orange-lighten-3-text {
+	color: 	@orangeLighten3 !important;
+
+	&:active {
+		color: 	 darken(@orangeLighten3,3%) !important;
+	}
+}
+
+.md-color.orange-lighten-2-text, .orange-lighten-2-text {
+	color: 	@orangeLighten2 !important;
+
+	&:active {
+		color: 	 darken(@orangeLighten2,3%) !important;
+	}
+}
+
+.md-color.orange-lighten-1-text, .orange-lighten-1-text {
+	color: 	@orangeLighten1 !important;
+
+	&:active {
+		color: 	 darken(@orangeLighten1,3%) !important;
+	}
+}
+
+.md-color.orange-text, .orange-text {
+	color: 	@orangeBase !important;
+
+	&:active {
+		color: 	 darken(@orangeBase,3%) !important;
+	}
+}
+
+.md-color.orange-darken-1-text, .orange-darken-1-text {
+	color: 	@orangeDarken1 !important;
+
+	&:active {
+		color: 	 darken(@orangeDarken1,3%) !important;
+	}
+}
+
+.md-color.orange-darken-2-text, .orange-darken-2-text {
+	color: 	@orangeDarken2 !important;
+
+	&:active {
+		color: 	 darken(@orangeDarken2,3%) !important;
+	}
+}
+
+.md-color.orange-darken-3-text, .orange-darken-3-text {
+	color: 	@orangeDarken3 !important;
+
+	&:active {
+		color: 	 darken(@orangeDarken3,3%) !important;
+	}
+}
+
+.md-color.orange-darken-4-text, .orange-darken-4-text {
+	color: 	@orangeDarken4 !important;
+
+	&:active {
+		color: 	 darken(@orangeDarken4,3%) !important;
+	}
+}
+
+.md-color.orange-accent-1-text, .orange-accent-1-text {
+	color: 	@orangeAccent1 !important;
+
+	&:active {
+		color: 	 darken(@orangeAccent1,3%) !important;
+	}
+}
+
+.md-color.orange-accent-2-text, .orange-accent-2-text {
+	color: 	@orangeAccent2 !important;
+
+	&:active {
+		color: 	 darken(@orangeAccent2,3%) !important;
+	}
+}
+
+.md-color.orange-accent-3-text, .orange-accent-3-text {
+	color: 	@orangeAccent3 !important;
+
+	&:active {
+		color: 	 darken(@orangeAccent3,3%) !important;
+	}
+}
+
+.md-color.orange-accent-4-text, .orange-accent-4-text {
+	color: 	@orangeAccent4 !important;
+
+	&:active {
+		color: 	 darken(@orangeAccent4,3%) !important;
+	}
+}
+
+/* deep-orange */
+.md-color.deep-orange-lighten-5-text, .deep-orange-lighten-5-text {
+	color: 	@deepOrangeLighten5 !important;
+
+	&:active {
+		color: 	 darken(@deepOrangeLighten5,3%) !important;
+	}
+}
+
+.md-color.deep-orange-lighten-4-text, .deep-orange-lighten-4-text {
+	color: 	@deepOrangeLighten4 !important;
+
+	&:active {
+		color: 	 darken(@deepOrangeLighten4,3%) !important;
+	}
+}
+
+.md-color.deep-orange-lighten-3-text, .deep-orange-lighten-3-text {
+	color: 	@deepOrangeLighten3 !important;
+
+	&:active {
+		color: 	 darken(@deepOrangeLighten3,3%) !important;
+	}
+}
+
+.md-color.deep-orange-lighten-2-text, .deep-orange-lighten-2-text {
+	color: 	@deepOrangeLighten2 !important;
+
+	&:active {
+		color: 	 darken(@deepOrangeLighten2,3%) !important;
+	}
+}
+
+.md-color.deep-orange-lighten-1-text, .deep-orange-lighten-1-text {
+	color: 	@deepOrangeLighten1 !important;
+
+	&:active {
+		color: 	 darken(@deepOrangeLighten1,3%) !important;
+	}
+}
+
+.md-color.deep-orange-text, .deep-orange-text {
+	color: 	@deepOrangeBase !important;
+
+	&:active {
+		color: 	 darken(@deepOrangeBase,3%) !important;
+	}
+}
+
+.md-color.deep-orange-darken-1-text, .deep-orange-darken-1-text {
+	color: 	@deepOrangeDarken1 !important;
+
+	&:active {
+		color: 	 darken(@deepOrangeDarken1,3%) !important;
+	}
+}
+
+.md-color.deep-orange-darken-2-text, .deep-orange-darken-2-text {
+	color: 	@deepOrangeDarken2 !important;
+
+	&:active {
+		color: 	 darken(@deepOrangeDarken2,3%) !important;
+	}
+}
+
+.md-color.deep-orange-darken-3-text, .deep-orange-darken-3-text {
+	color: 	@deepOrangeDarken3 !important;
+
+	&:active {
+		color: 	 darken(@deepOrangeDarken3,3%) !important;
+	}
+}
+
+.md-color.deep-orange-darken-4-text, .deep-orange-darken-4-text {
+	color: 	@deepOrangeDarken4 !important;
+
+	&:active {
+		color: 	 darken(@deepOrangeDarken4,3%) !important;
+	}
+}
+
+.md-color.deep-orange-accent-1-text, .deep-orange-accent-1-text {
+	color: 	@deepOrangeAccent1 !important;
+
+	&:active {
+		color: 	 darken(@deepOrangeAccent1,3%) !important;
+	}
+}
+
+.md-color.deep-orange-accent-2-text, .deep-orange-accent-2-text {
+	color: 	@deepOrangeAccent2 !important;
+
+	&:active {
+		color: 	 darken(@deepOrangeAccent2,3%) !important;
+	}
+}
+
+.md-color.deep-orange-accent-3-text, .deep-orange-accent-3-text {
+	color: 	@deepOrangeAccent3 !important;
+
+	&:active {
+		color: 	 darken(@deepOrangeAccent3,3%) !important;
+	}
+}
+
+.md-color.deep-orange-accent-4-text, .deep-orange-accent-4-text {
+	color: 	@deepOrangeAccent4 !important;
+
+	&:active {
+		color: 	 darken(@deepOrangeAccent4,3%) !important;
+	}
+}
+
+/* brown */
+.md-color.brown-lighten-5-text, .brown-lighten-5-text {
+	color: 	@brownLighten5 !important;
+
+	&:active {
+		color: 	 darken(@brownLighten5,3%) !important;
+	}
+}
+
+.md-color.brown-lighten-4-text, .brown-lighten-4-text {
+	color: 	@brownLighten4 !important;
+
+	&:active {
+		color: 	 darken(@brownLighten4,3%) !important;
+	}
+}
+
+.md-color.brown-lighten-3-text, .brown-lighten-3-text {
+	color: 	@brownLighten3 !important;
+
+	&:active {
+		color: 	 darken(@brownLighten3,3%) !important;
+	}
+}
+
+.md-color.brown-lighten-2-text, .brown-lighten-2-text {
+	color: 	@brownLighten2 !important;
+
+	&:active {
+		color: 	 darken(@brownLighten2,3%) !important;
+	}
+}
+
+.md-color.brown-lighten-1-text, .brown-lighten-1-text {
+	color: 	@brownLighten1 !important;
+
+	&:active {
+		color: 	 darken(@brownLighten1,3%) !important;
+	}
+}
+
+.md-color.brown-text, .brown-text {
+	color: 	@brownBase !important;
+
+	&:active {
+		color: 	 darken(@brownBase,3%) !important;
+	}
+}
+
+.md-color.brown-darken-1-text, .brown-darken-1-text {
+	color: 	@brownDarken1 !important;
+
+	&:active {
+		color: 	 darken(@brownDarken1,3%) !important;
+	}
+}
+
+.md-color.brown-darken-2-text, .brown-darken-2-text {
+	color: 	@brownDarken2 !important;
+
+	&:active {
+		color: 	 darken(@brownDarken2,3%) !important;
+	}
+}
+
+.md-color.brown-darken-3-text, .brown-darken-3-text {
+	color: 	@brownDarken3 !important;
+
+	&:active {
+		color: 	 darken(@brownDarken3,3%) !important;
+	}
+}
+
+.md-color.brown-darken-4-text, .brown-darken-4-text {
+	color: 	@brownDarken4 !important;
+
+	&:active {
+		color: 	 darken(@brownDarken4,3%) !important;
+	}
+}
+
+/* blue-grey  */
+.md-color.blue-grey-lighten-5-text, .blue-grey-lighten-5-text {
+	color: 	@blueGreyLighten5 !important;
+
+	&:active {
+		color: 	 darken(@blueGreyLighten5,3%) !important;
+	}
+}
+
+.md-color.blue-grey-lighten-4-text, .blue-grey-lighten-4-text {
+	color: 	@blueGreyLighten4 !important;
+
+	&:active {
+		color: 	 darken(@blueGreyLighten4,3%) !important;
+	}
+}
+
+.md-color.blue-grey-lighten-3-text, .blue-grey-lighten-3-text {
+	color: 	@blueGreyLighten3 !important;
+
+	&:active {
+		color: 	 darken(@blueGreyLighten3,3%) !important;
+	}
+}
+
+.md-color.blue-grey-lighten-2-text, .blue-grey-lighten-2-text {
+	color: 	@blueGreyLighten2 !important;
+
+	&:active {
+		color: 	 darken(@blueGreyLighten2,3%) !important;
+	}
+}
+
+.md-color.blue-grey-lighten-1-text, .blue-grey-lighten-1-text {
+	color: 	@blueGreyLighten1 !important;
+
+	&:active {
+		color: 	 darken(@blueGreyLighten1,3%) !important;
+	}
+}
+
+.md-color.blue-grey-text, .blue-grey-text {
+	color: 	@blueGreyBase !important;
+
+	&:active {
+		color: 	 darken(@blueGreyBase,3%) !important;
+	}
+}
+
+.md-color.blue-grey-darken-1-text, .blue-grey-darken-1-text {
+	color: 	@blueGreyDarken1 !important;
+
+	&:active {
+		color: 	 darken(@blueGreyDarken1,3%) !important;
+	}
+}
+
+.md-color.blue-grey-darken-2-text, .blue-grey-darken-2-text {
+	color: 	@blueGreyDarken2 !important;
+
+	&:active {
+		color: 	 darken(@blueGreyDarken2,3%) !important;
+	}
+}
+
+.md-color.blue-grey-darken-3-text, .blue-grey-darken-3-text {
+	color: 	@blueGreyDarken3 !important;
+
+	&:active {
+		color: 	 darken(@blueGreyDarken3,3%) !important;
+	}
+}
+
+.md-color.blue-grey-darken-4-text, .blue-grey-darken-4-text {
+	color: 	@blueGreyDarken4 !important;
+
+	&:active {
+		color: 	 darken(@blueGreyDarken4,3%) !important;
+	}
+}
+
+/* grey */
+.md-color.grey-lighten-5-text, .grey-lighten-5-text {
+	color: 	@greyLighten5 !important;
+
+	&:active {
+		color: 	 darken(@greyLighten5,3%) !important;
+	}
+}
+
+.md-color.grey-lighten-4-text, .grey-lighten-4-text {
+	color: 	@greyLighten4 !important;
+
+	&:active {
+		color: 	 darken(@greyLighten4,3%) !important;
+	}
+}
+
+.md-color.grey-lighten-3-text, .grey-lighten-3-text {
+	color: 	@greyLighten3 !important;
+
+	&:active {
+		color: 	 darken(@greyLighten3,3%) !important;
+	}
+}
+
+.md-color.grey-lighten-2-text, .grey-lighten-2-text {
+	color: 	@greyLighten2 !important;
+
+	&:active {
+		color: 	 darken(@greyLighten2,3%) !important;
+	}
+}
+
+.md-color.grey-lighten-1-text, .grey-lighten-1-text {
+	color: 	@greyLighten1 !important;
+
+	&:active {
+		color: 	 darken(@greyLighten1,3%) !important;
+	}
+}
+
+.md-color.grey-text, .grey-text {
+	color: 	@greyBase !important;
+
+	&:active {
+		color: 	 darken(@greyBase,3%) !important;
+	}
+}
+
+.md-color.grey-darken-1-text, .grey-darken-1-text {
+	color: 	@greyDarken1 !important;
+
+	&:active {
+		color: 	 darken(@greyDarken1,3%) !important;
+	}
+}
+
+.md-color.grey-darken-2-text, .grey-darken-2-text {
+	color: 	@greyDarken2 !important;
+
+	&:active {
+		color: 	 darken(@greyDarken2,3%) !important;
+	}
+}
+
+.md-color.grey-darken-3-text, .grey-darken-3-text {
+	color: 	@greyDarken3 !important;
+
+	&:active {
+		color: 	 darken(@greyDarken3,3%) !important;
+	}
+}
+
+.md-color.grey-darken-4-text, .grey-darken-4-text {
+	color: 	@greyDarken4 !important;
+
+	&:active {
+		color: 	 darken(@greyDarken4,3%) !important;
+	}
+}
+
+.md-color.black-text, .black-text {
+	color: 	@blackBase !important;
+
+	&:active {
+		color: 	 darken(@blackBase,3%) !important;
+	}
+}
+
+.md-color.white-text, .white-text {
+	color: 	@whiteBase !important;
+
+	&:active {
+		color: 	 darken(@whiteBase,3%) !important;
+	}
+}

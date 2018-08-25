@@ -63,14 +63,26 @@
     color: @navbarText;
     text-shadow: none;
   }
+  .navbar-blue .nav-collapse .nav .nav-header {
+    color: @navbarBlueText;
+  }  
   // Nav and dropdown links in navbar
   .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a {
     padding: 9px 15px;
-    font-weight: bold;
+    font-weight: normal;
     color: @navbarLinkColor;
     .border-radius(3px);
   }
+  .navbar-blue .nav-collapse .nav > li > a,
+  .navbar-blue .nav-collapse .dropdown-menu a {
+    color: @navbarBlueLinkColor;
+  }
+  .navbar-blue-inverse .nav-collapse .nav > li > a,
+  .navbar-blue-inverse .nav-collapse .dropdown-menu a {
+    color: @navbarBlueInverseLinkColor;
+  }
+  
   // Buttons
   .nav-collapse .btn {
     padding: 4px 10px 4px;
@@ -86,16 +98,33 @@
   .nav-collapse .dropdown-menu a:focus {
     background-color: @navbarBackground;
   }
+  .navbar-blue .nav-collapse .nav > li > a:hover,
+  .navbar-blue .nav-collapse .nav > li > a:focus,
+  .navbar-blue .nav-collapse .dropdown-menu a:hover,
+  .navbar-blue .nav-collapse .dropdown-menu a:focus {
+    background-color: @navbarBlueBackground;
+  }
   .navbar-inverse .nav-collapse .nav > li > a,
   .navbar-inverse .nav-collapse .dropdown-menu a {
     color: @navbarInverseLinkColor;
+  }
+  .navbar-blue .navbar-inverse .nav-collapse .nav > li > a,
+  .navbar-blue .navbar-inverse .nav-collapse .dropdown-menu a {
+    color: @navbarBlueInverseLinkColor;
   }
   .navbar-inverse .nav-collapse .nav > li > a:hover,
   .navbar-inverse .nav-collapse .nav > li > a:focus,
   .navbar-inverse .nav-collapse .dropdown-menu a:hover,
   .navbar-inverse .nav-collapse .dropdown-menu a:focus {
     background-color: @navbarInverseBackground;
+  }  
+  .navbar-blue-inverse .nav-collapse .nav > li > a:hover,
+  .navbar-blue-inverse .nav-collapse .nav > li > a:focus,
+  .navbar-blue-inverse .nav-collapse .dropdown-menu a:hover,
+  .navbar-blue-inverse .nav-collapse .dropdown-menu a:focus {
+    background-color: @navbarBlueInverseBackground;
   }
+  
   // Buttons in the navbar
   .nav-collapse.in .btn-group {
     margin-top: 5px;

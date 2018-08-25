@@ -56,11 +56,11 @@
 // Brand colors from Lumen Theme
 // -------------------------
 @brand-primary:         #158CBA;
+@brand-secondary:		#7b4795;
 @brand-success:         #28B62C;
 @brand-info:            #75CAEB;
 @brand-warning:         #FF851B;
 @brand-error:           #FF4136;
-
 
 // Scaffolding
 // -------------------------
@@ -82,9 +82,9 @@
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Source Sans Pro", "Liberation Sans", "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
-@serifFontFamily:       "Source Serif Pro", "Liberation Serif", Georgia, "Times New Roman", Times, serif;
-@monoFontFamily:        "Source Mono Pro", "Liberation Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
+@sansFontFamily:        "Helvetica Neue", Helvetica, "Liberation Sans", Verdana, Arial, sans-serif;
+@serifFontFamily:       Georgia, "Liberation Serif", "Times New Roman", Times, serif;
+@monoFontFamily:        Monaco, Menlo, "Liberation Mono", Consolas, "Courier New", monospace;
 
 @baseFontSize:          14px;
 @baseFontFamily:        @sansFontFamily;
@@ -144,6 +144,9 @@
 
 @btnPrimaryBackground:              @brand-primary;
 @btnPrimaryBackgroundHighlight:     darken(@btnPrimaryBackground, 15%);
+
+@btnSecondaryBackground:              @brand-secondary;
+@btnSecondaryBackgroundHighlight:     darken(@btnSecondaryBackground, 15%);
 
 
 //@btnInfoBackground:                 #5bc0de;
@@ -310,6 +313,42 @@
 @navbarInverseSearchPlaceholderColor:    @grayLighter;
 
 @navbarInverseBrandColor:                @navbarInverseLinkColor;
+
+// Navbar Blue
+
+@navbarBlueHeight:                    		 50px;
+@navbarBlueBackgroundHighlight:       		 lighten(@navbarBlueBackground, 8%);
+@navbarBlueBackground:                		 @brand-info; /* @blue; */
+@navbarBlueBorder:                	  		 darken(@navbarBlueBackground, 8%);
+
+@navbarBlueText:                      		 @grayLighter;
+@navbarBlueLinkColor:                 		 @white;
+@navbarBlueLinkColorHover:            		 @white;
+@navbarBlueLinkColorActive:           		 @navbarBlueLinkColorHover;
+@navbarBlueLinkBackgroundHover:       		 darken(@navbarBlueBackground, 12%);
+@navbarBlueLinkBackgroundActive:      		 darken(@navbarBlueBackground, 12%);
+
+@navbarBlueBrandColor:               		 @navbarBlueLinkColor;
+
+// Inverted navbar
+@navbarBlueInverseBackground:                @brand-primary; /* @blueDark; */
+@navbarBlueInverseBackgroundHighlight:       lighten(@navbarBlueInverseBackground, 5%);
+@navbarBlueInverseBorder:                    darken(@navbarBlueInverseBackground, 3%);
+
+@navbarBlueInverseText:                      @white;
+@navbarBlueInverseLinkColor:                 @white;
+@navbarBlueInverseLinkColorHover:            @white;
+@navbarBlueInverseLinkColorActive:           @white;
+@navbarBlueInverseLinkBackgroundHover:       darken(@navbarBlueInverseBackground, 6%);
+@navbarBlueInverseLinkBackgroundActive:      darken(@navbarBlueInverseBackground, 6%);
+
+@navbarBlueInverseSearchBackground:          @white;
+@navbarBlueInverseSearchBackgroundFocus:     @white;
+@navbarBlueInverseSearchBorder:              @navbarBlueInverseBackground;
+@navbarBlueInverseSearchPlaceholderColor:    @grayLight;
+
+@navbarBlueInverseBrandColor:                @navbarBlueInverseLinkColor;
+
 
 
 // Pagination

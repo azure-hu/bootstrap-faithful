@@ -56,9 +56,11 @@
   font-weight: 200;
   color: @navbarBrandColor;
   text-shadow: 0 1px 0 @navbarBackgroundHighlight;
+  .transition(color ease-in-out .2s);
   &:hover,
   &:focus {
     text-decoration: none;
+	.transition(color ease-in-out .2s);
   }
 }
 
@@ -243,10 +245,12 @@
 .navbar .nav > li > a {
   float: none;
   // Vertically center the text given @navbarHeight
-  padding: ((@navbarHeight - @baseLineHeight) / 2) 15px ((@navbarHeight - @baseLineHeight) / 2);
+  // padding: ((@navbarHeight - @baseLineHeight) / 2) 15px ((@navbarHeight - @baseLineHeight) / 2);
+  padding: 11px 10px 8px;
   color: @navbarLinkColor;
   text-decoration: none;
   text-shadow: 0 1px 0 @navbarBackgroundHighlight;
+  .transition(color ease-in-out .2s);
 }
 .navbar .nav .dropdown-toggle .caret {
   margin-top: 8px;
@@ -259,6 +263,7 @@
   #gradient.vertical(darken(@navbarBackgroundHighlight, 5%), darken(@navbarBackground, 5%));
   color: @navbarLinkColorHover;
   text-decoration: none;
+  .transition(color ease-in-out .2s);
 }
 
 // Active nav items
@@ -402,19 +407,17 @@
   .nav > li > a {
     color: @navbarInverseLinkColor;
     text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+	.transition(color ease-in-out .2s);
     &:hover,
     &:focus {
       color: @navbarInverseLinkColorHover;
       #gradient.vertical(darken(@navbarInverseBackgroundHighlight, 5%), darken(@navbarInverseBackground, 5%));
+	  .transition(color ease-in-out .2s);
     }
   }
 
   .brand {
     color: @navbarInverseBrandColor;
-  }
-
-  .brand-inverse {  
-  #gradient.vertical(@btnInfoBackground, @btnInfoBackgroundHighlight);
   }
 
   .navbar-text {
@@ -502,3 +505,307 @@
   }
 
 }
+
+
+// NAVBAR Blue
+
+.navbar-blue {
+	
+	.navbar-inner {
+		#gradient > .vertical(@navbarBlueBackgroundHighlight, @navbarBlueBackground);
+		border: 1px solid @navbarBlueBorder;
+	}
+
+	.brand {
+		/* padding: 14px 20px 16px; */
+		/* font-family: @headingsFontFamily; */
+		text-shadow: 0 1px 0 @navbarBlueBackgroundHighlight;		
+		color: @navbarBlueBrandColor;	
+		
+		&:hover,
+		&:focus {
+			color: @gray;
+		}		
+	}
+
+	li {
+		line-height: 20px;
+	}
+
+	.nav > li > a {
+		color: @navbarBlueLinkColor;
+		//padding: 16px 10px 14px;
+		padding: 11px 10px 8px;
+		font-family: @headingsFontFamily;
+		text-shadow: 0 1px 0 @navbarBlueInverseBackgroundHighlight;
+	}
+		
+	.nav > li > a:focus,
+	.nav > li > a:hover {
+		#gradient.vertical(darken(@navbarBlueBackgroundHighlight, 5%), darken(@navbarBlueBackground, 5%));
+		color: @navbarBlueLinkColorHover;
+	}
+
+	.nav > .active > a,
+	.nav > .active > a:hover,
+	.nav > .active > a:focus {
+		color: @navbarBlueLinkColorActive;
+		background-color: @navbarBlueLinkBackgroundActive;
+	}
+
+	.btn-navbar {
+		.buttonBackground(darken(@navbarBlueBackgroundHighlight, 5%), darken(@navbarBlueBackground, 5%));
+	}
+	
+	.search-query {
+		border: 1px solid darken(@linkColor, 10%);
+		line-height: normal;
+	}
+
+	.navbar-text {
+		/* padding: 19px 10px 18px; */
+		/* line-height: 13px; */
+		padding: 11px 10px 8px;
+		line-height: inherit;
+		color: @navbarBlueText;
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+	}
+
+	.navbar-link {
+		color: @navbarBlueLinkColor;
+		&:hover,
+		&:focus {
+		color: @navbarBlueLinkColorHover;
+	  }
+	}
+	  
+	.divider-vertical {
+		height: @navbarHeight;
+		margin: 0 9px;
+		border-left: 1px solid @navbarBlueBackground;
+		border-right: 1px solid @navbarBlueBackgroundHighlight;
+	}
+
+	.nav li.dropdown > a:hover .caret,
+	.nav li.dropdown > a:focus .caret {
+		border-top-color: @navbarBlueLinkColorHover;
+		border-bottom-color: @navbarBlueLinkColorHover;
+	}
+	
+	.nav li.dropdown.open > .dropdown-toggle,
+	.nav li.dropdown.active > .dropdown-toggle,
+	.nav li.dropdown.open.active > .dropdown-toggle {
+		background-color: @navbarBlueLinkBackgroundActive;
+		color: @navbarBlueLinkColorActive;
+	}
+	
+	.nav li.dropdown > .dropdown-toggle .caret {
+		border-top-color: @navbarBlueLinkColor;
+		border-bottom-color: @navbarBlueLinkColor;
+	}
+	
+	.nav li.dropdown.open > .dropdown-toggle .caret,
+	.nav li.dropdown.active > .dropdown-toggle .caret,
+	.nav li.dropdown.open.active > .dropdown-toggle .caret {
+		border-top-color: @navbarBlueLinkColorActive;
+		border-bottom-color: @navbarBlueLinkColorActive;
+	}
+	
+	
+	&-inverse {
+
+		.navbar-search .search-query {
+			color: @textColor;
+		}
+		
+		.nav > li > a {
+			color: @navbarBlueInverseLinkColor;
+			//padding: 16px 10px 14px;
+			padding: 11px 10px 8px;
+			font-family: @headingsFontFamily;
+			text-shadow: 0 1px 0 darken(@navbarBlueInverseBackgroundHighlight, 5%);
+		}
+		
+		.nav > li > a:focus,
+		.nav > li > a:hover {
+			#gradient.vertical(darken(@navbarBlueInverseBackgroundHighlight, 5%), darken(@navbarBlueInverseBackground, 5%));
+			color: @navbarBlueInverseLinkColorHover;
+		}
+		
+		.nav li.dropdown.open > .dropdown-toggle,
+		.nav li.dropdown.active > .dropdown-toggle,
+		.nav li.dropdown.open.active > .dropdown-toggle {
+			background-color: @navbarBlueInverseLinkBackgroundActive;
+			color: @navbarBlueInverseLinkColor;
+		}
+	}
+}
+
+@media (max-width: @navbarCollapseWidth) {
+
+	.navbar-blue .nav-collapse {
+
+		.nav li > a {
+
+			font-family: @headingsFontFamily;
+			font-weight: normal;
+			color: @white;
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+
+			&:hover {
+				background-color: #2B7CAC;
+			}
+		}
+
+		.nav .active > a {
+			.box-shadow(none);
+			background-color: #2B7CAC;
+		}
+
+		.dropdown-menu li > a:hover,
+		.dropdown-menu li > a:focus,
+		.dropdown-submenu:hover > a {
+			background-image: none;
+		}
+
+		.navbar-form,
+		.navbar-search {
+			border: none;
+		}
+
+		.nav-header {
+			color: #2B7CAC;
+		}
+	}
+
+	.navbar-blue .navbar-blue-inverse .nav-collapse {
+
+		.nav li > a {
+			color: @navbarInverseLinkColor;
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.1);
+			}
+		}
+
+		.nav .active > a,
+		.nav > li > a:hover,
+		.dropdown-menu a:hover {
+			background-color: rgba(0, 0, 0, 0.1) !important;
+		}
+	}
+}
+
+.navbar-blue-inverse {
+
+  .navbar-inner {
+    #gradient > .vertical(@navbarBlueInverseBackgroundHighlight, @navbarBlueInverseBackground);
+    border-color: @navbarBlueInverseBorder;
+  }
+
+  .brand,
+  .nav > li > a {
+    color: @navbarBlueInverseLinkColor;
+    &:hover,
+    &:focus {
+      color: @navbarBlueInverseLinkColorHover;
+      #gradient.vertical(darken(@navbarBlueInverseBackgroundHighlight, 5%), darken(@navbarBlueInverseBackground, 5%));
+    }
+  }
+
+  .brand {
+    color: @navbarBlueInverseBrandColor;
+  }
+  
+  .navbar-text {
+    color: @navbarBlueInverseText;
+  }
+
+  .nav > li > a:focus,
+  .nav > li > a:hover {
+    background-color: @navbarBlueInverseLinkBackgroundHover;
+    color: @navbarBlueInverseLinkColorHover;
+  }
+
+  .nav .active > a,
+  .nav .active > a:hover,
+  .nav .active > a:focus {
+    color: @navbarBlueInverseLinkColorActive;
+    background-color: @navbarBlueInverseLinkBackgroundActive;
+  }
+
+  // Inline text links
+  .navbar-link {
+    color: @navbarBlueInverseLinkColor;
+    &:hover,
+    &:focus {
+      color: @navbarBlueInverseLinkColorHover;
+    }
+  }
+
+  // Dividers in navbar
+  .divider-vertical {
+    border-left-color: @navbarBlueInverseBackground;
+    border-right-color: @navbarBlueInverseBackgroundHighlight;
+  }
+
+  // Dropdowns
+  .nav li.dropdown.open > .dropdown-toggle,
+  .nav li.dropdown.active > .dropdown-toggle,
+  .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: @navbarBlueInverseLinkBackgroundActive;
+    color: @navbarBlueInverseLinkColorActive;
+  }
+  .nav li.dropdown > a:hover .caret,
+  .nav li.dropdown > a:focus .caret {
+    border-top-color: @navbarBlueInverseLinkColorActive;
+    border-bottom-color: @navbarBlueInverseLinkColorActive;
+  }
+  .nav li.dropdown > .dropdown-toggle .caret {
+    border-top-color: @navbarBlueInverseLinkColor;
+    border-bottom-color: @navbarBlueInverseLinkColor;
+  }
+  .nav li.dropdown.open > .dropdown-toggle .caret,
+  .nav li.dropdown.active > .dropdown-toggle .caret,
+  .nav li.dropdown.open.active > .dropdown-toggle .caret {
+    border-top-color: @navbarBlueInverseLinkColorActive;
+    border-bottom-color: @navbarBlueInverseLinkColorActive;
+  }
+
+  // Navbar search
+  .navbar-search {
+    .search-query {
+      color: @white;
+      background-color: @navbarBlueInverseSearchBackground;
+      border-color: @navbarBlueInverseSearchBorder;
+      .placeholder(@navbarBlueInverseSearchPlaceholderColor);
+
+      // Focus states (we use .focused since IE7-8 and down doesn't support :focus)
+      &:focus,
+      &.focused {
+        background-color: @navbarBlueInverseSearchBackgroundFocus;
+      }
+    }
+  }
+
+  // Navbar collapse button
+  .btn-navbar {
+    .buttonBackground(darken(@navbarBlueInverseBackgroundHighlight, 5%), darken(@navbarBlueInverseBackground, 5%));
+  }
+
+}
+
+
+
+
+/*
+div.subnav {
+
+	font-family: @headingsFontFamily;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+
+	&-fixed {
+		top: @navbarHeight + 1;
+	}
+}
+*/

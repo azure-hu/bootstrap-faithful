@@ -1,0 +1,2169 @@
+/*!
+ * Material Design for Bootstrap 4
+ * Version: MDB Free 4.5.8
+ *
+ *
+ * Copyright: Material Design for Bootstrap
+ * https://mdbootstrap.com/
+ *
+ * Read the license: https://mdbootstrap.com/license/
+ */
+ 
+/*!
+ * Colors from MDBoostrap4 cloned to use with Bootstrap 2.3.2
+ * customized Boostwatch 2.3.2 theme, named "Faithful"
+ * Made for use colored elements and texts by @Azure_hu (github.com/zoi)
+ */
+
+@import "variables.less";
+@import "mixins.less";
+@import "mdc-variables.less";
+
+/* material base */
+.md-color.mdb-color-lighten-5, .mdb-color-lighten-5 {
+	background-color:	@mdbColorLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@mdbColorLighten5,3%) !important;
+	}
+}
+
+.md-color.mdb-color-lighten-4, .mdb-color-lighten-4 {
+	background-color:	@mdbColorLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@mdbColorLighten4,3%) !important;
+	}
+}
+
+.md-color.mdb-color-lighten-3, .mdb-color-lighten-3 {
+	background-color:	@mdbColorLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@mdbColorLighten3,3%) !important;
+	}
+}
+
+.md-color.mdb-color-lighten-2, .mdb-color-lighten-2 {
+	background-color:	@mdbColorLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@mdbColorLighten2,3%) !important;
+	}
+}
+
+.md-color.mdb-color-lighten-1, .mdb-color-lighten-1 {
+	background-color:	@mdbColorLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@mdbColorLighten1,3%) !important;
+	}
+}
+
+.md-color.mdb-color, .mdb-color {
+	background-color:	@mdbColorBase !important;
+
+	&:active {
+		background-color:	 darken(@mdbColorBase,3%) !important;
+	}
+}
+
+.md-color.mdb-color-darken-1, .mdb-color-darken-1 {
+	background-color:	@mdbColorDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@mdbColorDarken1,3%) !important;
+	}
+}
+
+.md-color.mdb-color-darken-2, .mdb-color-darken-2 {
+	background-color:	@mdbColorDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@mdbColorDarken2,3%) !important;
+	}
+}
+
+.md-color.mdb-color-darken-3, .mdb-color-darken-3 {
+	background-color:	@mdbColorDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@mdbColorDarken3,3%) !important;
+	}
+}
+
+.md-color.mdb-color-darken-4, .mdb-color-darken-4 {
+	background-color:	@mdbColorDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@mdbColorDarken4,3%) !important;
+	}
+}
+
+/* red */
+.md-color.red-lighten-5, .red-lighten-5 {
+	background-color:	@redLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@redLighten5,3%) !important;
+	}
+}
+
+.md-color.red-lighten-4, .red-lighten-4 {
+	background-color:	@redLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@redLighten4,3%) !important;
+	}
+}
+
+.md-color.red-lighten-3, .red-lighten-3 {
+	background-color:	@redLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@redLighten3,3%) !important;
+	}
+}
+
+.md-color.red-lighten-2, .red-lighten-2 {
+	background-color:	@redLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@redLighten2,3%) !important;
+	}
+}
+
+.md-color.red-lighten-1, .red-lighten-1 {
+	background-color:	@redLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@redLighten1,3%) !important;
+	}
+}
+
+.md-color.red, .red {
+	background-color:	@redBase !important;
+
+	&:active {
+		background-color:	 darken(@redBase,3%) !important;
+	}
+}
+
+.md-color.red-darken-1, .red-darken-1 {
+	background-color:	@redDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@redDarken1,3%) !important;
+	}
+}
+
+.md-color.red-darken-2, .red-darken-2 {
+	background-color:	@redDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@redDarken2,3%) !important;
+	}
+}
+
+.md-color.red-darken-3, .red-darken-3 {
+	background-color:	@redDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@redDarken3,3%) !important;
+	}
+}
+
+.md-color.red-darken-4, .red-darken-4 {
+	background-color:	@redDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@redDarken4,3%) !important;
+	}
+}
+
+.md-color.red-accent-1, .red-accent-1 {
+	background-color:	@redAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@redAccent1,3%) !important;
+	}
+}
+
+.md-color.red-accent-2, .red-accent-2 {
+	background-color:	@redAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@redAccent2,3%) !important;
+	}
+}
+
+.md-color.red-accent-3, .red-accent-3 {
+	background-color:	@redAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@redAccent3,3%) !important;
+	}
+}
+
+.md-color.red-accent-4, .red-accent-4 {
+	background-color:	@redAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@redAccent4,3%) !important;
+	}
+}
+
+/* pink */
+.md-color.pink-lighten-5, .pink-lighten-5 {
+	background-color:	@pinkLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@pinkLighten5,3%) !important;
+	}
+}
+
+.md-color.pink-lighten-4, .pink-lighten-4 {
+	background-color:	@pinkLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@pinkLighten4,3%) !important;
+	}
+}
+
+.md-color.pink-lighten-3, .pink-lighten-3 {
+	background-color:	@pinkLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@pinkLighten3,3%) !important;
+	}
+}
+
+.md-color.pink-lighten-2, .pink-lighten-2 {
+	background-color:	@pinkLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@pinkLighten2,3%) !important;
+	}
+}
+
+.md-color.pink-lighten-1, .pink-lighten-1 {
+	background-color:	@pinkLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@pinkLighten1,3%) !important;
+	}
+}
+
+.md-color.pink, .pink {
+	background-color:	@pinkBase !important;
+
+	&:active {
+		background-color:	 darken(@pinkBase,3%) !important;
+	}
+}
+
+.md-color.pink-darken-1, .pink-darken-1 {
+	background-color:	@pinkDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@pinkDarken1,3%) !important;
+	}
+}
+
+.md-color.pink-darken-2, .pink-darken-2 {
+	background-color:	@pinkDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@pinkDarken2,3%) !important;
+	}
+}
+
+.md-color.pink-darken-3, .pink-darken-3 {
+	background-color:	@pinkDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@pinkDarken3,3%) !important;
+	}
+}
+
+.md-color.pink-darken-4, .pink-darken-4 {
+	background-color:	@pinkDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@pinkDarken4,3%) !important;
+	}
+}
+
+.md-color.pink-accent-1, .pink-accent-1 {
+	background-color:	@pinkAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@pinkAccent1,3%) !important;
+	}
+}
+
+.md-color.pink-accent-2, .pink-accent-2 {
+	background-color:	@pinkAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@pinkAccent2,3%) !important;
+	}
+}
+
+.md-color.pink-accent-3, .pink-accent-3 {
+	background-color:	@pinkAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@pinkAccent3,3%) !important;
+	}
+}
+
+.md-color.pink-accent-4, .pink-accent-4 {
+	background-color:	@pinkAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@pinkAccent4,3%) !important;
+	}
+}
+
+/* purple */
+.md-color.purple-lighten-5, .purple-lighten-5 {
+	background-color:	@purpleLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@purpleLighten5,3%) !important;
+	}
+}
+
+.md-color.purple-lighten-4, .purple-lighten-4 {
+	background-color:	@purpleLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@purpleLighten4,3%) !important;
+	}
+}
+
+.md-color.purple-lighten-3, .purple-lighten-3 {
+	background-color:	@purpleLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@purpleLighten3,3%) !important;
+	}
+}
+
+.md-color.purple-lighten-2, .purple-lighten-2 {
+	background-color:	@purpleLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@purpleLighten2,3%) !important;
+	}
+}
+
+.md-color.purple-lighten-1, .purple-lighten-1 {
+	background-color:	@purpleLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@purpleLighten1,3%) !important;
+	}
+}
+
+.md-color.purple, .purple {
+	background-color:	@purpleBase !important;
+
+	&:active {
+		background-color:	 darken(@purpleBase,3%) !important;
+	}
+}
+
+.md-color.purple-darken-1, .purple-darken-1 {
+	background-color:	@purpleDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@purpleDarken1,3%) !important;
+	}
+}
+
+.md-color.purple-darken-2, .purple-darken-2 {
+	background-color:	@purpleDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@purpleDarken2,3%) !important;
+	}
+}
+
+.md-color.purple-darken-3, .purple-darken-3 {
+	background-color:	@purpleDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@purpleDarken3,3%) !important;
+	}
+}
+
+.md-color.purple-darken-4, .purple-darken-4 {
+	background-color:	@purpleDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@purpleDarken4,3%) !important;
+	}
+}
+
+.md-color.purple-accent-1, .purple-accent-1 {
+	background-color:	@purpleAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@purpleAccent1,3%) !important;
+	}
+}
+
+.md-color.purple-accent-2, .purple-accent-2 {
+	background-color:	@purpleAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@purpleAccent2,3%) !important;
+	}
+}
+
+.md-color.purple-accent-3, .purple-accent-3 {
+	background-color:	@purpleAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@purpleAccent3,3%) !important;
+	}
+}
+
+.md-color.purple-accent-4, .purple-accent-4 {
+	background-color:	@purpleAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@purpleAccent4,3%) !important;
+	}
+}
+
+/* deep-purple*/
+.md-color.deep-purple-lighten-5, .deep-purple-lighten-5 {
+	background-color:	@deepPurpleLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@deepPurpleLighten5,3%) !important;
+	}
+}
+
+.md-color.deep-purple-lighten-4, .deep-purple-lighten-4 {
+	background-color:	@deepPurpleLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@deepPurpleLighten4,3%) !important;
+	}
+}
+
+.md-color.deep-purple-lighten-3, .deep-purple-lighten-3 {
+	background-color:	@deepPurpleLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@deepPurpleLighten3,3%) !important;
+	}
+}
+
+.md-color.deep-purple-lighten-2, .deep-purple-lighten-2 {
+	background-color:	@deepPurpleLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@deepPurpleLighten2,3%) !important;
+	}
+}
+
+.md-color.deep-purple-lighten-1, .deep-purple-lighten-1 {
+	background-color:	@deepPurpleLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@deepPurpleLighten1,3%) !important;
+	}
+}
+
+.md-color.deep-purple, .deep-purple {
+	background-color:	@deepPurpleBase !important;
+
+	&:active {
+		background-color:	 darken(@deepPurpleBase,3%) !important;
+	}
+}
+
+.md-color.deep-purple-darken-1, .deep-purple-darken-1 {
+	background-color:	@deepPurpleDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@deepPurpleDarken1,3%) !important;
+	}
+}
+
+.md-color.deep-purple-darken-2, .deep-purple-darken-2 {
+	background-color:	@deepPurpleDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@deepPurpleDarken2,3%) !important;
+	}
+}
+
+.md-color.deep-purple-darken-3, .deep-purple-darken-3 {
+	background-color:	@deepPurpleDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@deepPurpleDarken3,3%) !important;
+	}
+}
+
+.md-color.deep-purple-darken-4, .deep-purple-darken-4 {
+	background-color:	@deepPurpleDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@deepPurpleDarken4,3%) !important;
+	}
+}
+
+.md-color.deep-purple-accent-1, .deep-purple-accent-1 {
+	background-color:	@deepPurpleAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@deepPurpleAccent1,3%) !important;
+	}
+}
+
+.md-color.deep-purple-accent-2, .deep-purple-accent-2 {
+	background-color:	@deepPurpleAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@deepPurpleAccent2,3%) !important;
+	}
+}
+
+.md-color.deep-purple-accent-3, .deep-purple-accent-3 {
+	background-color:	@deepPurpleAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@deepPurpleAccent3,3%) !important;
+	}
+}
+
+.md-color.deep-purple-accent-4, .deep-purple-accent-4 {
+	background-color:	@deepPurpleAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@deepPurpleAccent4,3%) !important;
+	}
+}
+
+/* indigo */
+.md-color.indigo-lighten-5, .indigo-lighten-5 {
+	background-color:	@indigoLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@indigoLighten5,3%) !important;
+	}
+}
+
+.md-color.indigo-lighten-4, .indigo-lighten-4 {
+	background-color:	@indigoLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@indigoLighten4,3%) !important;
+	}
+}
+
+.md-color.indigo-lighten-3, .indigo-lighten-3 {
+	background-color:	@indigoLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@indigoLighten3,3%) !important;
+	}
+}
+
+.md-color.indigo-lighten-2, .indigo-lighten-2 {
+	background-color:	@indigoLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@indigoLighten2,3%) !important;
+	}
+}
+
+.md-color.indigo-lighten-1, .indigo-lighten-1 {
+	background-color:	@indigoLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@indigoLighten1,3%) !important;
+	}
+}
+
+.md-color.indigo, .indigo {
+	background-color:	@indigoBase !important;
+
+	&:active {
+		background-color:	 darken(@indigoBase,3%) !important;
+	}
+}
+
+.md-color.indigo-darken-1, .indigo-darken-1 {
+	background-color:	@indigoDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@indigoDarken1,3%) !important;
+	}
+}
+
+.md-color.indigo-darken-2, .indigo-darken-2 {
+	background-color:	@indigoDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@indigoDarken2,3%) !important;
+	}
+}
+
+.md-color.indigo-darken-3, .indigo-darken-3 {
+	background-color:	@indigoDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@indigoDarken3,3%) !important;
+	}
+}
+
+.md-color.indigo-darken-4, .indigo-darken-4 {
+	background-color:	@indigoDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@indigoDarken4,3%) !important;
+	}
+}
+
+.md-color.indigo-accent-1, .indigo-accent-1 {
+	background-color:	@indigoAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@indigoAccent1,3%) !important;
+	}
+}
+
+.md-color.indigo-accent-2, .indigo-accent-2 {
+	background-color:	@indigoAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@indigoAccent2,3%) !important;
+	}
+}
+
+.md-color.indigo-accent-3, .indigo-accent-3 {
+	background-color:	@indigoAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@indigoAccent3,3%) !important;
+	}
+}
+
+.md-color.indigo-accent-4, .indigo-accent-4 {
+	background-color:	@indigoAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@indigoAccent4,3%) !important;
+	}
+}
+
+/* blue */
+.md-color.blue-lighten-5, .blue-lighten-5 {
+	background-color:	@blueLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@blueLighten5,3%) !important;
+	}
+}
+
+.md-color.blue-lighten-4, .blue-lighten-4 {
+	background-color:	@blueLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@blueLighten4,3%) !important;
+	}
+}
+
+.md-color.blue-lighten-3, .blue-lighten-3 {
+	background-color:	@blueLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@blueLighten3,3%) !important;
+	}
+}
+
+.md-color.blue-lighten-2, .blue-lighten-2 {
+	background-color:	@blueLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@blueLighten2,3%) !important;
+	}
+}
+
+.md-color.blue-lighten-1, .blue-lighten-1 {
+	background-color:	@blueLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@blueLighten1,3%) !important;
+	}
+}
+
+.md-color.blue, .blue {
+	background-color:	@blueBase !important;
+
+	&:active {
+		background-color:	 darken(@blueBase,3%) !important;
+	}
+}
+
+.md-color.blue-darken-1, .blue-darken-1 {
+	background-color:	@blueDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@blueDarken1,3%) !important;
+	}
+}
+
+.md-color.blue-darken-2, .blue-darken-2 {
+	background-color:	@blueDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@blueDarken2,3%) !important;
+	}
+}
+
+.md-color.blue-darken-3, .blue-darken-3 {
+	background-color:	@blueDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@blueDarken3,3%) !important;
+	}
+}
+
+.md-color.blue-darken-4, .blue-darken-4 {
+	background-color:	@blueDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@blueDarken4,3%) !important;
+	}
+}
+
+.md-color.blue-accent-1, .blue-accent-1 {
+	background-color:	@blueAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@blueAccent1,3%) !important;
+	}
+}
+
+.md-color.blue-accent-2, .blue-accent-2 {
+	background-color:	@blueAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@blueAccent2,3%) !important;
+	}
+}
+
+.md-color.blue-accent-3, .blue-accent-3 {
+	background-color:	@blueAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@blueAccent3,3%) !important;
+	}
+}
+
+.md-color.blue-accent-4, .blue-accent-4 {
+	background-color:	@blueAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@blueAccent4,3%) !important;
+	}
+}
+
+/* light-blue */
+.md-color.light-blue-lighten-5, .light-blue-lighten-5 {
+	background-color:	@lightBlueLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@lightBlueLighten5,3%) !important;
+	}
+}
+
+.md-color.light-blue-lighten-4, .light-blue-lighten-4 {
+	background-color:	@lightBlueLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@lightBlueLighten4,3%) !important;
+	}
+}
+
+/* match @lightBlueLighten4 */
+.md-color.light-blue-lighten-3, .light-blue-lighten-3 {
+	background-color:	@lightBlueLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@lightBlueLighten3,3%) !important;
+	}
+}
+
+.md-color.light-blue-lighten-2, .light-blue-lighten-2 {
+	background-color:	@lightBlueLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@lightBlueLighten2,3%) !important;
+	}
+}
+
+.md-color.light-blue-lighten-1, .light-blue-lighten-1 {
+	background-color:	@lightBlueLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@lightBlueLighten1,3%) !important;
+	}
+}
+
+.md-color.light-blue, .light-blue {
+	background-color:	@lightBlueBase !important;
+
+	&:active {
+		background-color:	 darken(@lightBlueBase,3%) !important;
+	}
+}
+
+.md-color.light-blue-darken-1, .light-blue-darken-1 {
+	background-color:	@lightBlueDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@lightBlueDarken1,3%) !important;
+	}
+}
+
+.md-color.light-blue-darken-2, .light-blue-darken-2 {
+	background-color:	@lightBlueDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@lightBlueDarken2,3%) !important;
+	}
+}
+
+.md-color.light-blue-darken-3, .light-blue-darken-3 {
+	background-color:	@lightBlueDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@lightBlueDarken3,3%) !important;
+	}
+}
+
+.md-color.light-blue-darken-4, .light-blue-darken-4 {
+	background-color:	@lightBlueDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@lightBlueDarken4,3%) !important;
+	}
+}
+
+.md-color.light-blue-accent-1, .light-blue-accent-1 {
+	background-color:	@lightBlueAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@lightBlueAccent1,3%) !important;
+	}
+}
+
+.md-color.light-blue-accent-2, .light-blue-accent-2 {
+	background-color:	@lightBlueAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@lightBlueAccent2,3%) !important;
+	}
+}
+
+.md-color.light-blue-accent-3, .light-blue-accent-3 {
+	background-color:	@lightBlueAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@lightBlueAccent3,3%) !important;
+	}
+}
+
+.md-color.light-blue-accent-4, .light-blue-accent-4 {
+	background-color:	@lightBlueAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@lightBlueAccent4,3%) !important;
+	}
+}
+
+/* cyan */
+.md-color.cyan-lighten-5, .cyan-lighten-5 {
+	background-color:	@cyanLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@cyanLighten5,3%) !important;
+	}
+}
+
+.md-color.cyan-lighten-4, .cyan-lighten-4 {
+	background-color:	@cyanLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@cyanLighten4,3%) !important;
+	}
+}
+
+.md-color.cyan-lighten-3, .cyan-lighten-3 {
+	background-color:	@cyanLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@cyanLighten3,3%) !important;
+	}
+}
+
+.md-color.cyan-lighten-2, .cyan-lighten-2 {
+	background-color:	@cyanLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@cyanLighten2,3%) !important;
+	}
+}
+
+.md-color.cyan-lighten-1, .cyan-lighten-1 {
+	background-color:	@cyanLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@cyanLighten1,3%) !important;
+	}
+}
+
+.md-color.cyan, .cyan {
+	background-color:	@cyanBase !important;
+
+	&:active {
+		background-color:	 darken(@cyanBase,3%) !important;
+	}
+}
+
+.md-color.cyan-darken-1, .cyan-darken-1 {
+	background-color:	@cyanDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@cyanDarken1,3%) !important;
+	}
+}
+
+.md-color.cyan-darken-2, .cyan-darken-2 {
+	background-color:	@cyanDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@cyanDarken2,3%) !important;
+	}
+}
+
+.md-color.cyan-darken-3, .cyan-darken-3 {
+	background-color:	@cyanDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@cyanDarken3,3%) !important;
+	}
+}
+
+.md-color.cyan-darken-4, .cyan-darken-4 {
+	background-color:	@cyanDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@cyanDarken4,3%) !important;
+	}
+}
+
+.md-color.cyan-accent-1, .cyan-accent-1 {
+	background-color:	@cyanAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@cyanAccent1,3%) !important;
+	}
+}
+
+.md-color.cyan-accent-2, .cyan-accent-2 {
+	background-color:	@cyanAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@cyanAccent2,3%) !important;
+	}
+}
+
+.md-color.cyan-accent-3, .cyan-accent-3 {
+	background-color:	@cyanAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@cyanAccent3,3%) !important;
+	}
+}
+
+.md-color.cyan-accent-4, .cyan-accent-4 {
+	background-color:	@cyanAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@cyanAccent4,3%) !important;
+	}
+}
+
+/* teal */
+.md-color.teal-lighten-5, .teal-lighten-5 {
+	background-color:	@tealLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@tealLighten5,3%) !important;
+	}
+}
+
+.md-color.teal-lighten-4, .teal-lighten-4 {
+	background-color:	@tealLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@tealLighten4,3%) !important;
+	}
+}
+
+.md-color.teal-lighten-3, .teal-lighten-3 {
+	background-color:	@tealLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@tealLighten3,3%) !important;
+	}
+}
+
+.md-color.teal-lighten-2, .teal-lighten-2 {
+	background-color:	@tealLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@tealLighten2,3%) !important;
+	}
+}
+
+.md-color.teal-lighten-1, .teal-lighten-1 {
+	background-color:	@tealLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@tealLighten1,3%) !important;
+	}
+}
+
+.md-color.teal, .teal {
+	background-color:	@tealBase !important;
+
+	&:active {
+		background-color:	 darken(@tealBase,3%) !important;
+	}
+}
+
+.md-color.teal-darken-1, .teal-darken-1 {
+	background-color:	@tealDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@tealDarken1,3%) !important;
+	}
+}
+
+.md-color.teal-darken-2, .teal-darken-2 {
+	background-color:	@tealDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@tealDarken2,3%) !important;
+	}
+}
+
+.md-color.teal-darken-3, .teal-darken-3 {
+	background-color:	@tealDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@tealDarken3,3%) !important;
+	}
+}
+
+.md-color.teal-darken-4, .teal-darken-4 {
+	background-color:	@tealDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@tealDarken4,3%) !important;
+	}
+}
+
+.md-color.teal-accent-1, .teal-accent-1 {
+	background-color:	@tealAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@tealAccent1,3%) !important;
+	}
+}
+
+.md-color.teal-accent-2, .teal-accent-2 {
+	background-color:	@tealAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@tealAccent2,3%) !important;
+	}
+}
+
+.md-color.teal-accent-3, .teal-accent-3 {
+	background-color:	@tealAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@tealAccent3,3%) !important;
+	}
+}
+
+.md-color.teal-accent-4, .teal-accent-4 {
+	background-color:	@tealAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@tealAccent4,3%) !important;
+	}
+}
+
+/* green */
+.md-color.green-lighten-5, .green-lighten-5 {
+	background-color:	@greenLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@greenLighten5,3%) !important;
+	}
+}
+
+.md-color.green-lighten-4, .green-lighten-4 {
+	background-color:	@greenLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@greenLighten4,3%) !important;
+	}
+}
+
+.md-color.green-lighten-3, .green-lighten-3 {
+	background-color:	@greenLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@greenLighten3,3%) !important;
+	}
+}
+
+.md-color.green-lighten-2, .green-lighten-2 {
+	background-color:	@greenLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@greenLighten2,3%) !important;
+	}
+}
+
+.md-color.green-lighten-1, .green-lighten-1 {
+	background-color:	@greenLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@greenLighten1,3%) !important;
+	}
+}
+
+.md-color.green, .green {
+	background-color:	@greenBase !important;
+
+	&:active {
+		background-color:	 darken(@greenBase,3%) !important;
+	}
+}
+
+.md-color.green-darken-1, .green-darken-1 {
+	background-color:	@greenDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@greenDarken1,3%) !important;
+	}
+}
+
+.md-color.green-darken-2, .green-darken-2 {
+	background-color:	@greenDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@greenDarken2,3%) !important;
+	}
+}
+
+.md-color.green-darken-3, .green-darken-3 {
+	background-color:	@greenDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@greenDarken3,3%) !important;
+	}
+}
+
+.md-color.green-darken-4, .green-darken-4 {
+	background-color:	@greenDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@greenDarken4,3%) !important;
+	}
+}
+
+.md-color.green-accent-1, .green-accent-1 {
+	background-color:	@greenAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@greenAccent1,3%) !important;
+	}
+}
+
+.md-color.green-accent-2, .green-accent-2 {
+	background-color:	@greenAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@greenAccent2,3%) !important;
+	}
+}
+
+.md-color.green-accent-3, .green-accent-3 {
+	background-color:	@greenAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@greenAccent3,3%) !important;
+	}
+}
+
+.md-color.green-accent-4, .green-accent-4 {
+	background-color:	@greenAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@greenAccent4,3%) !important;
+	}
+}
+
+/* light-green */
+.md-color.light-green-lighten-5, .light-green-lighten-5 {
+	background-color:	@lightGreenLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@lightGreenLighten5,3%) !important;
+	}
+}
+
+.md-color.light-green-lighten-4, .light-green-lighten-4 {
+	background-color:	@lightGreenLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@lightGreenLighten4,3%) !important;
+	}
+}
+
+.md-color.light-green-lighten-3, .light-green-lighten-3 {
+	background-color:	@lightGreenLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@lightGreenLighten3,3%) !important;
+	}
+}
+
+.md-color.light-green-lighten-2, .light-green-lighten-2 {
+	background-color:	@lightGreenLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@lightGreenLighten2,3%) !important;
+	}
+}
+
+.md-color.light-green-lighten-1, .light-green-lighten-1 {
+	background-color:	@lightGreenLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@lightGreenLighten1,3%) !important;
+	}
+}
+
+.md-color.light-green, .light-green {
+	background-color:	@lightGreenBase !important;
+
+	&:active {
+		background-color:	 darken(@lightGreenBase,3%) !important;
+	}
+}
+
+.md-color.light-green-darken-1, .light-green-darken-1 {
+	background-color:	@lightGreenDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@lightGreenDarken1,3%) !important;
+	}
+}
+
+.md-color.light-green-darken-2, .light-green-darken-2 {
+	background-color:	@lightGreenDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@lightGreenDarken2,3%) !important;
+	}
+}
+
+.md-color.light-green-darken-3, .light-green-darken-3 {
+	background-color:	@lightGreenDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@lightGreenDarken3,3%) !important;
+	}
+}
+
+.md-color.light-green-darken-4, .light-green-darken-4 {
+	background-color:	@lightGreenDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@lightGreenDarken4,3%) !important;
+	}
+}
+
+.md-color.light-green-accent-1, .light-green-accent-1 {
+	background-color:	@lightGreenAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@lightGreenAccent1,3%) !important;
+	}
+}
+
+.md-color.light-green-accent-2, .light-green-accent-2 {
+	background-color:	@lightGreenAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@lightGreenAccent2,3%) !important;
+	}
+}
+
+.md-color.light-green-accent-3, .light-green-accent-3 {
+	background-color:	@lightGreenAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@lightGreenAccent3,3%) !important;
+	}
+}
+
+.md-color.light-green-accent-4, .light-green-accent-4 {
+	background-color:	@lightGreenAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@lightGreenAccent4,3%) !important;
+	}
+}
+
+/* lime */
+.md-color.lime-lighten-5, .lime-lighten-5 {
+	background-color:	@limeLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@limeLighten5,3%) !important;
+	}
+}
+
+.md-color.lime-lighten-4, .lime-lighten-4 {
+	background-color:	@limeLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@limeLighten4,3%) !important;
+	}
+}
+
+.md-color.lime-lighten-3, .lime-lighten-3 {
+	background-color:	@limeLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@limeLighten3,3%) !important;
+	}
+}
+
+.md-color.lime-lighten-2, .lime-lighten-2 {
+	background-color:	@limeLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@limeLighten2,3%) !important;
+	}
+}
+
+.md-color.lime-lighten-1, .lime-lighten-1 {
+	background-color:	@limeLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@limeLighten1,3%) !important;
+	}
+}
+
+.md-color.lime, .lime {
+	background-color:	@limeBase !important;
+
+	&:active {
+		background-color:	 darken(@limeBase,3%) !important;
+	}
+}
+
+.md-color.lime-darken-1, .lime-darken-1 {
+	background-color:	@limeDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@limeDarken1,3%) !important;
+	}
+}
+
+.md-color.lime-darken-2, .lime-darken-2 {
+	background-color:	@limeDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@limeDarken2,3%) !important;
+	}
+}
+
+.md-color.lime-darken-3, .lime-darken-3 {
+	background-color:	@limeDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@limeDarken3,3%) !important;
+	}
+}
+
+.md-color.lime-darken-4, .lime-darken-4 {
+	background-color:	@limeDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@limeDarken4,3%) !important;
+	}
+}
+
+.md-color.lime-accent-1, .lime-accent-1 {
+	background-color:	@limeAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@limeAccent1,3%) !important;
+	}
+}
+
+.md-color.lime-accent-2, .lime-accent-2 {
+	background-color:	@limeAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@limeAccent2,3%) !important;
+	}
+}
+
+.md-color.lime-accent-3, .lime-accent-3 {
+	background-color:	@limeAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@limeAccent3,3%) !important;
+	}
+}
+
+.md-color.lime-accent-4, .lime-accent-4 {
+	background-color:	@limeAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@limeAccent4,3%) !important;
+	}
+}
+
+/* yellow */
+.md-color.yellow-lighten-5, .yellow-lighten-5 {
+	background-color:	@yellowLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@yellowLighten5,3%) !important;
+	}
+}
+
+.md-color.yellow-lighten-4, .yellow-lighten-4 {
+	background-color:	@yellowLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@yellowLighten4,3%) !important;
+	}
+}
+
+.md-color.yellow-lighten-3, .yellow-lighten-3 {
+	background-color:	@yellowLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@yellowLighten3,3%) !important;
+	}
+}
+
+.md-color.yellow-lighten-2, .yellow-lighten-2 {
+	background-color:	@yellowLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@yellowLighten2,3%) !important;
+	}
+}
+
+.md-color.yellow-lighten-1, .yellow-lighten-1 {
+	background-color:	@yellowLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@yellowLighten1,3%) !important;
+	}
+}
+
+.md-color.yellow, .yellow {
+	background-color:	@yellowBase !important;
+
+	&:active {
+		background-color:	 darken(@yellowBase,3%) !important;
+	}
+}
+
+.md-color.yellow-darken-1, .yellow-darken-1 {
+	background-color:	@yellowDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@yellowDarken1,3%) !important;
+	}
+}
+
+.md-color.yellow-darken-2, .yellow-darken-2 {
+	background-color:	@yellowDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@yellowDarken2,3%) !important;
+	}
+}
+
+.md-color.yellow-darken-3, .yellow-darken-3 {
+	background-color:	@yellowDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@yellowDarken3,3%) !important;
+	}
+}
+
+.md-color.yellow-darken-4, .yellow-darken-4 {
+	background-color:	@yellowDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@yellowDarken4,3%) !important;
+	}
+}
+
+.md-color.yellow-accent-1, .yellow-accent-1 {
+	background-color:	@yellowAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@yellowAccent1,3%) !important;
+	}
+}
+
+.md-color.yellow-accent-2, .yellow-accent-2 {
+	background-color:	@yellowAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@yellowAccent2,3%) !important;
+	}
+}
+
+.md-color.yellow-accent-3, .yellow-accent-3 {
+	background-color:	@yellowAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@yellowAccent3,3%) !important;
+	}
+}
+
+.md-color.yellow-accent-4, .yellow-accent-4 {
+	background-color:	@yellowAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@yellowAccent4,3%) !important;
+	}
+}
+
+/* amber */
+.md-color.amber-lighten-5, .amber-lighten-5 {
+	background-color:	@amberLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@amberLighten5,3%) !important;
+	}
+}
+
+.md-color.amber-lighten-4, .amber-lighten-4 {
+	background-color:	@amberLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@amberLighten4,3%) !important;
+	}
+}
+
+.md-color.amber-lighten-3, .amber-lighten-3 {
+	background-color:	@amberLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@amberLighten3,3%) !important;
+	}
+}
+
+.md-color.amber-lighten-2, .amber-lighten-2 {
+	background-color:	@amberLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@amberLighten2,3%) !important;
+	}
+}
+
+.md-color.amber-lighten-1, .amber-lighten-1 {
+	background-color:	@amberLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@amberLighten1,3%) !important;
+	}
+}
+
+.md-color.amber, .amber {
+	background-color:	@amberBase !important;
+
+	&:active {
+		background-color:	 darken(@amberBase,3%) !important;
+	}
+}
+
+.md-color.amber-darken-1, .amber-darken-1 {
+	background-color:	@amberDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@amberDarken1,3%) !important;
+	}
+}
+
+.md-color.amber-darken-2, .amber-darken-2 {
+	background-color:	@amberDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@amberDarken2,3%) !important;
+	}
+}
+
+.md-color.amber-darken-3, .amber-darken-3 {
+	background-color:	@amberDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@amberDarken3,3%) !important;
+	}
+}
+
+.md-color.amber-darken-4, .amber-darken-4 {
+	background-color:	@amberDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@amberDarken4,3%) !important;
+	}
+}
+
+.md-color.amber-accent-1, .amber-accent-1 {
+	background-color:	@amberAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@amberAccent1,3%) !important;
+	}
+}
+
+.md-color.amber-accent-2, .amber-accent-2 {
+	background-color:	@amberAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@amberAccent2,3%) !important;
+	}
+}
+
+.md-color.amber-accent-3, .amber-accent-3 {
+	background-color:	@amberAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@amberAccent3,3%) !important;
+	}
+}
+
+.md-color.amber-accent-4, .amber-accent-4 {
+	background-color:	@amberAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@amberAccent4,3%) !important;
+	}
+}
+
+/* orange */
+.md-color.orange-lighten-5, .orange-lighten-5 {
+	background-color:	@orangeLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@orangeLighten5,3%) !important;
+	}
+}
+
+.md-color.orange-lighten-4, .orange-lighten-4 {
+	background-color:	@orangeLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@orangeLighten4,3%) !important;
+	}
+}
+
+.md-color.orange-lighten-3, .orange-lighten-3 {
+	background-color:	@orangeLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@orangeLighten3,3%) !important;
+	}
+}
+
+.md-color.orange-lighten-2, .orange-lighten-2 {
+	background-color:	@orangeLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@orangeLighten2,3%) !important;
+	}
+}
+
+.md-color.orange-lighten-1, .orange-lighten-1 {
+	background-color:	@orangeLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@orangeLighten1,3%) !important;
+	}
+}
+
+.md-color.orange, .orange {
+	background-color:	@orangeBase !important;
+
+	&:active {
+		background-color:	 darken(@orangeBase,3%) !important;
+	}
+}
+
+.md-color.orange-darken-1, .orange-darken-1 {
+	background-color:	@orangeDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@orangeDarken1,3%) !important;
+	}
+}
+
+.md-color.orange-darken-2, .orange-darken-2 {
+	background-color:	@orangeDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@orangeDarken2,3%) !important;
+	}
+}
+
+.md-color.orange-darken-3, .orange-darken-3 {
+	background-color:	@orangeDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@orangeDarken3,3%) !important;
+	}
+}
+
+.md-color.orange-darken-4, .orange-darken-4 {
+	background-color:	@orangeDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@orangeDarken4,3%) !important;
+	}
+}
+
+.md-color.orange-accent-1, .orange-accent-1 {
+	background-color:	@orangeAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@orangeAccent1,3%) !important;
+	}
+}
+
+.md-color.orange-accent-2, .orange-accent-2 {
+	background-color:	@orangeAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@orangeAccent2,3%) !important;
+	}
+}
+
+.md-color.orange-accent-3, .orange-accent-3 {
+	background-color:	@orangeAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@orangeAccent3,3%) !important;
+	}
+}
+
+.md-color.orange-accent-4, .orange-accent-4 {
+	background-color:	@orangeAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@orangeAccent4,3%) !important;
+	}
+}
+
+/* deep-orange */
+.md-color.deep-orange-lighten-5, .deep-orange-lighten-5 {
+	background-color:	@deepOrangeLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@deepOrangeLighten5,3%) !important;
+	}
+}
+
+.md-color.deep-orange-lighten-4, .deep-orange-lighten-4 {
+	background-color:	@deepOrangeLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@deepOrangeLighten4,3%) !important;
+	}
+}
+
+.md-color.deep-orange-lighten-3, .deep-orange-lighten-3 {
+	background-color:	@deepOrangeLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@deepOrangeLighten3,3%) !important;
+	}
+}
+
+.md-color.deep-orange-lighten-2, .deep-orange-lighten-2 {
+	background-color:	@deepOrangeLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@deepOrangeLighten2,3%) !important;
+	}
+}
+
+.md-color.deep-orange-lighten-1, .deep-orange-lighten-1 {
+	background-color:	@deepOrangeLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@deepOrangeLighten1,3%) !important;
+	}
+}
+
+.md-color.deep-orange, .deep-orange {
+	background-color:	@deepOrangeBase !important;
+
+	&:active {
+		background-color:	 darken(@deepOrangeBase,3%) !important;
+	}
+}
+
+.md-color.deep-orange-darken-1, .deep-orange-darken-1 {
+	background-color:	@deepOrangeDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@deepOrangeDarken1,3%) !important;
+	}
+}
+
+.md-color.deep-orange-darken-2, .deep-orange-darken-2 {
+	background-color:	@deepOrangeDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@deepOrangeDarken2,3%) !important;
+	}
+}
+
+.md-color.deep-orange-darken-3, .deep-orange-darken-3 {
+	background-color:	@deepOrangeDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@deepOrangeDarken3,3%) !important;
+	}
+}
+
+.md-color.deep-orange-darken-4, .deep-orange-darken-4 {
+	background-color:	@deepOrangeDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@deepOrangeDarken4,3%) !important;
+	}
+}
+
+.md-color.deep-orange-accent-1, .deep-orange-accent-1 {
+	background-color:	@deepOrangeAccent1 !important;
+
+	&:active {
+		background-color:	 darken(@deepOrangeAccent1,3%) !important;
+	}
+}
+
+.md-color.deep-orange-accent-2, .deep-orange-accent-2 {
+	background-color:	@deepOrangeAccent2 !important;
+
+	&:active {
+		background-color:	 darken(@deepOrangeAccent2,3%) !important;
+	}	
+}
+
+.md-color.deep-orange-accent-3, .deep-orange-accent-3 {
+	background-color:	@deepOrangeAccent3 !important;
+
+	&:active {
+		background-color:	 darken(@deepOrangeAccent3,3%) !important;
+	}
+}
+
+.md-color.deep-orange-accent-4, .deep-orange-accent-4 {
+	background-color:	@deepOrangeAccent4 !important;
+
+	&:active {
+		background-color:	 darken(@deepOrangeAccent4,3%) !important;
+	}
+}
+
+/* brown */
+.md-color.brown-lighten-5, .brown-lighten-5 {
+	background-color:	@brownLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@brownLighten5,3%) !important;
+	}
+}
+
+.md-color.brown-lighten-4, .brown-lighten-4 {
+	background-color:	@brownLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@brownLighten4,3%) !important;
+	}
+}
+
+.md-color.brown-lighten-3, .brown-lighten-3 {
+	background-color:	@brownLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@brownLighten3,3%) !important;
+	}
+}
+
+.md-color.brown-lighten-2, .brown-lighten-2 {
+	background-color:	@brownLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@brownLighten2,3%) !important;
+	}
+}
+
+.md-color.brown-lighten-1, .brown-lighten-1 {
+	background-color:	@brownLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@brownLighten1,3%) !important;
+	}
+}
+
+.md-color.brown, .brown {
+	background-color:	@brownBase !important;
+
+	&:active {
+		background-color:	 darken(@brownBase,3%) !important;
+	}
+}
+
+.md-color.brown-darken-1, .brown-darken-1 {
+	background-color:	@brownDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@brownDarken1,3%) !important;
+	}
+}
+
+.md-color.brown-darken-2, .brown-darken-2 {
+	background-color:	@brownDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@brownDarken2,3%) !important;
+	}
+}
+
+.md-color.brown-darken-3, .brown-darken-3 {
+	background-color:	@brownDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@brownDarken3,3%) !important;
+	}
+}
+
+.md-color.brown-darken-4, .brown-darken-4 {
+	background-color:	@brownDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@brownDarken4,3%) !important;
+	}
+}
+
+/* blue-grey */
+.md-color.blue-grey-lighten-5, .blue-grey-lighten-5 {
+	background-color:	@blueGreyLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@blueGreyLighten5,3%) !important;
+	}
+}
+
+.md-color.blue-grey-lighten-4, .blue-grey-lighten-4 {
+	background-color:	@blueGreyLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@blueGreyLighten4,3%) !important;
+	}
+}
+
+.md-color.blue-grey-lighten-3, .blue-grey-lighten-3 {
+	background-color:	@blueGreyLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@blueGreyLighten3,3%) !important;
+	}
+}
+
+.md-color.blue-grey-lighten-2, .blue-grey-lighten-2 {
+	background-color:	@blueGreyLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@blueGreyLighten2,3%) !important;
+	}
+}
+
+.md-color.blue-grey-lighten-1, .blue-grey-lighten-1 {
+	background-color:	@blueGreyLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@blueGreyLighten1,3%) !important;
+	}
+}
+
+.md-color.blue-grey, .blue-grey {
+	background-color:	@blueGreyBase !important;
+
+	&:active {
+		background-color:	 darken(@blueGreyBase,3%) !important;
+	}
+}
+
+.md-color.blue-grey-darken-1, .blue-grey-darken-1 {
+	background-color:	@blueGreyDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@blueGreyDarken1,3%) !important;
+	}
+}
+
+.md-color.blue-grey-darken-2, .blue-grey-darken-2 {
+	background-color:	@blueGreyDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@blueGreyDarken2,3%) !important;
+	}
+}
+
+.md-color.blue-grey-darken-3, .blue-grey-darken-3 {
+	background-color:	@blueGreyDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@blueGreyDarken3,3%) !important;
+	}
+}
+
+.md-color.blue-grey-darken-4, .blue-grey-darken-4 {
+	background-color:	@blueGreyDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@blueGreyDarken4,3%) !important;
+	}
+}
+
+/* grey */
+.md-color.grey-lighten-5, .grey-lighten-5 {
+	background-color:	@greyLighten5 !important;
+
+	&:active {
+		background-color:	 darken(@greyLighten5,3%) !important;
+	}
+}
+
+.md-color.grey-lighten-4, .grey-lighten-4 {
+	background-color:	@greyLighten4 !important;
+
+	&:active {
+		background-color:	 darken(@greyLighten4,3%) !important;
+	}
+}
+
+.md-color.grey-lighten-3, .grey-lighten-3 {
+	background-color:	@greyLighten3 !important;
+
+	&:active {
+		background-color:	 darken(@greyLighten3,3%) !important;
+	}
+}
+
+.md-color.grey-lighten-2, .grey-lighten-2 {
+	background-color:	@greyLighten2 !important;
+
+	&:active {
+		background-color:	 darken(@greyLighten2,3%) !important;
+	}
+}
+
+.md-color.grey-lighten-1, .grey-lighten-1 {
+	background-color:	@greyLighten1 !important;
+
+	&:active {
+		background-color:	 darken(@greyLighten1,3%) !important;
+	}
+}
+
+.md-color.grey, .grey {
+	background-color:	@greyBase !important;
+
+	&:active {
+		background-color:	 darken(@greyBase,3%) !important;
+	}
+}
+
+.md-color.grey-darken-1, .grey-darken-1 {
+	background-color:	@greyDarken1 !important;
+
+	&:active {
+		background-color:	 darken(@greyDarken1,3%) !important;
+	}
+}
+
+.md-color.grey-darken-2, .grey-darken-2 {
+	background-color:	@greyDarken2 !important;
+
+	&:active {
+		background-color:	 darken(@greyDarken2,3%) !important;
+	}
+}
+
+.md-color.grey-darken-3, .grey-darken-3 {
+	background-color:	@greyDarken3 !important;
+
+	&:active {
+		background-color:	 darken(@greyDarken3,3%) !important;
+	}
+}
+
+.md-color.grey-darken-4, .grey-darken-4 {
+	background-color:	@greyDarken4 !important;
+
+	&:active {
+		background-color:	 darken(@greyDarken4,3%) !important;
+	}
+}
+
+.md-color.black, .black {
+	background-color:	@blackBase !important;
+
+	&:active {
+		background-color:	 darken(@blackBase,3%) !important;
+	}
+}
+
+.md-color.white, .white {
+	background-color:	@whiteBase !important;
+
+	&:active {
+		background-color:	 darken(@whiteBase,3%) !important;
+	}
+}
